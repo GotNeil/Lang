@@ -2,6 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 const CATEGORIES = ["1-100", "101-1000", "1001-10000", "1-9999", "素食"];
+const QUIZ_MODES = {
+  kanji: '看漢字練習日文發音',
+  listening: '日文聽力測驗',
+  chinese: '看中文練習日文發音',
+};
 
 const getInitialScores = () => {
   const savedScores = localStorage.getItem('jp_scores');
@@ -12,6 +17,7 @@ function App() {
   const [wordList, setWordList] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [quizMode, setQuizMode] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
   const [scores, setScores] = useState(getInitialScores());
   const [loading, setLoading] = useState(false);
@@ -29,8 +35,10 @@ function App() {
   useEffect(() => {
     if (wordList.length > 0) {
       nextWord(wordList);
+    } else if (selectedCategory) {
+      setCurrentWord(null); // Clear word if list is empty after filtering
     }
-  }, [wordList]);
+  }, [wordList, selectedCategory]);
 
   const cleanupTimers = () => {
     clearTimeout(autoAdvanceTimer.current);
@@ -39,6 +47,10 @@ function App() {
 
   const nextWord = (list) => {
     cleanupTimers();
+    if (list.length === 0) {
+      setCurrentWord(null);
+      return;
+    }
     const randomIndex = Math.floor(Math.random() * list.length);
     const newWord = { ...list[randomIndex], id: `${selectedCategory}-${list[randomIndex].kanji}` };
     setCurrentWord(newWord);
@@ -56,12 +68,17 @@ function App() {
     fetch(`/data/${category}.json`)
       .then(response => response.json())
       .then(data => {
+        let processedData = data;
+        if (quizMode === 'chinese') {
+          processedData = data.filter(word => word.chinese);
+        }
+
         if (category === '1-9999') {
-          const shuffled = data.sort(() => 0.5 - Math.random());
+          const shuffled = processedData.sort(() => 0.5 - Math.random());
           const selected = shuffled.slice(0, 50);
           setWordList(selected);
         } else {
-          setWordList(data);
+          setWordList(processedData);
         }
         setLoading(false);
       })
@@ -106,19 +123,44 @@ function App() {
     }
   };
 
+  const resetState = () => {
+    setQuizMode(null);
+    setSelectedCategory(null);
+    setCurrentWord(null);
+    setWordList([]);
+  }
+
   const renderQuizArea = () => {
     if (loading) return <p>載入中...</p>;
     if (error) return <p style={{color: 'red'}}>{error}</p>;
-    if (!currentWord) return <p>請先選擇一個題庫。</p>;
+    if (!currentWord) {
+      if (selectedCategory) {
+        return <p>此題庫在此模式中沒有可用的題目。</p>;
+      }
+      return <p>請先選擇一個題庫。</p>;
+    }
 
     const currentScore = scores[currentWord.id] || 0;
 
     return (
       <div className="quiz-area">
-        <div className="kanji-display">
-          {currentWord.kanji}
-          <span className="proficiency-score" title={`熟練度：${currentScore}`}>熟練度: {currentScore}</span>
-        </div>
+        {quizMode === 'kanji' && (
+          <div className="kanji-display">
+            {currentWord.kanji}
+            <span className="proficiency-score" title={`熟練度：${currentScore}`}>熟練度: {currentScore}</span>
+          </div>
+        )}
+        {quizMode === 'listening' && !showAnswer && (
+          <div className="listening-question">
+            <button onClick={() => speak(currentWord.kana)} className="speak-button">🔊 播放聲音</button>
+          </div>
+        )}
+        {quizMode === 'chinese' && (
+          <div className="kanji-display chinese-display">
+            {currentWord.chinese}
+            <span className="proficiency-score" title={`熟練度：${currentScore}`}>熟練度: {currentScore}</span>
+          </div>
+        )}
         <div className="controls">
           {!showAnswer && <button onClick={() => setShowAnswer(true)}>查看答案</button>}
           {showAnswer && (
@@ -148,8 +190,38 @@ function App() {
           </div>
         )}
         <button className='change-category' onClick={() => setSelectedCategory(null)}>更換題庫</button>
+        <button className='change-mode' onClick={resetState}>更換模式</button>
       </div>
     );
+  }
+
+  const renderContent = () => {
+    if (!quizMode) {
+      return (
+        <div className="mode-selector">
+          <h2>請選擇練習模式：</h2>
+          {Object.entries(QUIZ_MODES).map(([modeKey, modeName]) => (
+            <button key={modeKey} onClick={() => setQuizMode(modeKey)}>
+              {modeName}
+            </button>
+          ))}
+        </div>
+      );
+    }
+    if (!selectedCategory) {
+      return (
+        <div className="category-selector">
+          <h2>請選擇題庫：</h2>
+          {CATEGORIES.map(category => (
+            <button key={category} onClick={() => handleSelectCategory(category)}>
+              {category}
+            </button>
+          ))}
+          <button className='change-mode' onClick={resetState}>更換模式</button>
+        </div>
+      );
+    }
+    return renderQuizArea();
   }
 
   return (
@@ -158,16 +230,7 @@ function App() {
         <h1>日文單字練習</h1>
       </header>
       <main>
-        {!selectedCategory ? (
-          <div className="category-selector">
-            <h2>請選擇題庫：</h2>
-            {CATEGORIES.map(category => (
-              <button key={category} onClick={() => handleSelectCategory(category)}>
-                {category}
-              </button>
-            ))}
-          </div>
-        ) : renderQuizArea()}
+        {renderContent()}
       </main>
     </div>
   );
