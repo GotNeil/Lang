@@ -3,9 +3,9 @@ import './App.css';
 
 const CATEGORIES = ["1-100", "101-1000", "1001-10000", "素食"];
 const QUIZ_MODES = {
-  chinese: '看中文練習日文發音',
-  kanji: '看漢字練習日文發音',
-  listening: '日文聽力測驗',
+  chinese: '中文題目，練習日文發音',
+  kanji: '日文題目，練習日文發音',
+  listening: '日文題目，練習日文聽力',
 };
 
 const getInitialScores = () => {
