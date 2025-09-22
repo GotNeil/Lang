@@ -3,9 +3,9 @@ import './App.css';
 
 const CATEGORIES = ["1-100", "101-1000", "1001-10000", "1-9999", "素食"];
 const QUIZ_MODES = {
+  chinese: '看中文練習日文發音',
   kanji: '看漢字練習日文發音',
   listening: '日文聽力測驗',
-  chinese: '看中文練習日文發音',
 };
 
 const getInitialScores = () => {
@@ -17,7 +17,7 @@ function App() {
   const [wordList, setWordList] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [quizMode, setQuizMode] = useState(null);
+  const [quizMode, setQuizMode] = useState('chinese'); // Default to chinese
   const [showAnswer, setShowAnswer] = useState(false);
   const [scores, setScores] = useState(getInitialScores());
   const [loading, setLoading] = useState(false);
@@ -123,13 +123,6 @@ function App() {
     }
   };
 
-  const resetState = () => {
-    setQuizMode(null);
-    setSelectedCategory(null);
-    setCurrentWord(null);
-    setWordList([]);
-  }
-
   const renderQuizArea = () => {
     if (loading) return <p>載入中...</p>;
     if (error) return <p style={{color: 'red'}}>{error}</p>;
@@ -167,6 +160,7 @@ function App() {
             <div className="kana-display">
               <span className="kanji-in-answer">{currentWord.kanji}</span>
               {currentWord.kana}
+              {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
               <button onClick={() => speak(currentWord.kana)} className="speak-button">🔊</button>
             </div>
           )}
@@ -190,26 +184,31 @@ function App() {
           </div>
         )}
         <button className='change-category' onClick={() => setSelectedCategory(null)}>更換題庫</button>
-        <button className='change-mode' onClick={resetState}>更換模式</button>
       </div>
     );
   }
 
-  const renderContent = () => {
-    if (!quizMode) {
-      return (
+  const renderSetupScreen = () => {
+    return (
+      <div className="setup-screen">
         <div className="mode-selector">
           <h2>請選擇練習模式：</h2>
-          {Object.entries(QUIZ_MODES).map(([modeKey, modeName]) => (
-            <button key={modeKey} onClick={() => setQuizMode(modeKey)}>
-              {modeName}
-            </button>
-          ))}
+          <div className="radio-group">
+            {Object.entries(QUIZ_MODES).map(([modeKey, modeName]) => (
+              <React.Fragment key={modeKey}>
+                <input 
+                  type="radio" 
+                  id={modeKey}
+                  name="quizMode" 
+                  value={modeKey} 
+                  checked={quizMode === modeKey}
+                  onChange={() => setQuizMode(modeKey)}
+                />
+                <label htmlFor={modeKey}>{modeName}</label>
+              </React.Fragment>
+            ))}
+          </div>
         </div>
-      );
-    }
-    if (!selectedCategory) {
-      return (
         <div className="category-selector">
           <h2>請選擇題庫：</h2>
           {CATEGORIES.map(category => (
@@ -217,11 +216,9 @@ function App() {
               {category}
             </button>
           ))}
-          <button className='change-mode' onClick={resetState}>更換模式</button>
         </div>
-      );
-    }
-    return renderQuizArea();
+      </div>
+    );
   }
 
   return (
@@ -230,7 +227,7 @@ function App() {
         <h1>日文單字練習</h1>
       </header>
       <main>
-        {renderContent()}
+        {!selectedCategory ? renderSetupScreen() : renderQuizArea()}
       </main>
     </div>
   );
