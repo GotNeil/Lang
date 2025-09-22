@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
-const CATEGORIES = ["1-100", "101-1000", "1001-10000", "1-9999", "素食"];
+const CATEGORIES = ["1-100", "101-1000", "1001-10000", "素食"];
 const QUIZ_MODES = {
   chinese: '看中文練習日文發音',
   kanji: '看漢字練習日文發音',
@@ -95,7 +95,7 @@ function App() {
     
     setScores(prevScores => ({ ...prevScores, [wordId]: newScore }));
     setAnswerPhase('countdown');
-    setCountdown(3);
+    setCountdown(1);
 
     countdownTimer.current = setInterval(() => {
       setCountdown(prev => prev - 1);
@@ -104,7 +104,7 @@ function App() {
     autoAdvanceTimer.current = setTimeout(() => {
       clearInterval(countdownTimer.current);
       nextWord(wordList);
-    }, 3000);
+    }, 1000);
   };
 
   const handleStopCountdown = () => {
