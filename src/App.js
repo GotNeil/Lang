@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
+import Settings from './Settings';
 
 const QUIZ_MODES = {
   chinese: '中文題目，練習日文發音',
@@ -10,6 +11,18 @@ const QUIZ_MODES = {
 const getInitialScores = () => {
   const savedScores = localStorage.getItem('jp_scores');
   return savedScores ? JSON.parse(savedScores) : {};
+};
+
+const getInitialSettings = () => {
+  const savedSettings = localStorage.getItem('jp_settings');
+  if (savedSettings) {
+    return JSON.parse(savedSettings);
+  }
+  return {
+    numQuestions: 10,
+    autoAdvanceDelay: 1,
+    autoAdvanceEnabled: true,
+  };
 };
 
 // Fisher-Yates shuffle algorithm
@@ -44,6 +57,8 @@ function App() {
   const [answerPhase, setAnswerPhase] = useState('feedback'); // feedback, countdown, paused
   const [countdown, setCountdown] = useState(null);
   const [categories, setCategories] = useState([]);
+  const [showSettings, setShowSettings] = useState(false);
+  const [settings, setSettings] = useState(getInitialSettings());
   
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
@@ -58,6 +73,12 @@ function App() {
   useEffect(() => {
     localStorage.setItem('jp_scores', JSON.stringify(scores));
   }, [scores]);
+
+  const handleSaveSettings = (newSettings) => {
+    setSettings(newSettings);
+    localStorage.setItem('jp_settings', JSON.stringify(newSettings));
+    setShowSettings(false);
+  };
 
   const cleanupTimers = () => {
     clearTimeout(autoAdvanceTimer.current);
@@ -106,9 +127,10 @@ function App() {
         }
 
         const shuffledData = shuffleArray(processedData);
-        setQuizList(shuffledData);
+        const selectedData = shuffledData.slice(0, settings.numQuestions);
+        setQuizList(selectedData);
         setCurrentIndex(0);
-        showWordAtIndex(0, shuffledData);
+        showWordAtIndex(0, selectedData);
         setLoading(false);
       })
       .catch(err => {
@@ -123,17 +145,22 @@ function App() {
     const newScore = isCorrect ? currentScore + 1 : 0;
     
     setScores(prevScores => ({ ...prevScores, [wordId]: newScore }));
-    setAnswerPhase('countdown');
-    setCountdown(1);
 
-    countdownTimer.current = setInterval(() => {
-      setCountdown(prev => prev - 1);
-    }, 1000);
+    if (settings.autoAdvanceEnabled) {
+      setAnswerPhase('countdown');
+      setCountdown(settings.autoAdvanceDelay);
 
-    autoAdvanceTimer.current = setTimeout(() => {
-      clearInterval(countdownTimer.current);
-      nextWord();
-    }, 1000);
+      countdownTimer.current = setInterval(() => {
+        setCountdown(prev => prev - 1);
+      }, 1000);
+
+      autoAdvanceTimer.current = setTimeout(() => {
+        clearInterval(countdownTimer.current);
+        nextWord();
+      }, settings.autoAdvanceDelay * 1000);
+    } else {
+      setAnswerPhase('paused');
+    }
   };
 
   const handleStopCountdown = () => {
@@ -254,14 +281,25 @@ function App() {
     );
   }
 
+  const renderContent = () => {
+    if (showSettings) {
+      return <Settings settings={settings} onSave={handleSaveSettings} onBack={() => setShowSettings(false)} />;
+    }
+    if (!selectedCategory) {
+      return renderSetupScreen();
+    }
+    return renderQuizArea();
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>日文單字練習</h1>
+        <button className="settings-button" onClick={() => setShowSettings(true)}>設定</button>
       </header>
       <main>
         {error && <p style={{color: 'red'}}>{error}</p>}
-        {!selectedCategory ? renderSetupScreen() : renderQuizArea()}
+        {renderContent()}
       </main>
     </div>
   );
