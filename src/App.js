@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
-const CATEGORIES = ["1-100", "101-1000", "1001-10000", "素食"];
 const QUIZ_MODES = {
   chinese: '中文題目，練習日文發音',
   kanji: '日文題目，練習日文發音',
@@ -13,8 +12,28 @@ const getInitialScores = () => {
   return savedScores ? JSON.parse(savedScores) : {};
 };
 
+// Fisher-Yates shuffle algorithm
+const shuffleArray = (array) => {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex !== 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 function App() {
-  const [wordList, setWordList] = useState([]);
+  const [quizList, setQuizList] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [quizMode, setQuizMode] = useState('chinese'); // Default to chinese
@@ -24,46 +43,59 @@ function App() {
   const [error, setError] = useState(null);
   const [answerPhase, setAnswerPhase] = useState('feedback'); // feedback, countdown, paused
   const [countdown, setCountdown] = useState(null);
+  const [categories, setCategories] = useState([]);
   
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
 
   useEffect(() => {
-    localStorage.setItem('jp_scores', JSON.stringify(scores));
-  }, [scores]);
+    fetch('/data/datamanifest.json')
+      .then(response => response.json())
+      .then(data => setCategories(data))
+      .catch(err => setError('無法載入題庫清單'));
+  }, []);
 
   useEffect(() => {
-    if (wordList.length > 0) {
-      nextWord(wordList);
-    } else if (selectedCategory) {
-      setCurrentWord(null); // Clear word if list is empty after filtering
-    }
-  }, [wordList, selectedCategory]);
+    localStorage.setItem('jp_scores', JSON.stringify(scores));
+  }, [scores]);
 
   const cleanupTimers = () => {
     clearTimeout(autoAdvanceTimer.current);
     clearInterval(countdownTimer.current);
   };
 
-  const nextWord = (list) => {
-    cleanupTimers();
+  const showWordAtIndex = (index, list) => {
     if (list.length === 0) {
       setCurrentWord(null);
       return;
     }
-    const randomIndex = Math.floor(Math.random() * list.length);
-    const newWord = { ...list[randomIndex], id: `${selectedCategory}-${list[randomIndex].kanji}` };
+    const newWord = { ...list[index], id: `${selectedCategory}-${list[index].kanji}` };
     setCurrentWord(newWord);
     setShowAnswer(false);
     setAnswerPhase('feedback');
     setCountdown(null);
   };
 
+  const nextWord = () => {
+    cleanupTimers();
+    const nextIndex = currentIndex + 1;
+    if (nextIndex >= quizList.length) {
+      // Reshuffle and start from the beginning
+      const shuffledList = shuffleArray([...quizList]);
+      setQuizList(shuffledList);
+      setCurrentIndex(0);
+      showWordAtIndex(0, shuffledList);
+    } else {
+      setCurrentIndex(nextIndex);
+      showWordAtIndex(nextIndex, quizList);
+    }
+  };
+
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
     setLoading(true);
     setError(null);
-    setWordList([]);
+    setQuizList([]);
 
     fetch(`/data/${category}.json`)
       .then(response => response.json())
@@ -73,13 +105,10 @@ function App() {
           processedData = data.filter(word => word.chinese);
         }
 
-        if (category === '1-9999') {
-          const shuffled = processedData.sort(() => 0.5 - Math.random());
-          const selected = shuffled.slice(0, 50);
-          setWordList(selected);
-        } else {
-          setWordList(processedData);
-        }
+        const shuffledData = shuffleArray(processedData);
+        setQuizList(shuffledData);
+        setCurrentIndex(0);
+        showWordAtIndex(0, shuffledData);
         setLoading(false);
       })
       .catch(err => {
@@ -103,7 +132,7 @@ function App() {
 
     autoAdvanceTimer.current = setTimeout(() => {
       clearInterval(countdownTimer.current);
-      nextWord(wordList);
+      nextWord();
     }, 1000);
   };
 
@@ -179,7 +208,7 @@ function App() {
               </button>
             )}
             {answerPhase === 'paused' && (
-              <button className='next-word' onClick={() => nextWord(wordList)}>下一題</button>
+              <button className='next-word' onClick={nextWord}>下一題</button>
             )}
           </div>
         )}
@@ -211,11 +240,15 @@ function App() {
         </div>
         <div className="category-selector">
           <h2>請選擇題庫：</h2>
-          {CATEGORIES.map(category => (
-            <button key={category} onClick={() => handleSelectCategory(category)}>
-              {category}
-            </button>
-          ))}
+          {categories.length > 0 ? (
+            categories.map(category => (
+              <button key={category} onClick={() => handleSelectCategory(category)}>
+                {category}
+              </button>
+            ))
+          ) : (
+            <p>沒有可用的題庫。</p>
+          )}
         </div>
       </div>
     );
@@ -227,6 +260,7 @@ function App() {
         <h1>日文單字練習</h1>
       </header>
       <main>
+        {error && <p style={{color: 'red'}}>{error}</p>}
         {!selectedCategory ? renderSetupScreen() : renderQuizArea()}
       </main>
     </div>
