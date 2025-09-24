@@ -1,9 +1,51 @@
 [
-  {"kanji": "ベジタリアン", "kana": "べじたりあん", "chinese": "素食者 / vegetarian"},
-  {"kanji": "食べられますか", "kana": "たべられますか", "chinese": "可以吃嗎？"},
-  {"kanji": "菜食できますか", "kana": "さいしょくできますか", "chinese": "可以做成素食的嗎？"},
-  {"kanji": "肉なし", "kana": "にくなし", "chinese": "不要肉"},
-  {"kanji": "卵なし", "kana": "たまごなし", "chinese": "不要蛋"},
-  {"kanji": "魚なし", "kana": "さかななし", "chinese": "不要魚"},
-  {"kanji": "海鮮なし", "kana": "かいせんなし", "chinese": "不要海鮮"}
+  {
+    "kanji": "ベジタリアン", 
+    "kana": "べじたりあん", 
+    "chinese": "素食者 / vegetarian",
+    "example": "A: 私はベジタリアンです。 </br> B: そうですか。",
+    "example_chinese": "A: 我是素食者。 </br> B: 原來如此。"
+  },
+  {
+    "kanji": "食べられますか", 
+    "kana": "たべられますか", 
+    "chinese": "可以吃嗎？",
+    "example": "A: これはベジタリアンでも食べられますか。 </br> B: はい、大丈夫です。",
+    "example_chinese": "A: 這個素食者可以吃嗎？ </br> B: 是的，沒問題。"
+  },
+  {
+    "kanji": "菜食できますか", 
+    "kana": "さいしょくできますか", 
+    "chinese": "可以做成素食的嗎？",
+    "example": "A: この料理は菜食できますか。 </br> B: はい、できますよ。",
+    "example_chinese": "A: 這道菜可以做成素食的嗎？ </br> B: 是的，可以。"
+  },
+  {
+    "kanji": "肉なし", 
+    "kana": "にくなし", 
+    "chinese": "不要肉",
+    "example": "A: 肉なしのラーメンはありますか。 </br> B: はい、野菜ラーメンがあります。",
+    "example_chinese": "A: 有不加肉的拉麵嗎？ </br> B: 有的，我們有蔬菜拉麵。"
+  },
+  {
+    "kanji": "卵なし", 
+    "kana": "たまごなし", 
+    "chinese": "不要蛋",
+    "example": "A: 卵なしのチャーハンをお願いします。 </br> B: かしこまりました。",
+    "example_chinese": "A: 麻煩您，炒飯不要加蛋。 </br> B: 好的。"
+  },
+  {
+    "kanji": "魚なし", 
+    "kana": "さかななし", 
+    "chinese": "不要魚",
+    "example": "A: このスープは魚なしですか。 </br> B: はい、魚は入っていません。",
+    "example_chinese": "A: 這個湯沒有魚嗎？ </br> B: 是的，沒有放魚。"
+  },
+  {
+    "kanji": "海鮮なし", 
+    "kana": "かいせんなし", 
+    "chinese": "不要海鮮",
+    "example": "A: 海鮮なしのパスタはありますか。 </br> B: はい、トマトソースのパスタがあります。",
+    "example_chinese": "A: 有不加海鮮的義大利麵嗎？ </br> B: 有的，我們有番茄醬義大利麵。"
+  }
 ]

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Settings from './Settings';
 
+const CATEGORIES = ["1-100", "101-1000", "1001-10000", "素食", "購物", "旅遊地點-名詞"];
 const QUIZ_MODES = {
   chinese: '中文題目，練習日文發音',
   kanji: '日文題目，練習日文發音',
@@ -44,6 +45,11 @@ const shuffleArray = (array) => {
   return array;
 }
 
+const getJapaneseFromExample = (example) => {
+  if (!example) return "";
+  return example.replace(/<br\s*\/?>/gi, ' ');
+}
+
 function App() {
   const [quizList, setQuizList] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,19 +62,11 @@ function App() {
   const [error, setError] = useState(null);
   const [answerPhase, setAnswerPhase] = useState('feedback'); // feedback, countdown, paused
   const [countdown, setCountdown] = useState(null);
-  const [categories, setCategories] = useState([]);
   const [showSettings, setShowSettings] = useState(false);
   const [settings, setSettings] = useState(getInitialSettings());
   
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
-
-  useEffect(() => {
-    fetch('/data/datamanifest.json')
-      .then(response => response.json())
-      .then(data => setCategories(data))
-      .catch(err => setError('無法載入題庫清單'));
-  }, []);
 
   useEffect(() => {
     localStorage.setItem('jp_scores', JSON.stringify(scores));
@@ -213,11 +211,24 @@ function App() {
         <div className="controls">
           {!showAnswer && <button onClick={() => setShowAnswer(true)}>查看答案</button>}
           {showAnswer && (
-            <div className="kana-display">
-              <span className="kanji-in-answer">{currentWord.kanji}</span>
-              {currentWord.kana}
-              {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
-              <button onClick={() => speak(currentWord.kana)} className="speak-button">🔊</button>
+            <div className="answer-details">
+              <div className="kana-display">
+                <span className="kanji-in-answer">{currentWord.kanji}</span>
+                {currentWord.kana}
+                {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
+              </div>
+              {currentWord.example && 
+                <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />
+              }
+              {currentWord.example_chinese && 
+                <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />
+              }
+              <div className="speak-controls">
+                <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
+                {currentWord.example && 
+                  <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>
+                }
+              </div>
             </div>
           )}
         </div>
@@ -267,15 +278,11 @@ function App() {
         </div>
         <div className="category-selector">
           <h2>請選擇題庫：</h2>
-          {categories.length > 0 ? (
-            categories.map(category => (
-              <button key={category} onClick={() => handleSelectCategory(category)}>
-                {category}
-              </button>
-            ))
-          ) : (
-            <p>沒有可用的題庫。</p>
-          )}
+          {CATEGORIES.map(category => (
+            <button key={category} onClick={() => handleSelectCategory(category)}>
+              {category}
+            </button>
+          ))}
         </div>
       </div>
     );

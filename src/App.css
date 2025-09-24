@@ -157,6 +157,12 @@ main {
   line-height: 1.2;
 }
 
+.answer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .kana-display {
   font-size: 2em;
   color: #52c41a;
@@ -178,6 +184,27 @@ main {
 
 .chinese-in-answer {
   color: #ff7a45;
+}
+
+.example-display, .example-display-chinese {
+  font-size: 1.1em;
+  color: #555;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.example-display-chinese {
+  color: #888;
+}
+
+.speak-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .controls button,
@@ -235,17 +262,19 @@ main {
 
 .speak-button {
   background: none;
-  border: none;
-  font-size: 1.2em;
+  border: 1px solid #ddd;
+  font-size: 1em;
   cursor: pointer;
-  padding: 5px;
+  padding: 5px 10px;
   line-height: 1;
   color: #777;
-  transition: color 0.3s;
+  transition: all 0.3s;
+  border-radius: 5px;
 }
 
 .speak-button:hover {
   color: #000;
+  background-color: #f0f2f5;
 }
 
 .change-category,

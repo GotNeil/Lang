@@ -1,102 +1,352 @@
 [
-  {"kanji": "1", "kana": "いち", "chinese": "一"},
-  {"kanji": "2", "kana": "に", "chinese": "二"},
-  {"kanji": "3", "kana": "さん", "chinese": "三"},
-  {"kanji": "4", "kana": "よん", "chinese": "四"},
-  {"kanji": "5", "kana": "ご", "chinese": "五"},
-  {"kanji": "6", "kana": "ろく", "chinese": "六"},
-  {"kanji": "7", "kana": "なな", "chinese": "七"},
-  {"kanji": "8", "kana": "はち", "chinese": "八"},
-  {"kanji": "9", "kana": "きゅう", "chinese": "九"},
-  {"kanji": "10", "kana": "じゅう", "chinese": "十"},
-  {"kanji": "11", "kana": "じゅういち", "chinese": "十一"},
-  {"kanji": "12", "kana": "じゅうに", "chinese": "十二"},
-  {"kanji": "13", "kana": "じゅうさん", "chinese": "十三"},
-  {"kanji": "14", "kana": "じゅうよん", "chinese": "十四"},
-  {"kanji": "15", "kana": "じゅうご", "chinese": "十五"},
-  {"kanji": "16", "kana": "じゅうろく", "chinese": "十六"},
-  {"kanji": "17", "kana": "じゅうなな", "chinese": "十七"},
-  {"kanji": "18", "kana": "じゅうはち", "chinese": "十八"},
-  {"kanji": "19", "kana": "じゅうきゅう", "chinese": "十九"},
-  {"kanji": "20", "kana": "にじゅう", "chinese": "二十"},
-  {"kanji": "21", "kana": "にじゅういち", "chinese": "二十一"},
-  {"kanji": "22", "kana": "にじゅうに", "chinese": "二十二"},
-  {"kanji": "23", "kana": "にじゅうさん", "chinese": "二十三"},
-  {"kanji": "24", "kana": "にじゅうよん", "chinese": "二十四"},
-  {"kanji": "25", "kana": "にじゅうご", "chinese": "二十五"},
-  {"kanji": "26", "kana": "にじゅうろく", "chinese": "二十六"},
-  {"kanji": "27", "kana": "にじゅうなな", "chinese": "二十七"},
-  {"kanji": "28", "kana": "にじゅうはち", "chinese": "二十八"},
-  {"kanji": "29", "kana": "にじゅうきゅう", "chinese": "二十九"},
-  {"kanji": "30", "kana": "さんじゅう", "chinese": "三十"},
-  {"kanji": "31", "kana": "さんじゅういち", "chinese": "三十一"},
-  {"kanji": "32", "kana": "さんじゅうに", "chinese": "三十二"},
-  {"kanji": "33", "kana": "さんじゅうさん", "chinese": "三十三"},
-  {"kanji": "34", "kana": "さんじゅうよん", "chinese": "三十四"},
-  {"kanji": "35", "kana": "さんじゅうご", "chinese": "三十五"},
-  {"kanji": "36", "kana": "さんじゅうろく", "chinese": "三十六"},
-  {"kanji": "37", "kana": "さんじゅうなな", "chinese": "三十七"},
-  {"kanji": "38", "kana": "さんじゅうはち", "chinese": "三十八"},
-  {"kanji": "39", "kana": "さんじゅうきゅう", "chinese": "三十九"},
-  {"kanji": "40", "kana": "よんじゅう", "chinese": "四十"},
-  {"kanji": "41", "kana": "よんじゅういち", "chinese": "四十一"},
-  {"kanji": "42", "kana": "よんじゅうに", "chinese": "四十二"},
-  {"kanji": "43", "kana": "よんじゅうさん", "chinese": "四十三"},
-  {"kanji": "44", "kana": "よんじゅうよん", "chinese": "四十四"},
-  {"kanji": "45", "kana": "よんじゅうご", "chinese": "四十五"},
-  {"kanji": "46", "kana": "よんじゅうろく", "chinese": "四十六"},
-  {"kanji": "47", "kana": "よんじゅうなな", "chinese": "四十七"},
-  {"kanji": "48", "kana": "よんじゅうはち", "chinese": "四十八"},
-  {"kanji": "49", "kana": "よんじゅうきゅう", "chinese": "四十九"},
-  {"kanji": "50", "kana": "ごじゅう", "chinese": "五十"},
-  {"kanji": "51", "kana": "ごじゅういち", "chinese": "五十一"},
-  {"kanji": "52", "kana": "ごじゅうに", "chinese": "五十二"},
-  {"kanji": "53", "kana": "ごじゅうさん", "chinese": "五十三"},
-  {"kanji": "54", "kana": "ごじゅうよん", "chinese": "五十四"},
-  {"kanji": "55", "kana": "ごじゅうご", "chinese": "五十五"},
-  {"kanji": "56", "kana": "ごじゅうろく", "chinese": "五十六"},
-  {"kanji": "57", "kana": "ごじゅうなな", "chinese": "五十七"},
-  {"kanji": "58", "kana": "ごじゅうはち", "chinese": "五十八"},
-  {"kanji": "59", "kana": "ごじゅうきゅう", "chinese": "五十九"},
-  {"kanji": "60", "kana": "ろくじゅう", "chinese": "六十"},
-  {"kanji": "61", "kana": "ろくじゅういち", "chinese": "六十一"},
-  {"kanji": "62", "kana": "ろくじゅうに", "chinese": "六十二"},
-  {"kanji": "63", "kana": "ろくじゅうさん", "chinese": "六十三"},
-  {"kanji": "64", "kana": "ろくじゅうよん", "chinese": "六十四"},
-  {"kanji": "65", "kana": "ろくじゅうご", "chinese": "六十五"},
-  {"kanji": "66", "kana": "ろくじゅうろく", "chinese": "六十六"},
-  {"kanji": "67", "kana": "ろくじゅうなな", "chinese": "六十七"},
-  {"kanji": "68", "kana": "ろくじゅうはち", "chinese": "六十八"},
-  {"kanji": "69", "kana": "ろくじゅうきゅう", "chinese": "六十九"},
-  {"kanji": "70", "kana": "ななじゅう", "chinese": "七十"},
-  {"kanji": "71", "kana": "ななじゅういち", "chinese": "七十一"},
-  {"kanji": "72", "kana": "ななじゅうに", "chinese": "七十二"},
-  {"kanji": "73", "kana": "ななじゅうさん", "chinese": "七十三"},
-  {"kanji": "74", "kana": "ななじゅうよん", "chinese": "七十四"},
-  {"kanji": "75", "kana": "ななじゅうご", "chinese": "七十五"},
-  {"kanji": "76", "kana": "ななじゅうろく", "chinese": "七十六"},
-  {"kanji": "77", "kana": "ななじゅうなな", "chinese": "七十七"},
-  {"kanji": "78", "kana": "ななじゅうはち", "chinese": "七十八"},
-  {"kanji": "79", "kana": "ななじゅうきゅう", "chinese": "七十九"},
-  {"kanji": "80", "kana": "はちじゅう", "chinese": "八十"},
-  {"kanji": "81", "kana": "はちじゅういち", "chinese": "八十一"},
-  {"kanji": "82", "kana": "はちじゅうに", "chinese": "八十二"},
-  {"kanji": "83", "kana": "はちじゅうさん", "chinese": "八十三"},
-  {"kanji": "84", "kana": "はちじゅうよん", "chinese": "八十四"},
-  {"kanji": "85", "kana": "はちじゅうご", "chinese": "八十五"},
-  {"kanji": "86", "kana": "はちじゅうろく", "chinese": "八十六"},
-  {"kanji": "87", "kana": "はちじゅうなな", "chinese": "八十七"},
-  {"kanji": "88", "kana": "はちじゅうはち", "chinese": "八十八"},
-  {"kanji": "89", "kana": "はちじゅうきゅう", "chinese": "八十九"},
-  {"kanji": "90", "kana": "きゅうじゅう", "chinese": "九十"},
-  {"kanji": "91", "kana": "きゅうじゅういち", "chinese": "九十一"},
-  {"kanji": "92", "kana": "きゅうじゅうに", "chinese": "九十二"},
-  {"kanji": "93", "kana": "きゅうじゅうさん", "chinese": "九十三"},
-  {"kanji": "94", "kana": "きゅうじゅうよん", "chinese": "九十四"},
-  {"kanji": "95", "kana": "きゅうじゅうご", "chinese": "九十五"},
-  {"kanji": "96", "kana": "きゅうじゅうろく", "chinese": "九十六"},
-  {"kanji": "97", "kana": "きゅうじゅうなな", "chinese": "九十七"},
-  {"kanji": "98", "kana": "きゅうじゅうはち", "chinese": "九十八"},
-  {"kanji": "99", "kana": "きゅうじゅうきゅう", "chinese": "九十九"},
-  {"kanji": "100", "kana": "ひゃく", "chinese": "一百"}
+  {
+    "kanji": "2",
+    "kana": "に",
+    "chinese": "二",
+    "example": "これは2です。",
+    "example_chinese": "這是2。"
+  },
+  {
+    "kanji": "4",
+    "kana": "よん",
+    "chinese": "四",
+    "example": "これは4です。",
+    "example_chinese": "這是4。"
+  },
+  {
+    "kanji": "6",
+    "kana": "ろく",
+    "chinese": "六",
+    "example": "これは6です。",
+    "example_chinese": "這是6。"
+  },
+  {
+    "kanji": "8",
+    "kana": "はち",
+    "chinese": "八",
+    "example": "これは8です。",
+    "example_chinese": "這是8。"
+  },
+  {
+    "kanji": "10",
+    "kana": "じゅう",
+    "chinese": "十",
+    "example": "A: 鉛筆を十本ください。 </br> B: はい、どうぞ。",
+    "example_chinese": "請給我十枝鉛筆。 </br> 好的，請拿。"
+  },
+  {
+    "kanji": "12",
+    "kana": "じゅうに",
+    "chinese": "十二",
+    "example": "これは12です。",
+    "example_chinese": "這是12。"
+  },
+  {
+    "kanji": "14",
+    "kana": "じゅうよん",
+    "chinese": "十四",
+    "example": "これは14です。",
+    "example_chinese": "這是14。"
+  },
+  {
+    "kanji": "16",
+    "kana": "じゅうろく",
+    "chinese": "十六",
+    "example": "これは16です。",
+    "example_chinese": "這是16。"
+  },
+  {
+    "kanji": "18",
+    "kana": "じゅうはち",
+    "chinese": "十八",
+    "example": "これは18です。",
+    "example_chinese": "這是18。"
+  },
+  {
+    "kanji": "20",
+    "kana": "にじゅう",
+    "chinese": "二十",
+    "example": "A: この本は二十ページです。",
+    "example_chinese": "這本書有20頁。"
+  },
+  {
+    "kanji": "22",
+    "kana": "にじゅうに",
+    "chinese": "二十二",
+    "example": "これは22です。",
+    "example_chinese": "這是22。"
+  },
+  {
+    "kanji": "24",
+    "kana": "にじゅうよん",
+    "chinese": "二十四",
+    "example": "これは24です。",
+    "example_chinese": "這是24。"
+  },
+  {
+    "kanji": "26",
+    "kana": "にじゅうろく",
+    "chinese": "二十六",
+    "example": "これは26です。",
+    "example_chinese": "這是26。"
+  },
+  {
+    "kanji": "28",
+    "kana": "にじゅうはち",
+    "chinese": "二十八",
+    "example": "これは28です。",
+    "example_chinese": "這是28。"
+  },
+  {
+    "kanji": "30",
+    "kana": "さんじゅう",
+    "chinese": "三十",
+    "example": "これは30です。",
+    "example_chinese": "這是30。"
+  },
+  {
+    "kanji": "32",
+    "kana": "さんじゅうに",
+    "chinese": "三十二",
+    "example": "これは32です。",
+    "example_chinese": "這是32。"
+  },
+  {
+    "kanji": "34",
+    "kana": "さんじゅうよん",
+    "chinese": "三十四",
+    "example": "これは34です。",
+    "example_chinese": "這是34。"
+  },
+  {
+    "kanji": "36",
+    "kana": "さんじゅうろく",
+    "chinese": "三十六",
+    "example": "これは36です。",
+    "example_chinese": "這是36。"
+  },
+  {
+    "kanji": "38",
+    "kana": "さんじゅうはち",
+    "chinese": "三十八",
+    "example": "これは38です。",
+    "example_chinese": "這是38。"
+  },
+  {
+    "kanji": "40",
+    "kana": "よんじゅう",
+    "chinese": "四十",
+    "example": "これは40です。",
+    "example_chinese": "這是40。"
+  },
+  {
+    "kanji": "42",
+    "kana": "よんじゅうに",
+    "chinese": "四十二",
+    "example": "これは42です。",
+    "example_chinese": "這是42。"
+  },
+  {
+    "kanji": "44",
+    "kana": "よんじゅうよん",
+    "chinese": "四十四",
+    "example": "これは44です。",
+    "example_chinese": "這是44。"
+  },
+  {
+    "kanji": "46",
+    "kana": "よんじゅうろく",
+    "chinese": "四十六",
+    "example": "これは46です。",
+    "example_chinese": "這是46。"
+  },
+  {
+    "kanji": "48",
+    "kana": "よんじゅうはち",
+    "chinese": "四十八",
+    "example": "これは48です。",
+    "example_chinese": "這是48。"
+  },
+  {
+    "kanji": "50",
+    "kana": "ごじゅう",
+    "chinese": "五十",
+    "example": "これは50です。",
+    "example_chinese": "這是50。"
+  },
+  {
+    "kanji": "52",
+    "kana": "ごじゅうに",
+    "chinese": "五十二",
+    "example": "これは52です。",
+    "example_chinese": "這是52。"
+  },
+  {
+    "kanji": "54",
+    "kana": "ごじゅうよん",
+    "chinese": "五十四",
+    "example": "これは54です。",
+    "example_chinese": "這是54。"
+  },
+  {
+    "kanji": "56",
+    "kana": "ごじゅうろく",
+    "chinese": "五十六",
+    "example": "これは56です。",
+    "example_chinese": "這是56。"
+  },
+  {
+    "kanji": "58",
+    "kana": "ごじゅうはち",
+    "chinese": "五十八",
+    "example": "これは58です。",
+    "example_chinese": "這是58。"
+  },
+  {
+    "kanji": "60",
+    "kana": "ろくじゅう",
+    "chinese": "六十",
+    "example": "これは60です。",
+    "example_chinese": "這是60。"
+  },
+  {
+    "kanji": "62",
+    "kana": "ろくじゅうに",
+    "chinese": "六十二",
+    "example": "これは62です。",
+    "example_chinese": "這是62。"
+  },
+  {
+    "kanji": "64",
+    "kana": "ろくじゅうよん",
+    "chinese": "六十四",
+    "example": "これは64です。",
+    "example_chinese": "這是64。"
+  },
+  {
+    "kanji": "66",
+    "kana": "ろくじゅうろく",
+    "chinese": "六十六",
+    "example": "これは66です。",
+    "example_chinese": "這是66。"
+  },
+  {
+    "kanji": "68",
+    "kana": "ろくじゅうはち",
+    "chinese": "六十八",
+    "example": "これは68です。",
+    "example_chinese": "這是68。"
+  },
+  {
+    "kanji": "70",
+    "kana": "ななじゅう",
+    "chinese": "七十",
+    "example": "これは70です。",
+    "example_chinese": "這是70。"
+  },
+  {
+    "kanji": "72",
+    "kana": "ななじゅうに",
+    "chinese": "七十二",
+    "example": "これは72です。",
+    "example_chinese": "這是72。"
+  },
+  {
+    "kanji": "74",
+    "kana": "ななじゅうよん",
+    "chinese": "七十四",
+    "example": "これは74です。",
+    "example_chinese": "這是74。"
+  },
+  {
+    "kanji": "76",
+    "kana": "ななじゅうろく",
+    "chinese": "七十六",
+    "example": "これは76です。",
+    "example_chinese": "這是76。"
+  },
+  {
+    "kanji": "78",
+    "kana": "ななじゅうはち",
+    "chinese": "七十八",
+    "example": "これは78です。",
+    "example_chinese": "這是78。"
+  },
+  {
+    "kanji": "80",
+    "kana": "はちじゅう",
+    "chinese": "八十",
+    "example": "これは80です。",
+    "example_chinese": "這是80。"
+  },
+  {
+    "kanji": "82",
+    "kana": "はちじゅうに",
+    "chinese": "八十二",
+    "example": "これは82です。",
+    "example_chinese": "這是82。"
+  },
+  {
+    "kanji": "84",
+    "kana": "はちじゅうよん",
+    "chinese": "八十四",
+    "example": "これは84です。",
+    "example_chinese": "這是84。"
+  },
+  {
+    "kanji": "86",
+    "kana": "はちじゅうろく",
+    "chinese": "八十六",
+    "example": "これは86です。",
+    "example_chinese": "這是86。"
+  },
+  {
+    "kanji": "88",
+    "kana": "はちじゅうはち",
+    "chinese": "八十八",
+    "example": "これは88です。",
+    "example_chinese": "這是88。"
+  },
+  {
+    "kanji": "90",
+    "kana": "きゅうじゅう",
+    "chinese": "九十",
+    "example": "これは90です。",
+    "example_chinese": "這是90。"
+  },
+  {
+    "kanji": "92",
+    "kana": "きゅうじゅうに",
+    "chinese": "九十二",
+    "example": "これは92です。",
+    "example_chinese": "這是92。"
+  },
+  {
+    "kanji": "94",
+    "kana": "きゅうじゅうよん",
+    "chinese": "九十四",
+    "example": "これは94です。",
+    "example_chinese": "這是94。"
+  },
+  {
+    "kanji": "96",
+    "kana": "きゅうじゅうろく",
+    "chinese": "九十六",
+    "example": "これは96です。",
+    "example_chinese": "這是96。"
+  },
+  {
+    "kanji": "98",
+    "kana": "きゅうじゅうはち",
+    "chinese": "九十八",
+    "example": "これは98です。",
+    "example_chinese": "這是98。"
+  },
+  {
+    "kanji": "100",
+    "kana": "ひゃく",
+    "chinese": "一百",
+    "example": "A: 百円です。",
+    "example_chinese": "這是100日圓。"
+  }
 ]
