@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Settings from './Settings';
 
-const CATEGORIES = ["1-100", "101-1000", "1001-10000", "素食", "購物", "旅遊地點-名詞"];
 const QUIZ_MODES = {
   chinese: '中文題目，練習日文發音',
   kanji: '日文題目，練習日文發音',
@@ -54,7 +53,8 @@ function App() {
   const [quizList, setQuizList] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [quizStarted, setQuizStarted] = useState(false);
   const [quizMode, setQuizMode] = useState('chinese'); // Default to chinese
   const [showAnswer, setShowAnswer] = useState(false);
   const [scores, setScores] = useState(getInitialScores());
@@ -64,9 +64,17 @@ function App() {
   const [countdown, setCountdown] = useState(null);
   const [showSettings, setShowSettings] = useState(false);
   const [settings, setSettings] = useState(getInitialSettings());
+  const [categories, setCategories] = useState([]);
   
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
+
+  useEffect(() => {
+    fetch('/data/manifest.json')
+      .then(response => response.json())
+      .then(data => setCategories(data))
+      .catch(err => setError('無法載入題庫清單。'));
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('jp_scores', JSON.stringify(scores));
@@ -88,7 +96,7 @@ function App() {
       setCurrentWord(null);
       return;
     }
-    const newWord = { ...list[index], id: `${selectedCategory}-${list[index].kanji}` };
+    const newWord = { ...list[index], id: `${selectedCategories.join('-')}-${list[index].kanji}` };
     setCurrentWord(newWord);
     setShowAnswer(false);
     setAnswerPhase('feedback');
@@ -110,18 +118,21 @@ function App() {
     }
   };
 
-  const handleSelectCategory = (category) => {
-    setSelectedCategory(category);
+  const handleStartPractice = () => {
     setLoading(true);
     setError(null);
     setQuizList([]);
 
-    fetch(`/data/${category}.json`)
-      .then(response => response.json())
-      .then(data => {
-        let processedData = data;
+    const fetchPromises = selectedCategories.map(category =>
+      fetch(`/data/${category}.json`).then(response => response.json())
+    );
+
+    Promise.all(fetchPromises)
+      .then(allData => {
+        const mergedData = allData.flat();
+        let processedData = mergedData;
         if (quizMode === 'chinese') {
-          processedData = data.filter(word => word.chinese);
+          processedData = mergedData.filter(word => word.chinese);
         }
 
         const shuffledData = shuffleArray(processedData);
@@ -129,6 +140,7 @@ function App() {
         setQuizList(selectedData);
         setCurrentIndex(0);
         showWordAtIndex(0, selectedData);
+        setQuizStarted(true);
         setLoading(false);
       })
       .catch(err => {
@@ -181,7 +193,7 @@ function App() {
     if (loading) return <p>載入中...</p>;
     if (error) return <p style={{color: 'red'}}>{error}</p>;
     if (!currentWord) {
-      if (selectedCategory) {
+      if (quizStarted) {
         return <p>此題庫在此模式中沒有可用的題目。</p>;
       }
       return <p>請先選擇一個題庫。</p>;
@@ -199,7 +211,7 @@ function App() {
         )}
         {quizMode === 'listening' && !showAnswer && (
           <div className="listening-question">
-            <button onClick={() => speak(currentWord.kana)} className="speak-button">🔊 播放聲音</button>
+            <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 播放聲音</button>
           </div>
         )}
         {quizMode === 'chinese' && (
@@ -238,6 +250,7 @@ function App() {
               <div className="feedback-buttons">
                 <button className='correct' onClick={() => handleFeedback(true)}>答對了！</button>
                 <button className='incorrect' onClick={() => handleFeedback(false)}>答錯了</button>
+                <button className='next-word' onClick={nextWord}>下一題</button>
               </div>
             )}
             {answerPhase === 'countdown' && (
@@ -250,10 +263,21 @@ function App() {
             )}
           </div>
         )}
-        <button className='change-category' onClick={() => setSelectedCategory(null)}>更換題庫</button>
+        <button className='change-category' onClick={() => {
+          setQuizStarted(false);
+          setSelectedCategories([]);
+        }}>更換題庫</button>
       </div>
     );
   }
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategories(prev => 
+      prev.includes(category) 
+        ? prev.filter(c => c !== category) 
+        : [...prev, category]
+    );
+  };
 
   const renderSetupScreen = () => {
     return (
@@ -278,11 +302,27 @@ function App() {
         </div>
         <div className="category-selector">
           <h2>請選擇題庫：</h2>
-          {CATEGORIES.map(category => (
-            <button key={category} onClick={() => handleSelectCategory(category)}>
-              {category}
-            </button>
-          ))}
+          <div className="checkbox-group">
+            {categories.map(category => (
+              <div key={category} className="checkbox-item">
+                <input 
+                  type="checkbox"
+                  id={category}
+                  value={category}
+                  checked={selectedCategories.includes(category)}
+                  onChange={() => handleCategoryChange(category)}
+                />
+                <label htmlFor={category}>{category}</label>
+              </div>
+            ))}
+          </div>
+          <button 
+            onClick={handleStartPractice} 
+            disabled={selectedCategories.length === 0 || loading}
+            className="start-button"
+          >
+            {loading ? '載入中...' : '開始練習'}
+          </button>
         </div>
       </div>
     );
@@ -292,7 +332,7 @@ function App() {
     if (showSettings) {
       return <Settings settings={settings} onSave={handleSaveSettings} onBack={() => setShowSettings(false)} />;
     }
-    if (!selectedCategory) {
+    if (!quizStarted) {
       return renderSetupScreen();
     }
     return renderQuizArea();
