@@ -103,5 +103,103 @@
     "chinese": "一千",
     "example": "これは1000です。",
     "example_chinese": "這是1000。"
+  },
+    {
+    "kanji": "1001",
+    "kana": "せんいち",
+    "chinese": "一千零一",
+    "example": "これは1001です。",
+    "example_chinese": "這是1001。"
+  },
+  {
+    "kanji": "1010",
+    "kana": "せんじゅう",
+    "chinese": "一千十",
+    "example": "これは1010です。",
+    "example_chinese": "這是1010。"
+  },
+  {
+    "kanji": "1100",
+    "kana": "せんひゃく",
+    "chinese": "一千一百",
+    "example": "これは1100です。",
+    "example_chinese": "這是1100。"
+  },
+  {
+    "kanji": "1555",
+    "kana": "せんごひゃくごじゅうご",
+    "chinese": "一千五百五十五",
+    "example": "これは1555です。",
+    "example_chinese": "這是1555。"
+  },
+  {
+    "kanji": "2000",
+    "kana": "にせん",
+    "chinese": "二千",
+    "example": "これは2000です。",
+    "example_chinese": "這是2000。"
+  },
+  {
+    "kanji": "3000",
+    "kana": "さんぜん",
+    "chinese": "三千",
+    "example": "これは3000です。",
+    "example_chinese": "這是3000。"
+  },
+  {
+    "kanji": "4000",
+    "kana": "よんせん",
+    "chinese": "四千",
+    "example": "これは4000です。",
+    "example_chinese": "這是4000。"
+  },
+  {
+    "kanji": "5000",
+    "kana": "ごせん",
+    "chinese": "五千",
+    "example": "これは5000です。",
+    "example_chinese": "這是5000。"
+  },
+  {
+    "kanji": "6000",
+    "kana": "ろくせん",
+    "chinese": "六千",
+    "example": "これは6000です。",
+    "example_chinese": "這是6000。"
+  },
+  {
+    "kanji": "7000",
+    "kana": "ななせん",
+    "chinese": "七千",
+    "example": "これは7000です。",
+    "example_chinese": "這是7000。"
+  },
+  {
+    "kanji": "8000",
+    "kana": "はっせん",
+    "chinese": "八千",
+    "example": "これは8000です。",
+    "example_chinese": "這是8000。"
+  },
+  {
+    "kanji": "9000",
+    "kana": "きゅうせん",
+    "chinese": "九千",
+    "example": "これは9000です。",
+    "example_chinese": "這是9000。"
+  },
+  {
+    "kanji": "9999",
+    "kana": "きゅうせんきゅうひゃくきゅうじゅうきゅう",
+    "chinese": "九千九百九十九",
+    "example": "これは9999です。",
+    "example_chinese": "這是9999。"
+  },
+  {
+    "kanji": "10000",
+    "kana": "いちまん",
+    "chinese": "一萬",
+    "example": "これは10000です。",
+    "example_chinese": "這是10000。"
   }
 ]

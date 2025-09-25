@@ -19,9 +19,10 @@ const getInitialSettings = () => {
     return JSON.parse(savedSettings);
   }
   return {
-    numQuestions: 10,
+    numQuestions: 20, // Default to 20 questions
     autoAdvanceDelay: 1,
     autoAdvanceEnabled: true,
+    selectedVoiceURI: null,
   };
 };
 
@@ -65,9 +66,44 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [settings, setSettings] = useState(getInitialSettings());
   const [categories, setCategories] = useState([]);
+  const [endOfRoundReached, setEndOfRoundReached] = useState(false);
+  const [voices, setVoices] = useState([]);
+  const [selectedVoice, setSelectedVoice] = useState(null);
   
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
+
+  useEffect(() => {
+    const populateVoiceList = () => {
+      const availableVoices = window.speechSynthesis.getVoices();
+      setVoices(availableVoices);
+
+      const savedSettings = getInitialSettings();
+      let voiceToSet = null;
+
+      if (savedSettings.selectedVoiceURI) {
+        voiceToSet = availableVoices.find(v => v.voiceURI === savedSettings.selectedVoiceURI);
+      }
+      
+      if (!voiceToSet) {
+        const japaneseVoices = availableVoices.filter(voice => voice.lang.startsWith('ja'));
+        if (japaneseVoices.length > 0) {
+          voiceToSet = japaneseVoices[0];
+        }
+      }
+
+      if (!voiceToSet && availableVoices.length > 0) {
+        voiceToSet = availableVoices[0];
+      }
+      
+      setSelectedVoice(voiceToSet);
+    };
+
+    populateVoiceList();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = populateVoiceList;
+    }
+  }, []);
 
   useEffect(() => {
     setLoading(true);
@@ -96,6 +132,12 @@ function App() {
   }, [scores]);
 
   const handleSaveSettings = (newSettings) => {
+    // Find the full voice object from the URI to set in state
+    const voiceToSet = voices.find(v => v.voiceURI === newSettings.selectedVoiceURI);
+    if (voiceToSet) {
+      setSelectedVoice(voiceToSet);
+    }
+    
     setSettings(newSettings);
     localStorage.setItem('jp_settings', JSON.stringify(newSettings));
     setShowSettings(false);
@@ -121,8 +163,18 @@ function App() {
   const nextWord = () => {
     cleanupTimers();
     const nextIndex = currentIndex + 1;
+
+    if (
+      settings.numQuestions !== -1 &&
+      nextIndex === settings.numQuestions &&
+      quizList.length > settings.numQuestions
+    ) {
+      setCurrentIndex(nextIndex);
+      setEndOfRoundReached(true);
+      return;
+    }
+
     if (nextIndex >= quizList.length) {
-      // Reshuffle and start from the beginning
       const shuffledList = shuffleArray([...quizList]);
       setQuizList(shuffledList);
       setCurrentIndex(0);
@@ -134,6 +186,7 @@ function App() {
   };
 
   const handleStartPractice = () => {
+    setEndOfRoundReached(false);
     setLoading(true);
     setError(null);
     setQuizList([]);
@@ -151,7 +204,11 @@ function App() {
         }
 
         const shuffledData = shuffleArray(processedData);
-        const selectedData = shuffledData.slice(0, settings.numQuestions);
+        
+        const selectedData = settings.numQuestions === -1
+          ? shuffledData
+          : shuffledData; // Always take the full shuffled list now
+
         setQuizList(selectedData);
         setCurrentIndex(0);
         showWordAtIndex(0, selectedData);
@@ -162,6 +219,16 @@ function App() {
         setError('無法載入題庫，請稍後再試。');
         setLoading(false);
       });
+  };
+
+  const handleContinue = () => {
+    setEndOfRoundReached(false);
+    showWordAtIndex(currentIndex, quizList);
+  };
+
+  const handleReshuffle = () => {
+    setEndOfRoundReached(false);
+    handleStartPractice();
   };
 
   const handleFeedback = (isCorrect) => {
@@ -195,18 +262,33 @@ function App() {
   };
 
   const speak = (text) => {
-    if ('speechSynthesis' in window) {
+    if ('speechSynthesis' in window && selectedVoice) {
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'ja-JP';
+      utterance.voice = selectedVoice;
+      utterance.lang = selectedVoice.lang;
       window.speechSynthesis.speak(utterance);
     } else {
-      alert('抱歉，您的瀏覽器不支援語音功能。');
+      alert('抱歉，您的瀏覽器不支援語音功能，或找不到合適的語音包。');
     }
   };
 
   const renderQuizArea = () => {
     if (loading) return <p>載入中...</p>;
     if (error) return <p style={{color: 'red'}}>{error}</p>;
+
+    if (endOfRoundReached) {
+      return (
+        <div className="end-of-round-screen">
+          <h2>練習完畢！</h2>
+          <p>您已完成設定的 {settings.numQuestions} 道題目。</p>
+          <div className="end-of-round-controls">
+            <button onClick={handleContinue}>繼續練習</button>
+            <button onClick={handleReshuffle}>重新抽題</button>
+          </div>
+        </div>
+      );
+    }
+
     if (!currentWord) {
       if (quizStarted) {
         return <p>此題庫在此模式中沒有可用的題目。</p>;
@@ -218,6 +300,7 @@ function App() {
 
     return (
       <div className="quiz-area">
+        <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
         {quizMode === 'kanji' && (
           <div className="kanji-display">
             {currentWord.kanji}
@@ -346,7 +429,13 @@ function App() {
 
   const renderContent = () => {
     if (showSettings) {
-      return <Settings settings={settings} onSave={handleSaveSettings} onBack={() => setShowSettings(false)} />;
+      return <Settings 
+        settings={settings} 
+        onSave={handleSaveSettings} 
+        onBack={() => setShowSettings(false)}
+        voices={voices}
+        selectedVoice={selectedVoice}
+      />;
     }
     if (!quizStarted) {
       return renderSetupScreen();

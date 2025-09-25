@@ -1,0 +1,72 @@
+[
+  {
+    "kanji": "一人",
+    "kana": "ひとり",
+    "chinese": "一人",
+    "example": "A: 予約は一人ですか？</br>B: はい、一人です。",
+    "example_chinese": "A: 預約是一人嗎？</br>B: 是的，一人。"
+  },
+  {
+    "kanji": "二人",
+    "kana": "ふたり",
+    "chinese": "兩人",
+    "example": "A: 二人で席をお願いします。</br>B: かしこまりました。",
+    "example_chinese": "A: 請給我們兩個人的座位。</br>B: 明白了。"
+  },
+  {
+    "kanji": "三人",
+    "kana": "さんにん",
+    "chinese": "三人",
+    "example": "A: 三人で予約しました。</br>B: お席を用意します。",
+    "example_chinese": "A: 我預約了三個人。</br>B: 我會準備座位。"
+  },
+  {
+    "kanji": "四人",
+    "kana": "よにん",
+    "chinese": "四人",
+    "example": "A: 四人でテーブルをお願いします。</br>B: はい、少々お待ちください。",
+    "example_chinese": "A: 請給我們四人桌。</br>B: 好的，請稍等。"
+  },
+  {
+    "kanji": "五人",
+    "kana": "ごにん",
+    "chinese": "五人",
+    "example": "A: 五人分のメニューをください。</br>B: かしこまりました。",
+    "example_chinese": "A: 請給我們五人份的菜單。</br>B: 明白了。"
+  },
+  {
+    "kanji": "六人",
+    "kana": "ろくにん",
+    "chinese": "六人",
+    "example": "A: 六人で行きます。</br>B: 予約を確認しますね。",
+    "example_chinese": "A: 我們六個人去。</br>B: 我來確認預約。"
+  },
+  {
+    "kanji": "七人",
+    "kana": "しちにん",
+    "chinese": "七人",
+    "example": "A: 七人で予約をお願いします。</br>B: はい、承知しました。",
+    "example_chinese": "A: 請預約七個人。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "八人",
+    "kana": "はちにん",
+    "chinese": "八人",
+    "example": "A: 八人で食事をします。</br>B: お席をご用意します。",
+    "example_chinese": "A: 我們八個人吃飯。</br>B: 我會準備座位。"
+  },
+  {
+    "kanji": "九人",
+    "kana": "きゅうにん",
+    "chinese": "九人",
+    "example": "A: 九人で集まります。</br>B: お席の確認をします。",
+    "example_chinese": "A: 我們九個人聚會。</br>B: 我來確認座位。"
+  },
+  {
+    "kanji": "十人",
+    "kana": "じゅうにん",
+    "chinese": "十人",
+    "example": "A: 十人の予約をしました。</br>B: 承知しました。",
+    "example_chinese": "A: 我預約了十個人。</br>B: 知道了。"
+  }
+]

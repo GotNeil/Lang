@@ -1,0 +1,247 @@
+[
+  {
+    "kanji": "一番",
+    "kana": "いちばん",
+    "chinese": "第一號",
+    "example": "A: 一番のバスは何時に出ますか？</br>B: 9時です。",
+    "example_chinese": "A: 第一號巴士幾點出發？</br>B: 9點。"
+  },
+  {
+    "kanji": "二番",
+    "kana": "にばん",
+    "chinese": "第二號",
+    "example": "A: 二番の出口はどこですか？</br>B: あちらです。",
+    "example_chinese": "A: 第二號出口在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "三番",
+    "kana": "さんばん",
+    "chinese": "第三號",
+    "example": "A: 三番ホームは混んでいますか？</br>B: はい、少し混んでいます。",
+    "example_chinese": "A: 第三號月台擁擠嗎？</br>B: 是的，有點擁擠。"
+  },
+  {
+    "kanji": "四番",
+    "kana": "よんばん",
+    "chinese": "第四號",
+    "example": "A: 四番ゲートから搭乗します。</br>B: はい、気をつけてください。",
+    "example_chinese": "A: 從第四號登機門登機。</br>B: 好的，請注意安全。"
+  },
+  {
+    "kanji": "五番",
+    "kana": "ごばん",
+    "chinese": "第五號",
+    "example": "A: 五番バス停で待っています。</br>B: わかりました。",
+    "example_chinese": "A: 我在第五號公車站等。</br>B: 知道了。"
+  },
+  {
+    "kanji": "六番",
+    "kana": "ろくばん",
+    "chinese": "第六號",
+    "example": "A: 六番レーンで荷物を受け取ります。</br>B: はい、気をつけてください。",
+    "example_chinese": "A: 在第六號行李轉盤取行李。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "七番",
+    "kana": "ななばん",
+    "chinese": "第七號",
+    "example": "A: 七番のチケットを持っています。</br>B: こちらへどうぞ。",
+    "example_chinese": "A: 我有第七號票。</br>B: 請這邊走。"
+  },
+  {
+    "kanji": "八番",
+    "kana": "はちばん",
+    "chinese": "第八號",
+    "example": "A: 八番乗り場はどこですか？</br>B: あちらです。",
+    "example_chinese": "A: 第八號乘車處在哪？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "九番",
+    "kana": "きゅうばん",
+    "chinese": "第九號",
+    "example": "A: 九番出口から出てください。</br>B: はい、わかりました。",
+    "example_chinese": "A: 請從第九號出口出來。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "十番",
+    "kana": "じゅうばん",
+    "chinese": "第十號",
+    "example": "A: 十番ホームで待っています。</br>B: はい、気をつけてください。",
+    "example_chinese": "A: 我在第十號月台等。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "十一番",
+    "kana": "じゅういちばん",
+    "chinese": "第十一號",
+    "example": "A: 十一番出口はどこですか？</br>B: あちらです。",
+    "example_chinese": "A: 第十一號出口在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "十二番",
+    "kana": "じゅうにばん",
+    "chinese": "第十二號",
+    "example": "A: 十二番バス停で待ちます。</br>B: はい、わかりました。",
+    "example_chinese": "A: 我在第十二號公車站等。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "十三番",
+    "kana": "じゅうさんばん",
+    "chinese": "第十三號",
+    "example": "A: 十三番ホームに行きます。</br>B: はい、お気をつけて。",
+    "example_chinese": "A: 我要去第十三號月台。</br>B: 好的，請小心。"
+  },
+  {
+    "kanji": "十四番",
+    "kana": "じゅうよんばん",
+    "chinese": "第十四號",
+    "example": "A: 十四番出口は混んでいますか？</br>B: はい、少し混んでいます。",
+    "example_chinese": "A: 第十四號出口擁擠嗎？</br>B: 是的，有點擁擠。"
+  },
+  {
+    "kanji": "十五番",
+    "kana": "じゅうごばん",
+    "chinese": "第十五號",
+    "example": "A: 十五番レーンで待ってください。</br>B: はい、わかりました。",
+    "example_chinese": "A: 請在第十五號行李轉盤等。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "十六番",
+    "kana": "じゅうろくばん",
+    "chinese": "第十六號",
+    "example": "A: 十六番バスに乗ります。</br>B: はい、気をつけて。",
+    "example_chinese": "A: 我要搭第十六號巴士。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "十七番",
+    "kana": "じゅうななばん",
+    "chinese": "第十七號",
+    "example": "A: 十七番の席は空いていますか？</br>B: はい、ご案内します。",
+    "example_chinese": "A: 第十七號座位有空嗎？</br>B: 有的，我來帶您。"
+  },
+  {
+    "kanji": "十八番",
+    "kana": "じゅうはちばん",
+    "chinese": "第十八號",
+    "example": "A: 十八番ホームはどこですか？</br>B: あちらです。",
+    "example_chinese": "A: 第十八號月台在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "十九番",
+    "kana": "じゅうきゅうばん",
+    "chinese": "第十九號",
+    "example": "A: 十九番出口から出てください。</br>B: はい、わかりました。",
+    "example_chinese": "A: 請從第十九號出口出來。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "二十番",
+    "kana": "にじゅうばん",
+    "chinese": "第二十號",
+    "example": "A: 二十番バス停で待ちます。</br>B: はい、気をつけてください。",
+    "example_chinese": "A: 我在第二十號公車站等。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "二十一番",
+    "kana": "にじゅういちばん",
+    "chinese": "第二十一號",
+    "example": "A: 二十一番ホームは混んでいますか？</br>B: いいえ、空いています。",
+    "example_chinese": "A: 第二十一號月台擁擠嗎？</br>B: 不，空的。"
+  },
+  {
+    "kanji": "二十二番",
+    "kana": "にじゅうにばん",
+    "chinese": "第二十二號",
+    "example": "A: 二十二番出口はどこですか？</br>B: あちらです。",
+    "example_chinese": "A: 第二十二號出口在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "二十三番",
+    "kana": "にじゅうさんばん",
+    "chinese": "第二十三號",
+    "example": "A: 二十三番バスに乗ります。</br>B: はい、気をつけて。",
+    "example_chinese": "A: 我要搭第二十三號巴士。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "二十四番",
+    "kana": "にじゅうよんばん",
+    "chinese": "第二十四號",
+    "example": "A: 二十四番レーンで待っています。</br>B: はい、了解しました。",
+    "example_chinese": "A: 我在第二十四號行李轉盤等。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "二十五番",
+    "kana": "にじゅうごばん",
+    "chinese": "第二十五號",
+    "example": "A: 二十五番の席を予約しました。</br>B: はい、ご案内します。",
+    "example_chinese": "A: 我預約了第二十五號座位。</br>B: 好的，我來帶您。"
+  },
+  {
+    "kanji": "二十六番",
+    "kana": "にじゅうろくばん",
+    "chinese": "第二十六號",
+    "example": "A: 二十六番ホームに行きます。</br>B: はい、気をつけてください。",
+    "example_chinese": "A: 我要去第二十六號月台。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "二十七番",
+    "kana": "にじゅうななばん",
+    "chinese": "第二十七號",
+    "example": "A: 二十七番出口は混んでいますか？</br>B: はい、少し混んでいます。",
+    "example_chinese": "A: 第二十七號出口擁擠嗎？</br>B: 是的，有點擁擠。"
+  },
+  {
+    "kanji": "二十八番",
+    "kana": "にじゅうはちばん",
+    "chinese": "第二十八號",
+    "example": "A: 二十八番バス停で待っています。</br>B: はい、わかりました。",
+    "example_chinese": "A: 我在第二十八號公車站等。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "二十九番",
+    "kana": "にじゅうきゅうばん",
+    "chinese": "第二十九號",
+    "example": "A: 二十九番ホームはどこですか？</br>B: あちらです。",
+    "example_chinese": "A: 第二十九號月台在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "三十番",
+    "kana": "さんじゅうばん",
+    "chinese": "第三十號",
+    "example": "A: 三十番のバスに乗ります。</br>B: はい、気をつけて。",
+    "example_chinese": "A: 我要搭第三十號巴士。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "三十一番",
+    "kana": "さんじゅういちばん",
+    "chinese": "第三十一號",
+    "example": "A: 三十一番出口は混んでいますか？</br>B: いいえ、空いています。",
+    "example_chinese": "A: 第三十一號出口擁擠嗎？</br>B: 不，空的。"
+  },
+  {
+    "kanji": "三十二番",
+    "kana": "さんじゅうにばん",
+    "chinese": "第三十二號",
+    "example": "A: 三十二番ホームで待っています。</br>B: はい、わかりました。",
+    "example_chinese": "A: 我在第三十二號月台等。</br>B: 好的，知道了。"
+  },
+  {
+    "kanji": "三十三番",
+    "kana": "さんじゅうさんばん",
+    "chinese": "第三十三號",
+    "example": "A: 三十三番の席を予約しました。</br>B: はい、ご案内します。",
+    "example_chinese": "A: 我預約了第三十三號座位。</br>B: 好的，我來帶您。"
+  },
+  {
+    "kanji": "三十四番",
+    "kana": "さんじゅうよんばん",
+    "chinese": "第三十四號",
+    "example": "A: 三十四番バス停で待ちます。</br>B: はい、気をつけてください。",
+    "example_chinese": "A: 我在第三十四號公車站等。</br>B: 好的，請注意。"
+  },
+  {
+    "kanji": "三十五番",
+    "kana": "さんじゅうごばん",
+    "chinese": "第三十五號",
+    "example": "A: 三十五番ホームに行きます。</br>B: はい、気をつけて。",
+    "example_chinese": "A: 我要去第三十五號月台。</br>B: 好的，請注意。"
+  }
+]

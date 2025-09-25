@@ -63,11 +63,11 @@
   "example_chinese": "A: 這附近有食堂嗎？</br>B: 有，在那裡。"
   },
   {
-    "kanji": "便利商店",
-    "kana": "べんりしょうてん",
-    "chinese": "便利商店",
-    "example": "A: 便利商店は近くにありますか？</br>B: はい、あそこにあります。",
-    "example_chinese": "A: 便利商店在附近嗎？</br>B: 有，在那裡。"
+    "kanji": "コンビニ",
+  "kana": "こんびに",
+  "chinese": "便利商店",
+  "example": "A: コンビニは近くにありますか？</br>B: はい、あそこにあります。",
+  "example_chinese": "A: 便利商店在附近嗎？</br>B: 有，在那裡。"
   },
   {
     "kanji": "駐車場",

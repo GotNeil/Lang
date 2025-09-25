@@ -1,0 +1,72 @@
+[
+  {
+    "kanji": "一つ",
+    "kana": "ひとつ",
+    "chinese": "一個",
+    "example": "りんごを一つください。",
+    "example_chinese": "請給我一個蘋果。"
+  },
+  {
+    "kanji": "二つ",
+    "kana": "ふたつ",
+    "chinese": "兩個",
+    "example": "みかんを二つ食べました。",
+    "example_chinese": "吃了兩個橘子。"
+  },
+  {
+    "kanji": "三つ",
+    "kana": "みっつ",
+    "chinese": "三個",
+    "example": "たまごを三つ買いました。",
+    "example_chinese": "買了三個蛋。"
+  },
+  {
+    "kanji": "四つ",
+    "kana": "よっつ",
+    "chinese": "四個",
+    "example": "ケーキを四つ食べました。",
+    "example_chinese": "吃了四個蛋糕。"
+  },
+  {
+    "kanji": "五つ",
+    "kana": "いつつ",
+    "chinese": "五個",
+    "example": "りんごを五つ持っています。",
+    "example_chinese": "拿著五個蘋果。"
+  },
+  {
+    "kanji": "六つ",
+    "kana": "むっつ",
+    "chinese": "六個",
+    "example": "クッキーを六つ食べた。",
+    "example_chinese": "吃了六塊餅乾。"
+  },
+  {
+    "kanji": "七つ",
+    "kana": "ななつ",
+    "chinese": "七個",
+    "example": "キャンディーを七つ買った。",
+    "example_chinese": "買了七顆糖果。"
+  },
+  {
+    "kanji": "八つ",
+    "kana": "やっつ",
+    "chinese": "八個",
+    "example": "バナナを八つ食べた。",
+    "example_chinese": "吃了八根香蕉。"
+  },
+  {
+    "kanji": "九つ",
+    "kana": "ここのつ",
+    "chinese": "九個",
+    "example": "みかんを九つ買いました。",
+    "example_chinese": "買了九個橘子。"
+  },
+  {
+    "kanji": "十",
+    "kana": "とお",
+    "chinese": "十個",
+    "example": "りんごを十個ください。",
+    "example_chinese": "請給我十個蘋果。"
+  }
+]
