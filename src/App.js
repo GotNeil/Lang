@@ -70,10 +70,25 @@ function App() {
   const countdownTimer = useRef(null);
 
   useEffect(() => {
+    setLoading(true);
     fetch('/data/manifest.json')
       .then(response => response.json())
-      .then(data => setCategories(data))
-      .catch(err => setError('無法載入題庫清單。'));
+      .then(categoryNames => {
+        const fetchPromises = categoryNames.map(name =>
+          fetch(`/data/${name}.json`)
+            .then(res => res.json())
+            .then(data => ({ name, count: data.length }))
+        );
+        return Promise.all(fetchPromises);
+      })
+      .then(categoryData => {
+        setCategories(categoryData);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError('無法載入題庫清單。');
+        setLoading(false);
+      });
   }, []);
 
   useEffect(() => {
@@ -271,11 +286,11 @@ function App() {
     );
   }
 
-  const handleCategoryChange = (category) => {
+  const handleCategoryChange = (categoryName) => {
     setSelectedCategories(prev => 
-      prev.includes(category) 
-        ? prev.filter(c => c !== category) 
-        : [...prev, category]
+      prev.includes(categoryName) 
+        ? prev.filter(c => c !== categoryName) 
+        : [...prev, categoryName]
     );
   };
 
@@ -302,17 +317,18 @@ function App() {
         </div>
         <div className="category-selector">
           <h2>請選擇題庫：</h2>
+          {loading && <p>題庫載入中...</p>}
           <div className="checkbox-group">
             {categories.map(category => (
-              <div key={category} className="checkbox-item">
+              <div key={category.name} className="checkbox-item">
                 <input 
                   type="checkbox"
-                  id={category}
-                  value={category}
-                  checked={selectedCategories.includes(category)}
-                  onChange={() => handleCategoryChange(category)}
+                  id={category.name}
+                  value={category.name}
+                  checked={selectedCategories.includes(category.name)}
+                  onChange={() => handleCategoryChange(category.name)}
                 />
-                <label htmlFor={category}>{category}</label>
+                <label htmlFor={category.name}>{`${category.name} (${category.count})`}</label>
               </div>
             ))}
           </div>
