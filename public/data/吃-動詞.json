@@ -2,6 +2,7 @@
   {
     "kanji": "食べる",
     "kana": "たべる",
+    "romaji": "taberu",
     "chinese": "吃（辭書形）",
     "example": "A: 昼ご飯は何を食べますか？</br>B: パンを食べます。",
     "example_chinese": "A: 午餐吃什麼？</br>B: 吃麵包。"
@@ -9,6 +10,7 @@
   {
     "kanji": "食べます",
     "kana": "たべます",
+    "romaji": "tabemasu",
     "chinese": "吃（ます形）",
     "example": "A: 野菜を食べますか？</br>B: はい、毎日食べます。",
     "example_chinese": "A: 你吃蔬菜嗎？</br>B: 是的，每天都吃。"
@@ -16,6 +18,7 @@
   {
     "kanji": "食べますか？",
     "kana": "たべますか？",
+    "romaji": "tabemasu ka?",
     "chinese": "吃嗎？（ます形疑問）",
     "example": "A: 朝ご飯を食べますか？</br>B: はい、食べます。",
     "example_chinese": "A: 你吃早餐嗎？</br>B: 是的，我吃。"
@@ -23,6 +26,7 @@
   {
     "kanji": "食べない",
     "kana": "たべない",
+    "romaji": "tabenai",
     "chinese": "不吃（ない形）",
     "example": "A: 肉は食べますか？</br>B: いいえ、食べないです。",
     "example_chinese": "A: 你吃肉嗎？</br>B: 不，我不吃。"
@@ -30,6 +34,7 @@
   {
     "kanji": "食べてもいいですか？",
     "kana": "たべてもいいですか？",
+    "romaji": "tabetemo ii desu ka?",
     "chinese": "可以吃嗎？（請求許可詢問）",
     "example": "A: このパンを食べてもいいですか？</br>B: はい、どうぞ。",
     "example_chinese": "A: 這個麵包可以吃嗎？</br>B: 可以，請吃。"
@@ -37,15 +42,17 @@
   {
     "kanji": "食べられますか？",
     "kana": "たべられますか？",
+    "romaji": "taberaremasu ka?",
     "chinese": "能吃嗎？（可能性疑問）",
     "example": "A: この魚は食べられますか？</br>B: はい、新鮮ですから食べられます。",
     "example_chinese": "A: 這魚能吃嗎？</br>B: 可以，因為很新鮮。"
   },
   {
-  "kanji": "食べますか？",
-  "kana": "たべますか？",
-  "chinese": "你吃嗎？（詢問意願或習慣）",
-  "example": "A: 昼ご飯にカレーを食べますか？</br>B: はい、食べます。",
-  "example_chinese": "A: 你午餐吃咖哩嗎？</br>B: 是的，我吃。"
- }
+    "kanji": "食べますか？",
+    "kana": "たべますか？",
+    "romaji": "tabemasu ka?",
+    "chinese": "你吃嗎？（詢問意願或習慣）",
+    "example": "A: 昼ご飯にカレーを食べますか？</br>B: はい、食べます。",
+    "example_chinese": "A: 你午餐吃咖哩嗎？</br>B: 是的，我吃。"
+  }
 ]

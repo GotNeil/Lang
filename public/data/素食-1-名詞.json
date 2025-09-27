@@ -1,0 +1,74 @@
+[
+  {
+    "kanji": "ベジタリアン",
+    "kana": "べじたりあん",
+    "romaji": "bejitarian",
+    "chinese": "素食 / vegetarian",
+    "example": "A: あなたはベジタリアンですか。 </br> B: はい、そうです。",
+    "example_chinese": "A: 你是素食者嗎？ </br> B: 是的。"
+  },
+  {
+    "kanji": "ヴィーガン",
+    "kana": "ヴぃーがん",
+    "romaji": "viigan",
+    "chinese": "全素食 / vegan",
+    "example": "A: 彼はヴィーガンです。 </br> B: だから肉も魚も食べません。",
+    "example_chinese": "A: 他是全素食者。 </br> B: 所以他不吃肉也不吃魚。"
+  },
+  {
+    "kanji": "魚",
+    "kana": "さかな",
+    "romaji": "sakana",
+    "chinese": "魚 / fish",
+    "example": "A: 魚が好きですか。 </br> B: はい、大好きです。",
+    "example_chinese": "A: 你喜歡魚嗎？ </br> B: 是的，很喜歡。"
+  },
+  {
+    "kanji": "肉",
+    "kana": "にく",
+    "romaji": "niku",
+    "chinese": "肉 / meat",
+    "example": "A: にくを食べますか。 </br> B: いいえ、食べません。",
+    "example_chinese": "A: 你吃肉嗎？ </br> B: 不，我不吃。"
+  },
+  {
+    "kanji": "海鮮",
+    "kana": "かいせん",
+    "romaji": "kaisen",
+    "chinese": "海鮮 / seafood",
+    "example": "A: 海鮮料理はどうですか。 </br> B: とても美味しいです。",
+    "example_chinese": "A: 海鮮料理怎麼樣？ </br> B: 非常好吃。"
+  },
+  {
+    "kanji": "卵",
+    "kana": "たまご",
+    "romaji": "tamago",
+    "chinese": "蛋 / egg",
+    "example": "A: 卵を食べますか。 </br> B: はい、食べます。",
+    "example_chinese": "A: 你吃蛋嗎？ </br> B: 吃。"
+  },
+  {
+  "kanji": "ミルク",
+  "kana": "みるく",
+  "romaji": "miruku",
+  "chinese": "牛奶 / milk",
+  "example": "A: コーヒーにミルクを入れますか。 </br> B: はい、お願いします。",
+  "example_chinese": "A: 你的咖啡要加牛奶嗎？ </br> B: 好的，麻煩了。"
+},
+  {
+    "kanji": "乳製品",
+    "kana": "にゅうせいひん",
+    "romaji": "nyuuseihin",
+    "chinese": "乳製品 / dairy products",
+    "example": "A: チーズやヨーグルトなど乳製品が好きです。 </br> B: 私もです。",
+    "example_chinese": "A: 我喜歡起司和優格等乳製品。 </br> B: 我也是。"
+  },
+  {
+  "kanji": "野菜",
+  "kana": "やさい",
+  "romaji": "yasai",
+  "chinese": "蔬菜 / vegetables",
+  "example": "A: このレストランは野菜料理が有名ですよ。 </br> B: いいですね、ヘルシーな食事をしたいです。",
+  "example_chinese": "A: 這家餐廳的蔬菜料理很有名喔。 </br> B: 太好了，我想吃健康一點的餐點。"
+}
+]

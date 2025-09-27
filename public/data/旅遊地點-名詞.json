@@ -2,6 +2,7 @@
   {
     "kanji": "ゆいレール",
     "kana": "ゆいれーる",
+    "romaji": "yui reeru",
     "chinese": "那霸單軌電車",
     "example": "A: 那覇空港から市内まで、どうやって行きますか？</br>B: ゆいレールで行きます。",
     "example_chinese": "A: 從那霸機場到市區怎麼去？</br>B: 搭單軌電車去。"
@@ -9,6 +10,7 @@
   {
     "kanji": "スーパー",
     "kana": "すーぱー",
+    "romaji": "suupaa",
     "chinese": "超市",
     "example": "A: この辺にスーパーはありますか？</br>B: はい、あそこにあります。",
     "example_chinese": "A: 這附近有超市嗎？</br>B: 有，在那裡。"
@@ -16,6 +18,7 @@
   {
     "kanji": "ホテル",
     "kana": "ほてる",
+    "romaji": "hoteru",
     "chinese": "飯店、酒店",
     "example": "A: ホテルはどこですか？</br>B: あの角を曲がったところです。",
     "example_chinese": "A: 飯店在哪裡？</br>B: 在那個轉角。"
@@ -23,6 +26,7 @@
   {
     "kanji": "駅",
     "kana": "えき",
+    "romaji": "eki",
     "chinese": "車站",
     "example": "A: 駅まで歩いて行けますか？</br>B: はい、10分くらいです。",
     "example_chinese": "A: 走路可以到車站嗎？</br>B: 可以，大約10分鐘。"
@@ -30,6 +34,7 @@
   {
     "kanji": "空港",
     "kana": "くうこう",
+    "romaji": "kuukou",
     "chinese": "機場",
     "example": "A: 空港までの行き方は？</br>B: タクシーで行きます。",
     "example_chinese": "A: 去機場怎麼走？</br>B: 搭計程車去。"
@@ -37,6 +42,7 @@
   {
     "kanji": "公園",
     "kana": "こうえん",
+    "romaji": "kouen",
     "chinese": "公園",
     "example": "A: この近くに公園はありますか？</br>B: はい、あそこにあります。",
     "example_chinese": "A: 這附近有公園嗎？</br>B: 有，在那裡。"
@@ -44,6 +50,7 @@
   {
     "kanji": "トイレ",
     "kana": "といれ",
+    "romaji": "toire",
     "chinese": "廁所",
     "example": "A: トイレはどこですか？</br>B: 2階の奥です。",
     "example_chinese": "A: 廁所在哪裡？</br>B: 在二樓的盡頭。"
@@ -51,27 +58,31 @@
   {
     "kanji": "レストラン",
     "kana": "れすとらん",
+    "romaji": "resutoran",
     "chinese": "餐廳",
     "example": "A: レストランは何時までですか？</br>B: 夜10時までです。",
     "example_chinese": "A: 餐廳營業到幾點？</br>B: 營業到晚上10點。"
   },
   {
-   "kanji": "食堂",
-  "kana": "しょくどう",
-  "chinese": "食堂",
-  "example": "A: この辺に食堂はありますか？</br>B: はい、あそこにあります。",
-  "example_chinese": "A: 這附近有食堂嗎？</br>B: 有，在那裡。"
+    "kanji": "食堂",
+    "kana": "しょくどう",
+    "romaji": "shokudou",
+    "chinese": "食堂",
+    "example": "A: この辺に食堂はありますか？</br>B: はい、あそこにあります。",
+    "example_chinese": "A: 這附近有食堂嗎？</br>B: 有，在那裡。"
   },
   {
     "kanji": "コンビニ",
-  "kana": "こんびに",
-  "chinese": "便利商店",
-  "example": "A: コンビニは近くにありますか？</br>B: はい、あそこにあります。",
-  "example_chinese": "A: 便利商店在附近嗎？</br>B: 有，在那裡。"
+    "kana": "こんびに",
+    "romaji": "konbini",
+    "chinese": "便利商店",
+    "example": "A: コンビニは近くにありますか？</br>B: はい、あそこにあります。",
+    "example_chinese": "A: 便利商店在附近嗎？</br>B: 有，在那裡。"
   },
   {
     "kanji": "駐車場",
     "kana": "ちゅうしゃじょう",
+    "romaji": "chuushajou",
     "chinese": "停車場",
     "example": "A: 駐車場はありますか？</br>B: はい、ビルの地下にあります。",
     "example_chinese": "A: 有停車場嗎？</br>B: 有，在大樓地下。"
@@ -79,6 +90,7 @@
   {
     "kanji": "バス",
     "kana": "ばす",
+    "romaji": "basu",
     "chinese": "巴士",
     "example": "A: バスはどこで乗りますか？</br>B: 入口の前です。",
     "example_chinese": "A: 巴士在哪裡搭？</br>B: 在入口前。"
@@ -86,6 +98,7 @@
   {
     "kanji": "エレベーター",
     "kana": "えれべーたー",
+    "romaji": "erebeetaa",
     "chinese": "電梯",
     "example": "A: エレベーターはどこですか？</br>B: あそこにあります。",
     "example_chinese": "A: 電梯在哪裡？</br>B: 在那裡。"
@@ -93,6 +106,7 @@
   {
     "kanji": "エスカレーター",
     "kana": "えすかれーたー",
+    "romaji": "esukareetaa",
     "chinese": "手扶梯",
     "example": "A: エスカレーターで2階に行けますか？</br>B: はい、行けます。",
     "example_chinese": "A: 可以搭手扶梯去二樓嗎？</br>B: 可以。"
@@ -100,6 +114,7 @@
   {
     "kanji": "出口",
     "kana": "でぐち",
+    "romaji": "deguchi",
     "chinese": "出口",
     "example": "A: 出口はどこですか？</br>B: あそこです。",
     "example_chinese": "A: 出口在哪裡？</br>B: 在那裡。"
@@ -107,6 +122,7 @@
   {
     "kanji": "入口",
     "kana": "いりぐち",
+    "romaji": "iriguchi",
     "chinese": "入口",
     "example": "A: 入口はどこですか？</br>B: こちらです。",
     "example_chinese": "A: 入口在哪裡？</br>B: 在這邊。"
@@ -114,6 +130,7 @@
   {
     "kanji": "階段",
     "kana": "かいだん",
+    "romaji": "kaidan",
     "chinese": "樓梯",
     "example": "A: 階段で3階に行けますか？</br>B: はい、行けます。",
     "example_chinese": "A: 可以用樓梯到三樓嗎？</br>B: 可以。"
@@ -121,6 +138,7 @@
   {
     "kanji": "受付",
     "kana": "うけつけ",
+    "romaji": "uketsuke",
     "chinese": "接待櫃台、櫃檯",
     "example": "A: 受付はどこですか？</br>B: 1階の奥です。",
     "example_chinese": "A: 櫃台在哪裡？</br>B: 在一樓的盡頭。"
@@ -128,13 +146,15 @@
   {
     "kanji": "カウンター",
     "kana": "かうんたー",
+    "romaji": "kauntaa",
     "chinese": "櫃台（服務台）",
     "example": "A: カウンターでチケットを買えますか？</br>B: はい、買えます。",
     "example_chinese": "A: 可以在櫃台買票嗎？</br>B: 可以。"
   },
-    {
+  {
     "kanji": "居酒屋",
     "kana": "いざかや",
+    "romaji": "izakaya",
     "chinese": "居酒屋（日本式酒館）",
     "example": "A: 近くにおすすめの居酒屋はありますか？</br>B: はい、駅のそばに人気の店がありますよ。",
     "example_chinese": "A: 附近有推薦的居酒屋嗎？</br>B: 有的，車站附近有一家很受歡迎的店。"
@@ -142,6 +162,7 @@
   {
     "kanji": "カフェ",
     "kana": "カフェ",
+    "romaji": "kafe",
     "chinese": "咖啡廳",
     "example": "A: 静かなカフェで休めるところはありますか？</br>B: この通りをまっすぐ行くと、おしゃれなカフェがありますよ。",
     "example_chinese": "A: 有沒有可以安靜休息的咖啡廳？</br>B: 沿著這條路直走，有一家很時尚的咖啡廳喔。"

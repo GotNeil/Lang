@@ -1,8 +1,8 @@
 [
-
   {
     "kanji": "おにぎり",
     "kana": "おにぎり",
+    "romaji": "onigiri",
     "chinese": "飯糰",
     "example": "A: このおにぎりは中に何が入っていますか？</br>B: 鮭が入っています。",
     "example_chinese": "A: 這個飯糰裡面是什麼餡？</br>B: 裡面有鮭魚。"
@@ -10,6 +10,7 @@
   {
     "kanji": "刺身",
     "kana": "さしみ",
+    "romaji": "sashimi",
     "chinese": "生魚片",
     "example": "A: この刺身は今日の仕入れですか？</br>B: はい、本日の朝市場から仕入れました。",
     "example_chinese": "A: 這生魚片是今天進貨的嗎？</br>B: 是的，今天早上從市場拿貨的。"
@@ -17,6 +18,7 @@
   {
     "kanji": "サラダ",
     "kana": "サラダ",
+    "romaji": "sarada",
     "chinese": "沙拉",
     "example": "A: サラダはドレッシングなしでも注文できますか？</br>B: はい、可能です。",
     "example_chinese": "A: 沙拉可以不要醬料嗎？</br>B: 可以的。"
@@ -24,6 +26,7 @@
   {
     "kanji": "トマト",
     "kana": "トマト",
+    "romaji": "tomato",
     "chinese": "番茄",
     "example": "A: トマトは生で食べられますか？</br>B: はい、新鮮なのでそのまま食べられます。",
     "example_chinese": "A: 番茄可以生吃嗎？</br>B: 可以，很新鮮可以直接吃。"
@@ -31,6 +34,7 @@
   {
     "kanji": "キャベツ",
     "kana": "キャベツ",
+    "romaji": "kyabetsu",
     "chinese": "高麗菜",
     "example": "A: キャベツのお好み焼きはありますか？</br>B: はい、人気メニューです。",
     "example_chinese": "A: 有加高麗菜的大阪燒嗎？</br>B: 有的，是人氣餐點。"
@@ -38,6 +42,7 @@
   {
     "kanji": "しょうが",
     "kana": "しょうが",
+    "romaji": "shouga",
     "chinese": "薑",
     "example": "A: 生姜を抜いてもらえますか？</br>B: はい、対応できます。",
     "example_chinese": "A: 可以去掉薑嗎？</br>B: 可以的，沒問題。"
@@ -45,6 +50,7 @@
   {
     "kanji": "寿司",
     "kana": "すし",
+    "romaji": "sushi",
     "chinese": "壽司",
     "example": "A: 初めての方におすすめの寿司は何ですか？</br>B: サーモンとマグロがおすすめです。",
     "example_chinese": "A: 有推薦給第一次吃壽司的人嗎？</br>B: 推薦鮭魚和鮪魚壽司。"
@@ -52,13 +58,15 @@
   {
     "kanji": "日本酒",
     "kana": "にほんしゅ",
+    "romaji": "nihonshu",
     "chinese": "清酒",
     "example": "A: 地元の日本酒を試せますか？</br>B: はい、試飲セットがあります。",
     "example_chinese": "A: 可以試試當地的清酒嗎？</br>B: 可以的，有提供試飲組合。"
   },
-    {
+  {
     "kanji": "麦茶",
     "kana": "むぎちゃ",
+    "romaji": "mugicha",
     "chinese": "麥茶",
     "example": "A: 子どもには麦茶でもいいですか？</br>B: はい、カフェインが入っていないので安心です。",
     "example_chinese": "A: 小朋友喝麥茶可以嗎？</br>B: 可以，因為沒有咖啡因，請放心。"
@@ -66,6 +74,7 @@
   {
     "kanji": "ベジタリアン",
     "kana": "ベジタリアン",
+    "romaji": "bejitarian",
     "chinese": "素食",
     "example": "A: ベジタリアンの友達と来たのですが、大丈夫ですか？</br>B: はい、動物性食材を使っていないメニューもあります。",
     "example_chinese": "A: 我是跟吃素的朋友一起來的，可以嗎？</br>B: 可以，我們也有不使用動物性食材的菜單。"
@@ -73,6 +82,7 @@
   {
     "kanji": "帆立",
     "kana": "ほたて",
+    "romaji": "hotate",
     "chinese": "干貝",
     "example": "A: この帆立は焼いてありますか？</br>B: はい、バター焼きにしています。",
     "example_chinese": "A: 這個干貝是烤過的嗎？</br>B: 是的，是用奶油煎烤的。"

@@ -1,8 +1,8 @@
 [
-
   {
-    "kanji": "菜食できますか", 
-    "kana": "さいしょくできますか", 
+    "kanji": "菜食できますか",
+    "kana": "さいしょくできますか",
+    "romaji": "saishoku dekimasu ka",
     "chinese": "可以做成素食的嗎？",
     "example": "A: この料理は菜食できますか。 </br> B: はい、できますよ。",
     "example_chinese": "A: 這道菜可以做成素食的嗎？ </br> B: 是的，可以。"
@@ -10,6 +10,7 @@
   {
     "kanji": "ビーガンにできますか？",
     "kana": "ビーガンにできますか？",
+    "romaji": "biigan ni dekimasu ka?",
     "chinese": "可以做成純素食嗎？",
     "example": "A: このメニューはビーガンにできますか？</br>B: はい、対応可能です。",
     "example_chinese": "A: 這個菜單可以做成純素食嗎？</br>B: 可以，我們可以做調整。"

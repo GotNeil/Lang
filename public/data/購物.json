@@ -2,6 +2,7 @@
   {
     "kanji": "買いますか？",
     "kana": "かいますか？",
+    "romaji": "kaimasu ka?",
     "chinese": "你要買嗎？／你會買嗎？",
     "example": "A: この本を買いますか？</br>B: ええ、ちょっと見てから決めます。",
     "example_chinese": "A: 你要買這本書嗎？</br>B: 嗯，我看一下再決定。"
@@ -9,6 +10,7 @@
   {
     "kanji": "買います。",
     "kana": "かいます。",
+    "romaji": "kaimasu.",
     "chinese": "我會買。／我買。",
     "example": "A: この本を買いますか？</br>B: はい、この本を買います。",
     "example_chinese": "A: 你要買這本書嗎？</br>B: 是的，我要買這本書。"
@@ -16,6 +18,7 @@
   {
     "kanji": "買いません。",
     "kana": "かいません。",
+    "romaji": "kaimasen.",
     "chinese": "我不買。",
     "example": "A: この本を買いますか？</br>B: いいえ、この本は買いません。",
     "example_chinese": "A: 你要買這本書嗎？</br>B: 不，我不買這本書。"
@@ -23,6 +26,7 @@
   {
     "kanji": "買いたいです。",
     "kana": "かいたいです。",
+    "romaji": "kaitai desu.",
     "chinese": "我想買。",
     "example": "A: このパソコンを買いたいですか？</br>B: はい、このパソコンを買いたいです。",
     "example_chinese": "A: 你想買這台電腦嗎？</br>B: 是的，我想買這台電腦。"
@@ -30,6 +34,7 @@
   {
     "kanji": "買いたくないです。",
     "kana": "かいたくないです。",
+    "romaji": "kaitakunai desu.",
     "chinese": "我不想買。",
     "example": "A: このパソコンを買いたいですか？</br>B: いいえ、このパソコンは買いたくないです。",
     "example_chinese": "A: 你想買這台電腦嗎？</br>B: 不，我不想買這台電腦。"

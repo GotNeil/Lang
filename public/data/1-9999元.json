@@ -2,6 +2,7 @@
   {
     "kanji": "一円",
     "kana": "いちえん",
+    "romaji": "ichi en",
     "chinese": "1元（日圓）",
     "example": "A: この商品は一円ですか？</br>B: はい、とても安いですよ。",
     "example_chinese": "A: 這個商品是一元嗎？</br>B: 是的，非常便宜喔。"
@@ -9,6 +10,7 @@
   {
     "kanji": "十円",
     "kana": "じゅうえん",
+    "romaji": "juu en",
     "chinese": "10元（日圓）",
     "example": "A: 十円玉を持っていますか？</br>B: はい、お支払いに使えます。",
     "example_chinese": "A: 有10元硬幣嗎？</br>B: 有的，可以用來付款。"
@@ -16,6 +18,7 @@
   {
     "kanji": "百円",
     "kana": "ひゃくえん",
+    "romaji": "hyaku en",
     "chinese": "100元（日圓）",
     "example": "A: 百円ショップはどこですか？</br>B: あの角を曲がるとありますよ。",
     "example_chinese": "A: 100元商店在哪裡？</br>B: 轉過那個路口就有。"
@@ -23,6 +26,7 @@
   {
     "kanji": "三百円",
     "kana": "さんびゃくえん",
+    "romaji": "sanbyaku en",
     "chinese": "300元（日圓）",
     "example": "A: このカップは三百円ですか？</br>B: はい、ちょうど三百円です。",
     "example_chinese": "A: 這個杯子是300元嗎？</br>B: 是的，剛好300元。"
@@ -30,6 +34,7 @@
   {
     "kanji": "六百円",
     "kana": "ろっぴゃくえん",
+    "romaji": "roppyaku en",
     "chinese": "600元（日圓）",
     "example": "A: 600円の定食は美味しいですか？</br>B: とても人気がありますよ。",
     "example_chinese": "A: 600元的定食好吃嗎？</br>B: 非常有人氣喔。"
@@ -37,6 +42,7 @@
   {
     "kanji": "八百円",
     "kana": "はっぴゃくえん",
+    "romaji": "happyaku en",
     "chinese": "800元（日圓）",
     "example": "A: 八百円のチケットをください。</br>B: はい、ありがとうございます。",
     "example_chinese": "A: 請給我800元的票券。 </br>B: 好的，謝謝。"
@@ -44,6 +50,7 @@
   {
     "kanji": "千円",
     "kana": "せんえん",
+    "romaji": "sen en",
     "chinese": "1000元（日圓）",
     "example": "A: 千円札は使えますか？</br>B: はい、こちらで使えます。",
     "example_chinese": "A: 可以用1000元鈔票嗎？</br>B: 可以，這裡可以使用。"
@@ -51,6 +58,7 @@
   {
     "kanji": "三千円",
     "kana": "さんぜんえん",
+    "romaji": "sanzen en",
     "chinese": "3000元（日圓）",
     "example": "A: この旅行は三千円で行けますか？</br>B: はい、お得なプランがあります。",
     "example_chinese": "A: 這個行程3000元可以去嗎？</br>B: 有，這裡有划算的方案。"
@@ -58,6 +66,7 @@
   {
     "kanji": "八千円",
     "kana": "はっせんえん",
+    "romaji": "hassen en",
     "chinese": "8000元（日圓）",
     "example": "A: 八千円のホテル予約はできますか？</br>B: はい、空室があります。",
     "example_chinese": "A: 可以預約8000元的飯店嗎？</br>B: 可以，還有空房。"
@@ -65,13 +74,15 @@
   {
     "kanji": "九千九百九十九円",
     "kana": "きゅうせんきゅうひゃくきゅうじゅうきゅうえん",
+    "romaji": "kyuusen kyuuhyaku kyuujuu kyuu en",
     "chinese": "9999元（日圓）",
     "example": "A: これ全部で九千九百九十九円です。</br>B: 高いですが、品質はいいですよ。",
     "example_chinese": "A: 這些全部是9999元。 </br>B: 雖然貴，但品質很好喔。"
   },
-   {
+  {
     "kanji": "一円",
     "kana": "いちえん",
+    "romaji": "ichi en",
     "chinese": "1元（日圓）",
     "example": "A: 一円玉を持っていますか？</br>B: はい、たくさんありますよ。",
     "example_chinese": "A: 你有一元硬幣嗎？</br>B: 有，很多喔。"
@@ -79,6 +90,7 @@
   {
     "kanji": "二円",
     "kana": "にえん",
+    "romaji": "ni en",
     "chinese": "2元（日圓）",
     "example": "A: 二円玉はまだ使えますか？</br>B: いいえ、今は使われていません。",
     "example_chinese": "A: 2元硬幣還能用嗎？</br>B: 不行，現在已經不用了。"
@@ -86,6 +98,7 @@
   {
     "kanji": "三円",
     "kana": "さんえん",
+    "romaji": "san en",
     "chinese": "3元（日圓）",
     "example": "A: 三円玉は見たことがありますか？</br>B: いいえ、見たことがありません。",
     "example_chinese": "A: 你有看過3元硬幣嗎？</br>B: 沒有，沒看過。"
@@ -93,6 +106,7 @@
   {
     "kanji": "四円",
     "kana": "よんえん",
+    "romaji": "yon en",
     "chinese": "4元（日圓）",
     "example": "A: 四円は使われていますか？</br>B: いいえ、ありません。",
     "example_chinese": "A: 4元硬幣還有在用嗎？</br>B: 沒有，沒有喔。"
@@ -100,6 +114,7 @@
   {
     "kanji": "五円",
     "kana": "ごえん",
+    "romaji": "go en",
     "chinese": "5元（日圓）",
     "example": "A: 五円玉を財布に入れてください。</br>B: はい、わかりました。",
     "example_chinese": "A: 請把5元硬幣放到錢包裡。 </br>B: 好的，知道了。"
@@ -107,6 +122,7 @@
   {
     "kanji": "六円",
     "kana": "ろくえん",
+    "romaji": "roku en",
     "chinese": "6元（日圓）",
     "example": "A: 六円玉は珍しいですね。</br>B: はい、あまり見かけません。",
     "example_chinese": "A: 6元硬幣很罕見呢。</br>B: 是的，很少看到。"
@@ -114,6 +130,7 @@
   {
     "kanji": "七円",
     "kana": "ななえん",
+    "romaji": "nana en",
     "chinese": "7元（日圓）",
     "example": "A: 七円の品物はありますか？</br>B: はい、小さいお菓子があります。",
     "example_chinese": "A: 有7元的商品嗎？</br>B: 有，有小包裝的點心。"
@@ -121,6 +138,7 @@
   {
     "kanji": "八円",
     "kana": "はちえん",
+    "romaji": "hachi en",
     "chinese": "8元（日圓）",
     "example": "A: 八円は硬貨にありません。</br>B: そうですね、紙幣もありません。",
     "example_chinese": "A: 8元沒有硬幣喔？</br>B: 是的，也沒有紙鈔。"
@@ -128,6 +146,7 @@
   {
     "kanji": "九円",
     "kana": "きゅうえん",
+    "romaji": "kyuu en",
     "chinese": "9元（日圓）",
     "example": "A: 九円玉って珍しいですね。</br>B: はい、ほとんど流通していません。",
     "example_chinese": "A: 9元硬幣真少見。 </br>B: 是的，幾乎不流通。"
@@ -135,6 +154,7 @@
   {
     "kanji": "十円",
     "kana": "じゅうえん",
+    "romaji": "juu en",
     "chinese": "10元（日圓）",
     "example": "A: 十円玉はよく使いますか？</br>B: はい、よく使いますよ。",
     "example_chinese": "A: 你常用10元硬幣嗎？</br>B: 是的，很常用。"
@@ -142,6 +162,7 @@
   {
     "kanji": "十一円",
     "kana": "じゅういちえん",
+    "romaji": "juuichi en",
     "chinese": "11元（日圓）",
     "example": "A: この商品は十一円ですか？</br>B: はい、正確な値段です。",
     "example_chinese": "A: 這個商品是11元嗎？</br>B: 是的，這是正確價格。"
@@ -149,6 +170,7 @@
   {
     "kanji": "十二円",
     "kana": "じゅうにえん",
+    "romaji": "juuni en",
     "chinese": "12元（日圓）",
     "example": "A: 十二円のおつりをください。</br>B: はい、どうぞ。",
     "example_chinese": "A: 請給我12元找零。 </br>B: 好的，給你。"
@@ -156,6 +178,7 @@
   {
     "kanji": "十三円",
     "kana": "じゅうさんえん",
+    "romaji": "juusan en",
     "chinese": "13元（日圓）",
     "example": "A: 十三円は珍しいですね。</br>B: はい、あまり見かけません。",
     "example_chinese": "A: 13元很少見耶。 </br>B: 是的，不常見。"
@@ -163,6 +186,7 @@
   {
     "kanji": "十四円",
     "kana": "じゅうよんえん",
+    "romaji": "juuyon en",
     "chinese": "14元（日圓）",
     "example": "A: 十四円の商品はありますか？</br>B: いいえ、ありません。",
     "example_chinese": "A: 有14元的商品嗎？</br>B: 沒有。"
@@ -170,6 +194,7 @@
   {
     "kanji": "十五円",
     "kana": "じゅうごえん",
+    "romaji": "juugo en",
     "chinese": "15元（日圓）",
     "example": "A: 十五円玉は使われていますか？</br>B: いいえ、使われていません。",
     "example_chinese": "A: 15元硬幣還在用嗎？</br>B: 不，已經不用了。"
@@ -177,6 +202,7 @@
   {
     "kanji": "十六円",
     "kana": "じゅうろくえん",
+    "romaji": "juuroku en",
     "chinese": "16元（日圓）",
     "example": "A: 十六円の値段はありますか？</br>B: はい、見たことがあります。",
     "example_chinese": "A: 有16元的價格嗎？</br>B: 有，見過。"
@@ -184,6 +210,7 @@
   {
     "kanji": "十七円",
     "kana": "じゅうななえん",
+    "romaji": "juunana en",
     "chinese": "17元（日圓）",
     "example": "A: 十七円の硬貨はありますか？</br>B: いいえ、ありません。",
     "example_chinese": "A: 有17元硬幣嗎？</br>B: 沒有。"
@@ -191,6 +218,7 @@
   {
     "kanji": "十八円",
     "kana": "じゅうはちえん",
+    "romaji": "juuhachi en",
     "chinese": "18元（日圓）",
     "example": "A: 十八円のおつりはありますか？</br>B: はい、こちらです。",
     "example_chinese": "A: 有18元找零嗎？</br>B: 有，這裡。"
@@ -198,6 +226,7 @@
   {
     "kanji": "十九円",
     "kana": "じゅうきゅうえん",
+    "romaji": "juukyuu en",
     "chinese": "19元（日圓）",
     "example": "A: 十九円は使いやすいですか？</br>B: あまり使いませんね。",
     "example_chinese": "A: 19元好用嗎？</br>B: 不太用。"
@@ -205,6 +234,7 @@
   {
     "kanji": "二十円",
     "kana": "にじゅうえん",
+    "romaji": "nijuu en",
     "chinese": "20元（日圓）",
     "example": "A: 二十円玉はよく見かけますか？</br>B: いいえ、あまりありません。",
     "example_chinese": "A: 常看到20元硬幣嗎？</br>B: 不太多見。"
@@ -212,6 +242,7 @@
   {
     "kanji": "二十一円",
     "kana": "にじゅういちえん",
+    "romaji": "nijuuichi en",
     "chinese": "21元（日圓）",
     "example": "A: 二十一円の料金を教えてください。</br>B: はい、こちらです。",
     "example_chinese": "A: 請告訴我21元的費用。 </br>B: 這裡是。"
@@ -219,6 +250,7 @@
   {
     "kanji": "二十二円",
     "kana": "にじゅうにえん",
+    "romaji": "nijuuni en",
     "chinese": "22元（日圓）",
     "example": "A: 二十二円はおつりで使えますか？</br>B: はい、使えますよ。",
     "example_chinese": "A: 22元可以當找零嗎？</br>B: 可以喔。"
@@ -226,13 +258,15 @@
   {
     "kanji": "三百二十三円",
     "kana": "さんびゃくにじゅうさんえん",
+    "romaji": "sanbyaku nijuusan en",
     "chinese": "323元（日圓）",
     "example": "A: このお土産は三百二十三円です。</br>B: はい、じゃあ三百二十三円払います。",
     "example_chinese": "A: 這個伴手禮是323元。 </br>B: 好，我付323元。"
   },
-    {
+  {
     "kanji": "五百九十六円",
     "kana": "ごひゃくきゅうじゅうろくえん",
+    "romaji": "gohyaku kyuujuu roku en",
     "chinese": "596元（日圓）",
     "example": "A: この商品は五百九十六円です。</br>B: クレジットカードは使えますか？",
     "example_chinese": "A: 這個商品是596元。</br>B: 可以用信用卡嗎？"
@@ -240,6 +274,7 @@
   {
     "kanji": "二百十七円",
     "kana": "にひゃくじゅうななえん",
+    "romaji": "nihyaku juunana en",
     "chinese": "217元（日圓）",
     "example": "A: チケットは二百十七円です。</br>B: 現金で払います。",
     "example_chinese": "A: 車票是217元。</br>B: 我用現金支付。"
@@ -247,6 +282,7 @@
   {
     "kanji": "七百五円",
     "kana": "ななひゃくごえん",
+    "romaji": "nanahyaku go en",
     "chinese": "705元（日圓）",
     "example": "A: 七百五円のお会計をお願いします。</br>B: はい、かしこまりました。",
     "example_chinese": "A: 請幫我結帳705元。</br>B: 好的，明白了。"
@@ -254,6 +290,7 @@
   {
     "kanji": "八百十二円",
     "kana": "はっぴゃくじゅうにえん",
+    "romaji": "happyaku juuni en",
     "chinese": "812元（日圓）",
     "example": "A: 八百十二円をお支払いください。</br>B: 現金で払います。",
     "example_chinese": "A: 請支付812元。</br>B: 我用現金付。"
@@ -261,6 +298,7 @@
   {
     "kanji": "四百九円",
     "kana": "よんひゃくきゅうえん",
+    "romaji": "yonhyaku kyuu en",
     "chinese": "409元（日圓）",
     "example": "A: この商品は四百九円です。</br>B: 少し安くなりませんか？",
     "example_chinese": "A: 這個商品是409元。</br>B: 可以便宜一點嗎？"
@@ -268,6 +306,7 @@
   {
     "kanji": "百九十九円",
     "kana": "ひゃくきゅうじゅうきゅうえん",
+    "romaji": "hyaku kyuujuu kyuu en",
     "chinese": "199元（日圓）",
     "example": "A: セール品は百九十九円です。</br>B: お得ですね！",
     "example_chinese": "A: 特價品是199元。</br>B: 好划算！"

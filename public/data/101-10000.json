@@ -2,6 +2,7 @@
   {
     "kanji": "101",
     "kana": "ひゃくいち",
+    "romaji": "hyaku ichi",
     "chinese": "一百零一",
     "example": "これは101です。",
     "example_chinese": "這是101。"
@@ -9,6 +10,7 @@
   {
     "kanji": "110",
     "kana": "ひゃくじゅう",
+    "romaji": "hyaku juu",
     "chinese": "一百一十",
     "example": "これは110です。",
     "example_chinese": "這是110。"
@@ -16,6 +18,7 @@
   {
     "kanji": "150",
     "kana": "ひゃくごじゅう",
+    "romaji": "hyaku gojuu",
     "chinese": "一百五十",
     "example": "これは150です。",
     "example_chinese": "這是150。"
@@ -23,6 +26,7 @@
   {
     "kanji": "200",
     "kana": "にひゃく",
+    "romaji": "nihyaku",
     "chinese": "二百",
     "example": "これは200です。",
     "example_chinese": "這是200。"
@@ -30,6 +34,7 @@
   {
     "kanji": "255",
     "kana": "にひゃくごじゅうご",
+    "romaji": "nihyaku gojuugo",
     "chinese": "二百五十五",
     "example": "これは255です。",
     "example_chinese": "這是255。"
@@ -37,6 +42,7 @@
   {
     "kanji": "300",
     "kana": "さんびゃく",
+    "romaji": "sanbyaku",
     "chinese": "三百",
     "example": "これは300です。",
     "example_chinese": "這是300。"
@@ -44,6 +50,7 @@
   {
     "kanji": "350",
     "kana": "さんびゃくごじゅう",
+    "romaji": "sanbyaku gojuu",
     "chinese": "三百五十",
     "example": "これは350です。",
     "example_chinese": "這是350。"
@@ -51,6 +58,7 @@
   {
     "kanji": "400",
     "kana": "よんひゃく",
+    "romaji": "yonhyaku",
     "chinese": "四百",
     "example": "これは400です。",
     "example_chinese": "這是400。"
@@ -58,6 +66,7 @@
   {
     "kanji": "500",
     "kana": "ごひゃく",
+    "romaji": "gohyaku",
     "chinese": "五百",
     "example": "これは500です。",
     "example_chinese": "這是500。"
@@ -65,6 +74,7 @@
   {
     "kanji": "600",
     "kana": "ろっぴゃく",
+    "romaji": "roppyaku",
     "chinese": "六百",
     "example": "これは600です。",
     "example_chinese": "這是600。"
@@ -72,6 +82,7 @@
   {
     "kanji": "700",
     "kana": "ななひゃく",
+    "romaji": "nanahyaku",
     "chinese": "七百",
     "example": "これは700です。",
     "example_chinese": "這是700。"
@@ -79,6 +90,7 @@
   {
     "kanji": "800",
     "kana": "はっぴゃく",
+    "romaji": "happyaku",
     "chinese": "八百",
     "example": "これは800です。",
     "example_chinese": "這是800。"
@@ -86,6 +98,7 @@
   {
     "kanji": "900",
     "kana": "きゅうひゃく",
+    "romaji": "kyuuhyaku",
     "chinese": "九百",
     "example": "これは900です。",
     "example_chinese": "這是900。"
@@ -93,6 +106,7 @@
   {
     "kanji": "999",
     "kana": "きゅうひゃくきゅうじゅうきゅう",
+    "romaji": "kyuuhyaku kyuujuu kyuu",
     "chinese": "九百九十九",
     "example": "これは999です。",
     "example_chinese": "這是999。"
@@ -100,13 +114,15 @@
   {
     "kanji": "1000",
     "kana": "せん",
+    "romaji": "sen",
     "chinese": "一千",
     "example": "これは1000です。",
     "example_chinese": "這是1000。"
   },
-    {
+  {
     "kanji": "1001",
     "kana": "せんいち",
+    "romaji": "sen ichi",
     "chinese": "一千零一",
     "example": "これは1001です。",
     "example_chinese": "這是1001。"
@@ -114,6 +130,7 @@
   {
     "kanji": "1010",
     "kana": "せんじゅう",
+    "romaji": "sen juu",
     "chinese": "一千十",
     "example": "これは1010です。",
     "example_chinese": "這是1010。"
@@ -121,6 +138,7 @@
   {
     "kanji": "1100",
     "kana": "せんひゃく",
+    "romaji": "sen hyaku",
     "chinese": "一千一百",
     "example": "これは1100です。",
     "example_chinese": "這是1100。"
@@ -128,6 +146,7 @@
   {
     "kanji": "1555",
     "kana": "せんごひゃくごじゅうご",
+    "romaji": "sen gohyaku gojuugo",
     "chinese": "一千五百五十五",
     "example": "これは1555です。",
     "example_chinese": "這是1555。"
@@ -135,6 +154,7 @@
   {
     "kanji": "2000",
     "kana": "にせん",
+    "romaji": "nisen",
     "chinese": "二千",
     "example": "これは2000です。",
     "example_chinese": "這是2000。"
@@ -142,6 +162,7 @@
   {
     "kanji": "3000",
     "kana": "さんぜん",
+    "romaji": "sanzen",
     "chinese": "三千",
     "example": "これは3000です。",
     "example_chinese": "這是3000。"
@@ -149,6 +170,7 @@
   {
     "kanji": "4000",
     "kana": "よんせん",
+    "romaji": "yonsen",
     "chinese": "四千",
     "example": "これは4000です。",
     "example_chinese": "這是4000。"
@@ -156,6 +178,7 @@
   {
     "kanji": "5000",
     "kana": "ごせん",
+    "romaji": "gosen",
     "chinese": "五千",
     "example": "これは5000です。",
     "example_chinese": "這是5000。"
@@ -163,6 +186,7 @@
   {
     "kanji": "6000",
     "kana": "ろくせん",
+    "romaji": "rokusen",
     "chinese": "六千",
     "example": "これは6000です。",
     "example_chinese": "這是6000。"
@@ -170,6 +194,7 @@
   {
     "kanji": "7000",
     "kana": "ななせん",
+    "romaji": "nanasen",
     "chinese": "七千",
     "example": "これは7000です。",
     "example_chinese": "這是7000。"
@@ -177,6 +202,7 @@
   {
     "kanji": "8000",
     "kana": "はっせん",
+    "romaji": "hassen",
     "chinese": "八千",
     "example": "これは8000です。",
     "example_chinese": "這是8000。"
@@ -184,6 +210,7 @@
   {
     "kanji": "9000",
     "kana": "きゅうせん",
+    "romaji": "kyuusen",
     "chinese": "九千",
     "example": "これは9000です。",
     "example_chinese": "這是9000。"
@@ -191,6 +218,7 @@
   {
     "kanji": "9999",
     "kana": "きゅうせんきゅうひゃくきゅうじゅうきゅう",
+    "romaji": "kyuusen kyuuhyaku kyuujuu kyuu",
     "chinese": "九千九百九十九",
     "example": "これは9999です。",
     "example_chinese": "這是9999。"
@@ -198,6 +226,7 @@
   {
     "kanji": "10000",
     "kana": "いちまん",
+    "romaji": "ichi man",
     "chinese": "一萬",
     "example": "これは10000です。",
     "example_chinese": "這是10000。"
