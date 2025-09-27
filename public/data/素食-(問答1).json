@@ -88,6 +88,22 @@
     "example_chinese": "A: 他是全素食者。 </br> B: 所以他不吃肉也不吃魚。"
   },
   {
+  "kanji": "ねぎ、にんにく、玉ねぎはなしでお願いします。",
+  "kana": "ねぎ、にんにく、たまねぎはなしでおねがいします。",
+  "romaji": "Negi, ninniku, tamanegi wa nashi de onegai shimasu.",
+  "chinese": "蔥、蒜、洋蔥不要。",
+  "example": "A: ねぎ、にんにく、玉ねぎはなしでお願いします。 </br> B: はい、承知しました。",
+  "example_chinese": "A: 蔥、蒜、洋蔥不要。 </br> B: 好的，知道了。"
+},
+{
+  "kanji": "ねぎ、にんにくはなしでお願いします。",
+  "kana": "ねぎ、にんにくはなしでおねがいします。",
+  "romaji": "Negi, ninniku wa nashi de onegai shimasu.",
+  "chinese": "蔥、蒜不要。",
+  "example": "A: ねぎ、にんにくはなしでお願いします。 </br> B: はい、大丈夫です。",
+  "example_chinese": "A: 蔥、蒜不要。 </br> B: 好的，沒問題。"
+},
+  {
     "kanji": "肉なし",
     "kana": "にくなし",
     "romaji": "niku nashi",

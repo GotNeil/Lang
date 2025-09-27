@@ -1,0 +1,107 @@
+[
+
+  {
+    "kanji": "水",
+    "kana": "みず",
+    "romaji": "mizu",
+    "chinese": "開水",
+    "example": "A: お水をいただけますか？</br>B: はい、すぐお持ちします。",
+    "example_chinese": "A: 可以給我一杯水嗎？</br>B: 好的，馬上來。"
+  },
+  {
+    "kanji": "お湯",
+    "kana": "おゆ",
+    "romaji": "oyu",
+    "chinese": "熱開水",
+    "example": "A: 薬を飲むのでお湯をもらえますか？</br>B: はい、少々お待ちください。",
+    "example_chinese": "A: 我要吃藥，可以給我熱水嗎？</br>B: 好的，請稍等一下。"
+  },
+  {
+    "kanji": "お茶",
+    "kana": "おちゃ",
+    "romaji": "ocha",
+    "chinese": "茶",
+    "example": "A: 食事のあとにお茶が出ますか？</br>B: はい、無料で提供しています。",
+    "example_chinese": "A: 用餐後有提供茶嗎？</br>B: 有的，免費提供。"
+  },
+  {
+    "kanji": "烏龍茶",
+    "kana": "ウーロンちゃ",
+    "romaji": "uuron cha",
+    "chinese": "烏龍茶",
+    "example": "A: ウーロン茶のボトルはありますか？</br>B: はい、冷たいものと温かいものがあります。",
+    "example_chinese": "A: 有瓶裝烏龍茶嗎？</br>B: 有的，有冰的和熱的。"
+  },
+  {
+    "kanji": "緑茶",
+    "kana": "りょくちゃ",
+    "romaji": "ryokucha",
+    "chinese": "綠茶",
+    "example": "A: 日本の緑茶は苦いですか？</br>B: 種類によりますが、さっぱりしています。",
+    "example_chinese": "A: 日本綠茶會苦嗎？</br>B: 要看種類，大多是清爽口味。"
+  },
+  {
+    "kanji": "紅茶",
+    "kana": "こうちゃ",
+    "romaji": "koucha",
+    "chinese": "紅茶",
+    "example": "A: ホットの紅茶はありますか？</br>B: はい、ミルクとレモンが選べます。",
+    "example_chinese": "A: 有熱紅茶嗎？</br>B: 有的，可以選擇加牛奶或檸檬。"
+  },
+  {
+    "kanji": "コーヒー",
+    "kana": "コーヒー",
+    "romaji": "koohii",
+    "chinese": "咖啡",
+    "example": "A: 朝食にコーヒーは付きますか？</br>B: はい、ホットかアイスが選べます。",
+    "example_chinese": "A: 早餐有附咖啡嗎？</br>B: 有的，可以選熱的或冰的。"
+  },
+  {
+    "kanji": "ジュース",
+    "kana": "ジュース",
+    "romaji": "juusu",
+    "chinese": "果汁",
+    "example": "A: 100％のジュースはありますか？</br>B: はい、オレンジとリンゴがあります。",
+    "example_chinese": "A: 有100%果汁嗎？</br>B: 有的，有橙汁和蘋果汁。"
+  },
+  {
+    "kanji": "牛乳",
+    "kana": "ぎゅうにゅう",
+    "romaji": "gyuunyuu",
+    "chinese": "牛奶",
+    "example": "A: 朝ごはんに牛乳はつきますか？</br>B: はい、お子様用にご用意しています。",
+    "example_chinese": "A: 早餐有附牛奶嗎？</br>B: 有的，準備了給小朋友用的。"
+  },
+  {
+    "kanji": "ビール",
+    "kana": "ビール",
+    "romaji": "biiru",
+    "chinese": "啤酒",
+    "example": "A: ビールは生ですか？</br>B: はい、生ビールをご用意しています。",
+    "example_chinese": "A: 啤酒是生啤嗎？</br>B: 是的，我們有提供生啤酒。"
+  },
+  {
+    "kanji": "お酒",
+    "kana": "おさけ",
+    "romaji": "osake",
+    "chinese": "酒（總稱）",
+    "example": "A: お酒は何がありますか？</br>B: ビール、日本酒、ワインがあります。",
+    "example_chinese": "A: 有什麼酒類呢？</br>B: 有啤酒、日本酒和葡萄酒。"
+  },
+  {
+    "kanji": "日本酒",
+    "kana": "にほんしゅ",
+    "romaji": "nihonshu",
+    "chinese": "清酒",
+    "example": "A: 地元の日本酒を試せますか？</br>B: はい、試飲セットがあります。",
+    "example_chinese": "A: 可以試試當地的清酒嗎？</br>B: 可以的，有提供試飲組合。"
+  },
+  {
+    "kanji": "麦茶",
+    "kana": "むぎちゃ",
+    "romaji": "mugicha",
+    "chinese": "麥茶",
+    "example": "A: 子どもには麦茶でもいいですか？</br>B: はい、カフェインが入っていないので安心です。",
+    "example_chinese": "A: 小朋友喝麥茶可以嗎？</br>B: 可以，因為沒有咖啡因，請放心。"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "kanji": "一杯",
+    "kana": "いっぱい",
+    "romaji": "ippai",
+    "chinese": "一杯",
+    "example": "ビールを一杯ください。",
+    "example_chinese": "請給我一杯啤酒。"
+  },
+  {
+    "kanji": "二杯",
+    "kana": "にはい",
+    "romaji": "nihai",
+    "chinese": "兩杯",
+    "example": "水を二杯飲みました。",
+    "example_chinese": "我喝了兩杯水。"
+  },
+  {
+    "kanji": "三杯",
+    "kana": "さんばい",
+    "romaji": "sanbai",
+    "chinese": "三杯",
+    "example": "コーヒーを三杯お願いします。",
+    "example_chinese": "請給我三杯咖啡。"
+  },
+  {
+    "kanji": "四杯",
+    "kana": "よんはい",
+    "romaji": "yonhai",
+    "chinese": "四杯",
+    "example": "お茶を四杯用意しました。",
+    "example_chinese": "我準備了四杯茶。"
+  },
+  {
+    "kanji": "五杯",
+    "kana": "ごはい",
+    "romaji": "gohai",
+    "chinese": "五杯",
+    "example": "ジュースを五杯ください。",
+    "example_chinese": "請給我五杯果汁。"
+  },
+  {
+    "kanji": "六杯",
+    "kana": "ろっぱい",
+    "romaji": "roppai",
+    "chinese": "六杯",
+    "example": "ビールを六杯頼みました。",
+    "example_chinese": "我點了六杯啤酒。"
+  },
+  {
+    "kanji": "七杯",
+    "kana": "ななはい",
+    "romaji": "nanahai",
+    "chinese": "七杯",
+    "example": "水を七杯飲みました。",
+    "example_chinese": "我喝了七杯水。"
+  },
+  {
+    "kanji": "八杯",
+    "kana": "はっぱい",
+    "romaji": "happai",
+    "chinese": "八杯",
+    "example": "お茶を八杯どうぞ。",
+    "example_chinese": "請喝八杯茶。"
+  },
+  {
+    "kanji": "九杯",
+    "kana": "きゅうはい",
+    "romaji": "kyuuhai",
+    "chinese": "九杯",
+    "example": "ジュースを九杯ください。",
+    "example_chinese": "請給我九杯果汁。"
+  },
+  {
+    "kanji": "十杯",
+    "kana": "じゅっぱい",
+    "romaji": "juppai",
+    "chinese": "十杯",
+    "example": "ビールを十杯持ってきてください。",
+    "example_chinese": "請拿來十杯啤酒。"
+  }
+]

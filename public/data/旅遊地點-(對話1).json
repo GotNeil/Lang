@@ -1,0 +1,42 @@
+[
+  {
+    "kanji": "トイレはどこですか？",
+    "kana": "といれはどこですか？",
+    "romaji": "toire wa doko desu ka?",
+    "chinese": "廁所在哪裡？",
+    "example": "A: すみません、トイレはどこですか？</br>B: 階段の横にあります。",
+    "example_chinese": "A: 不好意思，廁所在哪裡？</br>B: 在樓梯旁邊。"
+  },
+  {
+    "kanji": "近くに食べるところはありますか？",
+    "kana": "ちかくにたべるところはありますか？",
+    "romaji": "chikaku ni taberu tokoro wa arimasu ka?",
+    "chinese": "附近有吃的嗎？",
+    "example": "A: 近くに食べるところはありますか？</br>B: はい、コンビニの隣にラーメン屋があります。",
+    "example_chinese": "A: 附近有吃的地方嗎？</br>B: 有的，便利商店旁邊有拉麵店。"
+  },
+  {
+    "kanji": "まだ営業していますか？",
+    "kana": "まだえいぎょうしていますか？",
+    "romaji": "mada eigyou shiteimasu ka?",
+    "chinese": "還有營業嗎？",
+    "example": "A: すみません、まだ営業していますか？</br>B: はい、午後10時までです。",
+    "example_chinese": "A: 不好意思，還有營業嗎？</br>B: 有喔，營業到晚上10點。"
+  },
+  {
+    "kanji": "無料ですか？",
+    "kana": "むりょうですか？",
+    "romaji": "muryou desu ka?",
+    "chinese": "免費嗎？",
+    "example": "A: この展示は無料ですか？</br>B: はい、入場は無料です。",
+    "example_chinese": "A: 這個展覽免費嗎？</br>B: 是的，入場免費。"
+  },
+  {
+    "kanji": "お金がかかりますか？",
+    "kana": "おかねがかかりますか？",
+    "romaji": "okane ga kakarimasu ka?",
+    "chinese": "要費用嗎？",
+    "example": "A: この体験はお金がかかりますか？</br>B: はい、一人500円です。",
+    "example_chinese": "A: 這個體驗要錢嗎？</br>B: 要的，一人500日圓。"
+  }
+]

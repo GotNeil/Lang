@@ -1,0 +1,82 @@
+[
+  {
+    "kanji": "しょうゆ",
+    "kana": "しょうゆ",
+    "romaji": "shouyu",
+    "chinese": "醬油",
+    "example": "A: すみません、しょうゆはありますか？</br>B: はい、テーブルの上にあります。",
+    "example_chinese": "A: 不好意思，請問有醬油嗎？</br>B: 有喔，在桌上。"
+  },
+  {
+    "kanji": "塩",
+    "kana": "しお",
+    "romaji": "shio",
+    "chinese": "鹽",
+    "example": "A: 塩を少しください。</br>B: はい、どうぞ。",
+    "example_chinese": "A: 請給我一點鹽。</br>B: 好的，請用。"
+  },
+  {
+    "kanji": "砂糖",
+    "kana": "さとう",
+    "romaji": "satou",
+    "chinese": "砂糖",
+    "example": "A: コーヒーに砂糖を入れますか？</br>B: はい、お願いします。",
+    "example_chinese": "A: 咖啡要加糖嗎？</br>B: 好的，請加。"
+  },
+  {
+    "kanji": "酢",
+    "kana": "す",
+    "romaji": "su",
+    "chinese": "醋",
+    "example": "A: 酢はどこにありますか？</br>B: 冷蔵庫の中です。",
+    "example_chinese": "A: 醋在哪裡？</br>B: 在冰箱裡。"
+  },
+  {
+    "kanji": "味噌",
+    "kana": "みそ",
+    "romaji": "miso",
+    "chinese": "味噌（味增）",
+    "example": "A: 味噌汁は毎日飲みますか？</br>B: はい、朝ごはんによく飲みます。",
+    "example_chinese": "A: 你每天喝味噌湯嗎？</br>B: 是的，早餐常喝。"
+  },
+  {
+    "kanji": "ソース",
+    "kana": "ソース",
+    "romaji": "soosu",
+    "chinese": "醬汁（如豬排醬）",
+    "example": "A: とんかつにソースをかけますか？</br>B: はい、お願いします。",
+    "example_chinese": "A: 豬排要淋醬汁嗎？</br>B: 好的，請加。"
+  },
+  {
+    "kanji": "ケチャップ",
+    "kana": "ケチャップ",
+    "romaji": "kechappu",
+    "chinese": "番茄醬",
+    "example": "A: フライドポテトにケチャップをつけますか？</br>B: はい、少しだけ。",
+    "example_chinese": "A: 薯條要沾番茄醬嗎？</br>B: 好的，沾一點就好。"
+  },
+  {
+    "kanji": "マヨネーズ",
+    "kana": "マヨネーズ",
+    "romaji": "mayoneezu",
+    "chinese": "美乃滋",
+    "example": "A: サラダにマヨネーズは大丈夫ですか？</br>B: はい、好きです。",
+    "example_chinese": "A: 沙拉加美乃滋可以嗎？</br>B: 可以，我喜歡。"
+  },
+  {
+    "kanji": "からし",
+    "kana": "からし",
+    "romaji": "karashi",
+    "chinese": "黃芥末（辛辣）",
+    "example": "A: からしは辛いですか？</br>B: はい、とても辛いです。",
+    "example_chinese": "A: 黃芥末會辣嗎？</br>B: 會的，非常辣喔。"
+  },
+  {
+    "kanji": "わさび",
+    "kana": "わさび",
+    "romaji": "wasabi",
+    "chinese": "芥末（山葵）",
+    "example": "A: わさび抜きにできますか？</br>B: はい、できます。",
+    "example_chinese": "A: 可以不加芥末嗎？</br>B: 可以的。"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "kanji": "白ご飯",
+    "kana": "しろごはん",
+    "romaji": "shiro gohan",
+    "chinese": "白飯",
+    "example": "A: 白ご飯は大盛りにできますか？</br>B: はい、プラス100円でできます。",
+    "example_chinese": "A: 白飯可以加大嗎？</br>B: 可以，加100日圓。"
+  },
+  {
+    "kanji": "カレーライス",
+    "kana": "カレーライス",
+    "romaji": "karee raisu",
+    "chinese": "咖哩飯",
+    "example": "A: この店のおすすめは何ですか？</br>B: カレーライスが一番人気です。",
+    "example_chinese": "A: 這家店的推薦是什麼？</br>B: 咖哩飯最受歡迎。"
+  },
+  {
+    "kanji": "ラーメン",
+    "kana": "ラーメン",
+    "romaji": "raamen",
+    "chinese": "拉麵",
+    "example": "A: このラーメンは辛いですか？</br>B: 少し辛いですが、美味しいですよ。",
+    "example_chinese": "A: 這個拉麵辣嗎？</br>B: 有一點辣，但很好吃喔。"
+  },
+  {
+    "kanji": "うどん",
+    "kana": "うどん",
+    "romaji": "udon",
+    "chinese": "烏龍麵",
+    "example": "A: このうどんは温かいですか？</br>B: はい、温かいです。冷たいのもありますよ。",
+    "example_chinese": "A: 這個烏龍麵是熱的嗎？</br>B: 是的，是熱的。我們也有冷的。"
+  },
+  {
+    "kanji": "そば",
+    "kana": "そば",
+    "romaji": "soba",
+    "chinese": "蕎麥麵",
+    "example": "A: そばはどこで食べられますか？</br>B: この通りの角に有名なお店があります。",
+    "example_chinese": "A: 哪裡可以吃到蕎麥麵？</br>B: 這條街角有一家有名的店。"
+  },
+  {
+    "kanji": "焼きそば",
+    "kana": "やきそば",
+    "romaji": "yakisoba",
+    "chinese": "炒麵",
+    "example": "A: お祭りでは何が人気ですか？</br>B: 焼きそばが定番ですよ。",
+    "example_chinese": "A: 祭典上什麼最受歡迎？</br>B: 炒麵是定番（必吃）的喔。"
+  },
+  {
+    "kanji": "パン",
+    "kana": "パン",
+    "romaji": "pan",
+    "chinese": "麵包",
+    "example": "A: このパンは焼きたてですか？</br>B: はい、今朝焼いたばかりです。",
+    "example_chinese": "A: 這個麵包是現烤的嗎？</br>B: 是的，是今天早上剛烤好的。"
+  },
+  {
+    "kanji": "サンドイッチ",
+    "kana": "サンドイッチ",
+    "romaji": "sandoitchi",
+    "chinese": "三明治",
+    "example": "A: ベジタリアン向けのサンドイッチはありますか？</br>B: はい、こちらの野菜サンドがおすすめです。",
+    "example_chinese": "A: 有適合素食者的三明治嗎？</br>B: 有的，這款蔬菜三明治很推薦。"
+  },
+  {
+    "kanji": "寿司",
+    "kana": "すし",
+    "romaji": "sushi",
+    "chinese": "壽司",
+    "example": "A: 初めての方におすすめの寿司は何ですか？</br>B: サーモンとマグロがおすすめです。",
+    "example_chinese": "A: 有推薦給第一次吃壽司的人嗎？</br>B: 推薦鮭魚和鮪魚壽司。"
+  },
+  {
+    "kanji": "天ぷら",
+    "kana": "てんぷら",
+    "romaji": "tenpura",
+    "chinese": "天婦羅",
+    "example": "A: 天ぷら定食はどこで食べられますか？</br>B: あの和食店が有名ですよ。",
+    "example_chinese": "A: 哪裡可以吃到天婦羅定食？</br>B: 那家和食店很有名喔。"
+  },
+  {
+    "kanji": "焼き鳥",
+    "kana": "やきとり",
+    "romaji": "yakitori",
+    "chinese": "烤雞串",
+    "example": "A: 焼き鳥は塩味とタレ味、どちらが人気ですか？</br>B: タレ味の方が人気です。",
+    "example_chinese": "A: 烤雞串是鹽味還是醬味比較受歡迎？</br>B: 醬味比較受歡迎。"
+  },
+  {
+    "kanji": "たこ焼き",
+    "kana": "たこやき",
+    "romaji": "takoyaki",
+    "chinese": "章魚燒",
+    "example": "A: 大阪名物のたこ焼きはどこで食べられますか？</br>B: 駅前の屋台がおすすめです。",
+    "example_chinese": "A: 大阪名產章魚燒哪裡吃得到？</br>B: 車站前的攤販很推薦。"
+  },
+  {
+    "kanji": "味噌汁",
+    "kana": "みそしる",
+    "romaji": "miso shiru",
+    "chinese": "味噌湯",
+    "example": "A: 味噌汁はセットに含まれていますか？</br>B: はい、定食には含まれています。",
+    "example_chinese": "A: 味噌湯有包含在套餐內嗎？</br>B: 有的，套餐裡有附味噌湯。"
+  },
+  {
+    "kanji": "おでん",
+    "kana": "おでん",
+    "romaji": "oden",
+    "chinese": "關東煮",
+    "example": "A: コンビニでおでんはまだやっていますか？</br>B: はい、冬季限定で販売中です。",
+    "example_chinese": "A: 便利商店還有賣關東煮嗎？</br>B: 有的，冬季限定販售中。"
+  },
+  {
+    "kanji": "ベジタリアン",
+    "kana": "ベジタリアン",
+    "romaji": "bejitarian",
+    "chinese": "素食",
+    "example": "A: ベジタリアンの友達と来たのですが、大丈夫ですか？</br>B: はい、動物性食材を使っていないメニューもあります。",
+    "example_chinese": "A: 我是跟吃素的朋友一起來的，可以嗎？</br>B: 可以，我們也有不使用動物性食材的菜單。"
+  },
+  {
+    "kanji": "ヴィーガン",
+    "kana": "ヴぃーがん",
+    "romaji": "viigan",
+    "chinese": "全素食 / vegan",
+    "example": "A: 彼はヴィーガンです。 </br> B: だから肉も魚も食べません。",
+    "example_chinese": "A: 他是全素食者。 </br> B: 所以他不吃肉也不吃魚。"
+  }
+]

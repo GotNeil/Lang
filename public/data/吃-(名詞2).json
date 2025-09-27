@@ -40,46 +40,6 @@
     "example_chinese": "A: 有加高麗菜的大阪燒嗎？</br>B: 有的，是人氣餐點。"
   },
   {
-    "kanji": "しょうが",
-    "kana": "しょうが",
-    "romaji": "shouga",
-    "chinese": "薑",
-    "example": "A: 生姜を抜いてもらえますか？</br>B: はい、対応できます。",
-    "example_chinese": "A: 可以去掉薑嗎？</br>B: 可以的，沒問題。"
-  },
-  {
-    "kanji": "寿司",
-    "kana": "すし",
-    "romaji": "sushi",
-    "chinese": "壽司",
-    "example": "A: 初めての方におすすめの寿司は何ですか？</br>B: サーモンとマグロがおすすめです。",
-    "example_chinese": "A: 有推薦給第一次吃壽司的人嗎？</br>B: 推薦鮭魚和鮪魚壽司。"
-  },
-  {
-    "kanji": "日本酒",
-    "kana": "にほんしゅ",
-    "romaji": "nihonshu",
-    "chinese": "清酒",
-    "example": "A: 地元の日本酒を試せますか？</br>B: はい、試飲セットがあります。",
-    "example_chinese": "A: 可以試試當地的清酒嗎？</br>B: 可以的，有提供試飲組合。"
-  },
-  {
-    "kanji": "麦茶",
-    "kana": "むぎちゃ",
-    "romaji": "mugicha",
-    "chinese": "麥茶",
-    "example": "A: 子どもには麦茶でもいいですか？</br>B: はい、カフェインが入っていないので安心です。",
-    "example_chinese": "A: 小朋友喝麥茶可以嗎？</br>B: 可以，因為沒有咖啡因，請放心。"
-  },
-  {
-    "kanji": "ベジタリアン",
-    "kana": "ベジタリアン",
-    "romaji": "bejitarian",
-    "chinese": "素食",
-    "example": "A: ベジタリアンの友達と来たのですが、大丈夫ですか？</br>B: はい、動物性食材を使っていないメニューもあります。",
-    "example_chinese": "A: 我是跟吃素的朋友一起來的，可以嗎？</br>B: 可以，我們也有不使用動物性食材的菜單。"
-  },
-  {
     "kanji": "帆立",
     "kana": "ほたて",
     "romaji": "hotate",

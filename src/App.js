@@ -71,6 +71,7 @@ function App() {
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
   const quizContentRef = useRef(null);
+  const quizAreaRef = useRef(null); // New ref
   
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
@@ -390,7 +391,7 @@ function App() {
             )}
           </div>
         ) : quizMode === 'dictionary' ? (
-          <div className="quiz-area dictionary-mode">
+          <div className="quiz-area dictionary-mode" ref={quizAreaRef}>
             <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
             <div className="answer-details">
               <div className="kana-display">
@@ -433,7 +434,7 @@ function App() {
             <button className='change-category' onClick={handleGoHome}>回到首頁</button>
           </div>
         ) : (
-          <div className="quiz-area">
+          <div className="quiz-area" ref={quizAreaRef}>
             <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
             {quizMode === 'kanji' && (
               <div className="kanji-display">
@@ -453,7 +454,12 @@ function App() {
               </div>
             )}
             <div className="controls">
-              {!showAnswer && <button onClick={() => setShowAnswer(true)}>查看答案</button>}
+              {!showAnswer && <button onClick={() => {
+            setShowAnswer(true);
+            if (quizAreaRef.current) {
+              quizAreaRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }}>查看答案</button>}
               {showAnswer && (
                                 <div className="answer-details">
                                   <div className="kana-display">
