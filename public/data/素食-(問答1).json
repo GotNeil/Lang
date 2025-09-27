@@ -1,5 +1,60 @@
 [
   {
+    "kanji": "これはビーガンですか？",
+    "kana": "これはビーガンですか？",
+    "romaji": "kore wa biigan desu ka?",
+    "chinese": "這是純素食嗎？",
+    "example": "A: これはビーガン料理ですか？</br>B: いいえ、チーズが入っています。",
+    "example_chinese": "A: 這是純素食料理嗎？</br>B: 不是，裡面含有起司。"
+  },
+  {
+    "kanji": "私はビーガンです。",
+    "kana": "わたしはビーガンです。",
+    "romaji": "watashi wa biigan desu.",
+    "chinese": "我是純素食者。",
+    "example": "A: ビーガンのおすすめ料理はありますか？</br>B: はい、野菜中心のメニューがあります。",
+    "example_chinese": "A: 有推薦的純素食料理嗎？</br>B: 有的，我們有以蔬菜為主的菜單。"
+  },
+  {
+    "kanji": "ビーガンは食べられますか？",
+    "kana": "ビーガンはたべられますか？",
+    "romaji": "biigan wa taberaremasu ka?",
+    "chinese": "純素食者可以吃嗎？",
+    "example": "A: これはビーガン料理ですか？</br>B: はい、動物性のものは使っていません。",
+    "example_chinese": "A: 這是純素食料理嗎？</br>B: 是的，沒有使用任何動物性食材。"
+  },
+  {
+  "kanji": "魚と卵は食べません、牛乳とチーズは大丈夫です。",
+  "kana": "さかなとたまごはたべません、ぎゅうにゅうとちーずはだいじょうぶです。",
+  "romaji": "Sakana to tamago wa tabemasen, gyuunyuu to chiizu wa daijoubu desu.",
+  "chinese": "我不吃魚和蛋，牛奶和起司可以。",
+  "example": "A: 魚と卵は食べません、牛乳とチーズは大丈夫です。 </br> B: わかりました。",
+  "example_chinese": "A: 我不吃魚和蛋，牛奶和起司可以。 </br> B: 我知道了。"
+},
+{
+  "kanji": "魚と卵はなしでお願いします。",
+  "kana": "さかなとたまごはなしでおねがいします。",
+  "romaji": "Sakana to tamago wa nashi de onegai shimasu.",
+  "chinese": "請不要魚和蛋。",
+  "example": "A: 魚と卵はなしでお願いします。 </br> B: はい、かしこまりました。",
+  "example_chinese": "A: 請不要魚和蛋。 </br> B: 好的，了解。"
+},{
+  "kanji": "牛乳とチーズは大丈夫です。",
+  "kana": "ぎゅうにゅうとちーずはだいじょうぶです。",
+  "romaji": "Gyuunyuu to chiizu wa daijoubu desu.",
+  "chinese": "牛奶和起司可以。",
+  "example": "A: 牛乳とチーズは大丈夫です。 </br> B: わかりました。",
+  "example_chinese": "A: 牛奶和起司可以。 </br> B: 明白了。"
+},
+  {
+    "kanji": "食べられますか",
+    "kana": "たべられますか",
+    "romaji": "taberaremasu ka",
+    "chinese": "可以吃嗎？",
+    "example": "A: これはベジタリアンでも食べられますか。 </br> B: はい、大丈夫です。",
+    "example_chinese": "A: 這個素食者可以吃嗎？ </br> B: 是的，沒問題。"
+  },
+  {
     "kanji": "ベジタリアン",
     "kana": "べじたりあん",
     "romaji": "bejitarian",
@@ -8,12 +63,12 @@
     "example_chinese": "A: 我是素食者。 </br> B: 原來如此。"
   },
   {
-    "kanji": "食べられますか",
-    "kana": "たべられますか",
-    "romaji": "taberaremasu ka",
-    "chinese": "可以吃嗎？",
-    "example": "A: これはベジタリアンでも食べられますか。 </br> B: はい、大丈夫です。",
-    "example_chinese": "A: 這個素食者可以吃嗎？ </br> B: 是的，沒問題。"
+    "kanji": "ヴィーガン",
+    "kana": "ヴぃーがん",
+    "romaji": "viigan",
+    "chinese": "全素食 / vegan",
+    "example": "A: 彼はヴィーガンです。 </br> B: だから肉も魚も食べません。",
+    "example_chinese": "A: 他是全素食者。 </br> B: 所以他不吃肉也不吃魚。"
   },
   {
     "kanji": "肉なし",
@@ -46,29 +101,5 @@
     "chinese": "不要海鮮",
     "example": "A: 海鮮なしのパスタはありますか。 </br> B: はい、トマトソースのパスタがあります。",
     "example_chinese": "A: 有不加海鮮的義大利麵嗎？ </br> B: 有的，我們有番茄醬義大利麵。"
-  },
-  {
-    "kanji": "ビーガンは食べられますか？",
-    "kana": "ビーガンはたべられますか？",
-    "romaji": "biigan wa taberaremasu ka?",
-    "chinese": "純素食者可以吃嗎？",
-    "example": "A: これはビーガン料理ですか？</br>B: はい、動物性のものは使っていません。",
-    "example_chinese": "A: 這是純素食料理嗎？</br>B: 是的，沒有使用任何動物性食材。"
-  },
-  {
-    "kanji": "これはビーガンですか？",
-    "kana": "これはビーガンですか？",
-    "romaji": "kore wa biigan desu ka?",
-    "chinese": "這是純素食嗎？",
-    "example": "A: これはビーガン料理ですか？</br>B: いいえ、チーズが入っています。",
-    "example_chinese": "A: 這是純素食料理嗎？</br>B: 不是，裡面含有起司。"
-  },
-  {
-    "kanji": "私はビーガンです。",
-    "kana": "わたしはビーガンです。",
-    "romaji": "watashi wa biigan desu.",
-    "chinese": "我是純素食者。",
-    "example": "A: ビーガンのおすすめ料理はありますか？</br>B: はい、野菜中心のメニューがあります。",
-    "example_chinese": "A: 有推薦的純素食料理嗎？</br>B: 有的，我們有以蔬菜為主的菜單。"
   }
 ]

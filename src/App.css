@@ -48,10 +48,14 @@ main {
   margin-bottom: 20px;
 }
 
-.mode-selector h2, .category-selector h2, .settings-page h2 {
+.mode-selector h2, .settings-page h2 {
   margin-top: 0;
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
+}
+
+.category-selector h2 {
+  margin-top: 0;
 }
 
 .radio-group {
@@ -74,9 +78,9 @@ main {
 }
 
 .radio-group input[type="radio"]:checked + label {
-  background-color: #007bff;
-  color: white;
-  border-color: #007bff;
+  background-color: #EEE04C;
+  color: black;
+  border-color: #EEE04C;
 }
 
 .category-selector button {
@@ -221,11 +225,18 @@ main {
 
 .change-category {
   margin-top: 20px;
-  background: none;
-  border: none;
-  color: #007bff;
-  text-decoration: underline;
+  background-color: #f0f0f0; /* Light gray background */
+  border: 1px solid #ccc;    /* Subtle border */
+  color: #333;              /* Darker text color */
+  text-decoration: none;    /* Remove underline */
+  padding: 10px 15px;       /* Standard padding */
+  border-radius: 5px;       /* Rounded corners */
   cursor: pointer;
+  transition: background-color 0.2s; /* Smooth hover effect */
+}
+
+.change-category:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
 }
 
 .settings-page .setting-item {
@@ -459,4 +470,53 @@ main {
   color: #d7d2cb;
   font-size: 0.9em;
   margin-left: 5px;
+}
+
+.category-selector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.start-button-inline {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s;
+}
+
+.start-button-inline:hover {
+  background-color: #0056b3;
+}
+
+.start-button-inline:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.answer-separator {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.speak-japanese-only {
+  text-align: center;
+  margin-top: 15px; /* Space above the button */
+  margin-bottom: 15px; /* Space below the button, before the separator */
+}
+
+.example-speak-text {
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  color: #007bff; /* A blue color to make it stand out */
+  cursor: pointer; /* Indicate it's clickable, even if it's just text */
 }

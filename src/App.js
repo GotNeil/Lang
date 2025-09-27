@@ -57,7 +57,7 @@ function App() {
   const [currentWord, setCurrentWord] = useState(null);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [quizStarted, setQuizStarted] = useState(false);
-  const [quizMode, setQuizMode] = useState('chinese'); // Default to chinese
+  const [quizMode, setQuizMode] = useState('dictionary'); // Default to dictionary
   const [showAnswer, setShowAnswer] = useState(false);
   const [scores, setScores] = useState(getInitialScores());
   const [loading, setLoading] = useState(false);
@@ -395,15 +395,23 @@ function App() {
                 {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
                 {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
               </div>
+
+              <div className="speak-japanese-only">
+                <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
+              </div>
+
+              <hr className="answer-separator" />
+
+              {currentWord.example && (
+                <div className="example-speak-text">
+                  對話範例
+                </div>
+              )}
+
               {currentWord.example && 
                 <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />}
               {currentWord.example_chinese && 
                 <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />}
-              <div className="speak-controls">
-                <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
-                {currentWord.example && 
-                  <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>}
-              </div>
             </div>
             <div className="phase-controls">
               <div className="feedback-buttons">
@@ -436,22 +444,30 @@ function App() {
             <div className="controls">
               {!showAnswer && <button onClick={() => setShowAnswer(true)}>查看答案</button>}
               {showAnswer && (
-                <div className="answer-details">
-                  <div className="kana-display">
-                    <span className="kanji-in-answer">{currentWord.kanji}</span>
-                    {currentWord.kana}
-                    {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
-                    {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
-                  </div>
+                                <div className="answer-details">
+                                  <div className="kana-display">
+                                    <span className="kanji-in-answer">{currentWord.kanji}</span>
+                                    {currentWord.kana}
+                                    {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
+                                    {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
+                                  </div>
+                
+                                  <div className="speak-japanese-only">
+                                    <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
+                                  </div>
+                
+                                  <hr className="answer-separator" />
+                
                   {currentWord.example && 
                     <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />}
                   {currentWord.example_chinese && 
                     <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />}
-                  <div className="speak-controls">
-                    <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
-                    {currentWord.example && 
-                      <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>}
-                  </div>
+
+                  {currentWord.example && (
+                    <div className="example-speak-text">
+                      對話範例
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -530,7 +546,16 @@ function App() {
           </div>
         </div>
         <div className="category-selector">
-          <h2>請選擇詞庫：</h2>
+          <div className="category-selector-header">
+            <h2>請選擇詞庫：</h2>
+            <button 
+              onClick={handleStartPractice} 
+              disabled={selectedCategories.length === 0 || loading}
+              className="start-button-inline"
+            >
+              開始練習
+            </button>
+          </div>
           {loading && <p>詞庫載入中...</p>}
           
           {categoryGroups.map(group => (
