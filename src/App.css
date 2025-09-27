@@ -437,6 +437,11 @@ main {
   .quiz-sidebar {
     width: 100%;
     margin-top: 20px;
-    max-height: 300px; /* Adjust height for mobile */
+    max-height: 600px; /* Adjust height for mobile */
+  }
+
+  .sidebar-list {
+    /* Parent max-height - approx. header height */
+    max-height: calc(600px - 48px);
   }
 }

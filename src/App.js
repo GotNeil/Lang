@@ -123,7 +123,7 @@ function App() {
         setLoading(false);
       })
       .catch(err => {
-        setError('無法載入題庫清單。');
+        setError('無法載入詞庫清單。');
         setLoading(false);
       });
   }, []);
@@ -238,7 +238,7 @@ function App() {
         setLoading(false);
       })
       .catch(err => {
-        setError('無法載入題庫，請稍後再試。');
+        setError('無法載入詞庫，請稍後再試。');
         setLoading(false);
       });
   };
@@ -328,7 +328,7 @@ function App() {
 
     return (
       <div className="quiz-sidebar">
-        <div className="sidebar-header">題庫列表</div>
+        <div className="sidebar-header">詞庫列表</div>
         <ul className="sidebar-list">
           {list.map((word, index) => (
             <li
@@ -360,9 +360,9 @@ function App() {
         ) : !currentWord ? (
           <div className="quiz-area">
             {quizStarted ? (
-              <p>此題庫在此模式中沒有可用的題目。</p>
+              <p>此詞庫在此模式中沒有可用的題目。</p>
             ) : (
-              <p>請先選擇一個題庫。</p>
+              <p>請先選擇一個詞庫。</p>
             )}
           </div>
         ) : quizMode === 'dictionary' ? (
@@ -391,10 +391,7 @@ function App() {
                 <button className='next-word' onClick={nextWord}>下一筆</button>
               </div>
             </div>
-            <button className='change-category' onClick={() => {
-              setQuizStarted(false);
-              setSelectedCategories([]);
-            }}>更換題庫</button>
+            <button className='change-category' onClick={handleGoHome}>回到首頁</button>
           </div>
         ) : (
           <div className="quiz-area">
@@ -457,10 +454,7 @@ function App() {
                 )}
               </div>
             )}
-            <button className='change-category' onClick={() => {
-              setQuizStarted(false);
-              setSelectedCategories([]);
-            }}>更換題庫</button>
+            <button className='change-category' onClick={handleGoHome}>回到首頁</button>
           </div>
         )}
       </>
@@ -516,8 +510,8 @@ function App() {
           </div>
         </div>
         <div className="category-selector">
-          <h2>請選擇題庫：</h2>
-          {loading && <p>題庫載入中...</p>}
+          <h2>請選擇詞庫：</h2>
+          {loading && <p>詞庫載入中...</p>}
           <div className="checkbox-group">
             {categories.map(category => (
               <div key={category.name} className="checkbox-item">
