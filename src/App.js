@@ -6,6 +6,7 @@ const QUIZ_MODES = {
   chinese: '練習日文發音(🇹🇼中文題目)',
   kanji: '練習日文發音(🇯🇵日文題目)',
   listening: '練習日文聽力(🇯🇵🎧日文題目)',
+  dictionary: '辭典模式(📚自由瀏覽)',
 };
 
 const getInitialScores = () => {
@@ -160,25 +161,39 @@ function App() {
     setCountdown(null);
   };
 
+  const previousWord = () => {
+    cleanupTimers();
+    const prevIndex = currentIndex - 1;
+    if (prevIndex >= 0) {
+      setCurrentIndex(prevIndex);
+      showWordAtIndex(prevIndex, quizList);
+    } else {
+      const lastIndex = quizList.length - 1;
+      setCurrentIndex(lastIndex);
+      showWordAtIndex(lastIndex, quizList);
+    }
+  };
+
   const nextWord = () => {
     cleanupTimers();
     const nextIndex = currentIndex + 1;
 
-    if (
-      settings.numQuestions !== -1 &&
-      nextIndex === settings.numQuestions &&
-      quizList.length > settings.numQuestions
-    ) {
+    if (quizMode !== 'dictionary' && settings.numQuestions !== -1 && nextIndex === settings.numQuestions && quizList.length > settings.numQuestions) {
       setCurrentIndex(nextIndex);
       setEndOfRoundReached(true);
       return;
     }
 
     if (nextIndex >= quizList.length) {
-      const shuffledList = shuffleArray([...quizList]);
-      setQuizList(shuffledList);
-      setCurrentIndex(0);
-      showWordAtIndex(0, shuffledList);
+      if (quizMode === 'dictionary') {
+        setCurrentIndex(0);
+        showWordAtIndex(0, quizList);
+      } else {
+        const shuffledList = shuffleArray([...quizList]);
+        setQuizList(shuffledList);
+        setCurrentIndex(0);
+        showWordAtIndex(0, shuffledList);
+      }
     } else {
       setCurrentIndex(nextIndex);
       showWordAtIndex(nextIndex, quizList);
@@ -203,11 +218,13 @@ function App() {
           processedData = mergedData.filter(word => word.chinese);
         }
 
-        const shuffledData = shuffleArray(processedData);
+        const dataForQuiz = quizMode === 'dictionary'
+          ? processedData
+          : shuffleArray(processedData);
         
         const selectedData = settings.numQuestions === -1
-          ? shuffledData
-          : shuffledData; // Always take the full shuffled list now
+          ? dataForQuiz
+          : dataForQuiz; // Always take the full list now
 
         setQuizList(selectedData);
         setCurrentIndex(0);
@@ -296,6 +313,44 @@ function App() {
       return <p>請先選擇一個題庫。</p>;
     }
 
+    if (quizMode === 'dictionary') {
+      return (
+        <div className="quiz-area dictionary-mode">
+          <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
+          <div className="answer-details">
+            <div className="kana-display">
+              <span className="kanji-in-answer">{currentWord.kanji}</span>
+              {currentWord.kana}
+              {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
+              {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
+            </div>
+            {currentWord.example && 
+              <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />
+            }
+            {currentWord.example_chinese && 
+              <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />
+            }
+            <div className="speak-controls">
+              <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
+              {currentWord.example && 
+                <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>
+              }
+            </div>
+          </div>
+          <div className="phase-controls">
+            <div className="feedback-buttons">
+              <button className='next-word' onClick={previousWord}>上一筆</button>
+              <button className='next-word' onClick={nextWord}>下一筆</button>
+            </div>
+          </div>
+          <button className='change-category' onClick={() => {
+            setQuizStarted(false);
+            setSelectedCategories([]);
+          }}>更換題庫</button>
+        </div>
+      );
+    }
+
     const currentScore = scores[currentWord.id] || 0;
 
     return (
@@ -325,6 +380,7 @@ function App() {
               <div className="kana-display">
                 <span className="kanji-in-answer">{currentWord.kanji}</span>
                 {currentWord.kana}
+                {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
                 {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
               </div>
               {currentWord.example && 

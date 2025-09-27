@@ -179,6 +179,14 @@ main {
   margin-left: 10px;
 }
 
+.romaji-in-answer {
+  font-size: 0.8em;
+  color: #007bff;
+  margin-left: 10px;
+  display: block;
+  margin-top: 5px;
+}
+
 .example-display, .example-display-chinese {
   font-size: 1.1em;
   margin: 10px 0;
