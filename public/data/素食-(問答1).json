@@ -32,19 +32,36 @@
   "example_chinese": "A: 我不吃魚和蛋，牛奶和起司可以。 </br> B: 我知道了。"
 },
 {
+  "kanji": "海鮮、卵、ねぎ、にんにく、玉ねぎはなしでお願いします。",
+  "kana": "かいせん、たまご、ねぎ、にんにく、たまねぎはなしでおねがいします。",
+  "romaji": "Kaisen, tamago, negi, ninniku, tamanegi wa nashi de onegai shimasu.",
+  "chinese": "請不要海鮮、蛋、蔥、蒜、洋蔥。",
+  "example": "A: 海鮮、卵、ねぎ、にんにく、玉ねぎはなしでお願いします。 </br> B: かしこまりました。",
+  "example_chinese": "A: 請不要海鮮、蛋、蔥、蒜、洋蔥。 </br> B: 好的，了解。"
+},
+{
   "kanji": "魚と卵はなしでお願いします。",
   "kana": "さかなとたまごはなしでおねがいします。",
   "romaji": "Sakana to tamago wa nashi de onegai shimasu.",
   "chinese": "請不要魚和蛋。",
   "example": "A: 魚と卵はなしでお願いします。 </br> B: はい、かしこまりました。",
   "example_chinese": "A: 請不要魚和蛋。 </br> B: 好的，了解。"
-},{
+},
+{
   "kanji": "牛乳とチーズは大丈夫です。",
   "kana": "ぎゅうにゅうとちーずはだいじょうぶです。",
   "romaji": "Gyuunyuu to chiizu wa daijoubu desu.",
   "chinese": "牛奶和起司可以。",
   "example": "A: 牛乳とチーズは大丈夫です。 </br> B: わかりました。",
   "example_chinese": "A: 牛奶和起司可以。 </br> B: 明白了。"
+},
+{
+  "kanji": "アメリカーノを一杯ください。ありがとうございます。",
+  "kana": "あめりかーのをいっぱいください。ありがとうございます。",
+  "romaji": "Amerikaano o ippai kudasai. Arigatou gozaimasu.",
+  "chinese": "美式咖啡一杯，謝謝。",
+  "example": "A: アメリカーノを一杯ください。ありがとうございます。 </br> B: はい、どうぞ。",
+  "example_chinese": "A: 美式咖啡一杯，謝謝。 </br> B: 好的，請用。"
 },
   {
     "kanji": "食べられますか",

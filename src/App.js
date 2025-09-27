@@ -413,6 +413,13 @@ function App() {
               {currentWord.example_chinese && 
                 <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />}
             </div>
+
+            {currentWord.example && (
+              <div className="speak-example-button-container">
+                <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>
+              </div>
+            )}
+
             <div className="phase-controls">
               <div className="feedback-buttons">
                 <button className='next-word' onClick={previousWord}>上一筆</button>
@@ -471,6 +478,13 @@ function App() {
                 </div>
               )}
             </div>
+
+            {currentWord.example && (
+              <div className="speak-example-button-container">
+                <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>
+              </div>
+            )}
+
             {showAnswer && (
               <div className="phase-controls">
                 {answerPhase === 'feedback' && (

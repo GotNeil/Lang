@@ -518,5 +518,10 @@ main {
   margin-top: 15px;
   text-align: center;
   color: #007bff; /* A blue color to make it stand out */
-  cursor: pointer; /* Indicate it's clickable, even if it's just text */
+}
+
+.speak-example-button-container {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
