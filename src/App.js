@@ -70,6 +70,7 @@ function App() {
   const [endOfRoundReached, setEndOfRoundReached] = useState(false);
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
+  const quizContentRef = useRef(null);
   
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
@@ -318,6 +319,9 @@ function App() {
     cleanupTimers();
     setCurrentIndex(index);
     showWordAtIndex(index, quizList);
+    if (quizContentRef.current) {
+      quizContentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   const QuizSidebar = ({ list, mode, currentIndex, onWordSelect }) => {
@@ -515,7 +519,7 @@ function App() {
 
     return (
       <div className="quiz-area-container">
-        <div className="quiz-content">
+        <div className="quiz-content" ref={quizContentRef}>
           {quizContent}
         </div>
         {quizList.length > 0 && (
