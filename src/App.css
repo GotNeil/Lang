@@ -287,23 +287,6 @@ main {
   padding-left: 10px; /* Indent the checkboxes */
 }
 
-.category-group {
-  margin-bottom: 25px;
-  text-align: left;
-}
-
-.category-group h3 {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #e0e0e0;
-  font-size: 1.2em;
-  color: #333;
-}
-
-.category-group .checkbox-group {
-  justify-content: flex-start;
-}
-
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
@@ -470,4 +453,10 @@ main {
     /* Parent max-height - approx. header height */
     max-height: calc(600px - 48px);
   }
+}
+
+.category-count {
+  color: #d7d2cb;
+  font-size: 0.9em;
+  margin-left: 5px;
 }

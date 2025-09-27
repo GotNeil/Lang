@@ -546,7 +546,10 @@ function App() {
                       checked={selectedCategories.includes(file.name)}
                       onChange={() => handleCategoryChange(file.name)}
                     />
-                    <label htmlFor={file.name}>{`${file.name.replace('.json', '')} (${file.count})`}</label>
+                    <label htmlFor={file.name}>
+                      {file.name.replace('.json', '')}
+                      <span className="category-count"> ({file.count})</span>
+                    </label>
                   </div>
                 ))}
               </div>
