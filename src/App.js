@@ -132,6 +132,11 @@ function App() {
     localStorage.setItem('jp_scores', JSON.stringify(scores));
   }, [scores]);
 
+  const handleGoHome = () => {
+    setQuizStarted(false);
+    setSelectedCategories([]);
+  };
+
   const handleSaveSettings = (newSettings) => {
     // Find the full voice object from the URI to set in state
     const voiceToSet = voices.find(v => v.voiceURI === newSettings.selectedVoiceURI);
@@ -289,93 +294,80 @@ function App() {
     }
   };
 
-  const renderQuizArea = () => {
-    if (loading) return <p>載入中...</p>;
-    if (error) return <p style={{color: 'red'}}>{error}</p>;
+  const handleWordSelect = (index) => {
+    cleanupTimers();
+    setCurrentIndex(index);
+    showWordAtIndex(index, quizList);
+  };
 
-    if (endOfRoundReached) {
-      return (
-        <div className="end-of-round-screen">
-          <h2>練習完畢！</h2>
-          <p>您已完成設定的 {settings.numQuestions} 道題目。</p>
-          <div className="end-of-round-controls">
-            <button onClick={handleContinue}>繼續練習</button>
-            <button onClick={handleReshuffle}>重新抽題</button>
-          </div>
-        </div>
-      );
-    }
+  const QuizSidebar = ({ list, mode, currentIndex, onWordSelect }) => {
+    const currentItemRef = useRef(null);
 
-    if (!currentWord) {
-      if (quizStarted) {
-        return <p>此題庫在此模式中沒有可用的題目。</p>;
+    useEffect(() => {
+      if (currentItemRef.current) {
+        currentItemRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+        });
       }
-      return <p>請先選擇一個題庫。</p>;
-    }
+    }, [currentIndex]);
 
-    if (quizMode === 'dictionary') {
-      return (
-        <div className="quiz-area dictionary-mode">
-          <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
-          <div className="answer-details">
-            <div className="kana-display">
-              <span className="kanji-in-answer">{currentWord.kanji}</span>
-              {currentWord.kana}
-              {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
-              {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
-            </div>
-            {currentWord.example && 
-              <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />
-            }
-            {currentWord.example_chinese && 
-              <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />
-            }
-            <div className="speak-controls">
-              <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
-              {currentWord.example && 
-                <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>
-              }
-            </div>
-          </div>
-          <div className="phase-controls">
-            <div className="feedback-buttons">
-              <button className='next-word' onClick={previousWord}>上一筆</button>
-              <button className='next-word' onClick={nextWord}>下一筆</button>
-            </div>
-          </div>
-          <button className='change-category' onClick={() => {
-            setQuizStarted(false);
-            setSelectedCategories([]);
-          }}>更換題庫</button>
-        </div>
-      );
-    }
-
-    const currentScore = scores[currentWord.id] || 0;
+    const getDisplayText = (word, index) => {
+      switch (mode) {
+        case 'chinese':
+        case 'dictionary':
+          return word.chinese || word.kanji;
+        case 'kanji':
+          return word.kanji;
+        case 'listening':
+          return `題目 ${index + 1}`;
+        default:
+          return word.kanji;
+      }
+    };
 
     return (
-      <div className="quiz-area">
-        <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
-        {quizMode === 'kanji' && (
-          <div className="kanji-display">
-            {currentWord.kanji}
-            <span className="proficiency-score" title={`熟練度：${currentScore}`}>熟練度: {currentScore}</span>
+      <div className="quiz-sidebar">
+        <div className="sidebar-header">題庫列表</div>
+        <ul className="sidebar-list">
+          {list.map((word, index) => (
+            <li
+              key={`${word.id}-${index}`}
+              ref={index === currentIndex ? currentItemRef : null}
+              className={`sidebar-item ${index === currentIndex ? 'active' : ''}`}
+              onClick={() => onWordSelect(index)}
+            >
+              {getDisplayText(word, index)}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
+  const renderQuizArea = () => {
+    const quizContent = (
+      <>
+        {endOfRoundReached ? (
+          <div className="end-of-round-screen">
+            <h2>練習完畢！</h2>
+            <p>您已完成設定的 {settings.numQuestions} 道題目。</p>
+            <div className="end-of-round-controls">
+              <button onClick={handleContinue}>繼續練習</button>
+              <button onClick={handleReshuffle}>重新抽題</button>
+            </div>
           </div>
-        )}
-        {quizMode === 'listening' && !showAnswer && (
-          <div className="listening-question">
-            <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 播放聲音</button>
+        ) : !currentWord ? (
+          <div className="quiz-area">
+            {quizStarted ? (
+              <p>此題庫在此模式中沒有可用的題目。</p>
+            ) : (
+              <p>請先選擇一個題庫。</p>
+            )}
           </div>
-        )}
-        {quizMode === 'chinese' && (
-          <div className="kanji-display chinese-display">
-            {currentWord.chinese}
-            <span className="proficiency-score" title={`熟練度：${currentScore}`}>熟練度: {currentScore}</span>
-          </div>
-        )}
-        <div className="controls">
-          {!showAnswer && <button onClick={() => setShowAnswer(true)}>查看答案</button>}
-          {showAnswer && (
+        ) : quizMode === 'dictionary' ? (
+          <div className="quiz-area dictionary-mode">
+            <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
             <div className="answer-details">
               <div className="kana-display">
                 <span className="kanji-in-answer">{currentWord.kanji}</span>
@@ -384,46 +376,115 @@ function App() {
                 {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
               </div>
               {currentWord.example && 
-                <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />
-              }
+                <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />}
               {currentWord.example_chinese && 
-                <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />
-              }
+                <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />}
               <div className="speak-controls">
                 <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
                 {currentWord.example && 
-                  <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>
-                }
+                  <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>}
               </div>
             </div>
-          )}
-        </div>
-        {showAnswer && (
-          <div className="phase-controls">
-            {answerPhase === 'feedback' && (
+            <div className="phase-controls">
               <div className="feedback-buttons">
-                <button className='correct' onClick={() => handleFeedback(true)}>答對了！</button>
-                <button className='incorrect' onClick={() => handleFeedback(false)}>答錯了</button>
-                <button className='next-word' onClick={nextWord}>下一題</button>
+                <button className='next-word' onClick={previousWord}>上一筆</button>
+                <button className='next-word' onClick={nextWord}>下一筆</button>
+              </div>
+            </div>
+            <button className='change-category' onClick={() => {
+              setQuizStarted(false);
+              setSelectedCategories([]);
+            }}>更換題庫</button>
+          </div>
+        ) : (
+          <div className="quiz-area">
+            <p className="question-counter">{currentIndex + 1} / {quizList.length}</p>
+            {quizMode === 'kanji' && (
+              <div className="kanji-display">
+                {currentWord.kanji}
+                <span className="proficiency-score" title={`熟練度：${scores[currentWord.id] || 0}`}>熟練度: {scores[currentWord.id] || 0}</span>
               </div>
             )}
-            {answerPhase === 'countdown' && (
-              <button className="stop-button" onClick={handleStopCountdown}>
-                停止倒數 ({countdown})
-              </button>
+            {quizMode === 'listening' && !showAnswer && (
+              <div className="listening-question">
+                <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 播放聲音</button>
+              </div>
             )}
-            {answerPhase === 'paused' && (
-              <button className='next-word' onClick={nextWord}>下一題</button>
+            {quizMode === 'chinese' && (
+              <div className="kanji-display chinese-display">
+                {currentWord.chinese}
+                <span className="proficiency-score" title={`熟練度：${scores[currentWord.id] || 0}`}>熟練度: {scores[currentWord.id] || 0}</span>
+              </div>
             )}
+            <div className="controls">
+              {!showAnswer && <button onClick={() => setShowAnswer(true)}>查看答案</button>}
+              {showAnswer && (
+                <div className="answer-details">
+                  <div className="kana-display">
+                    <span className="kanji-in-answer">{currentWord.kanji}</span>
+                    {currentWord.kana}
+                    {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
+                    {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
+                  </div>
+                  {currentWord.example && 
+                    <div className="example-display" dangerouslySetInnerHTML={{ __html: currentWord.example }} />}
+                  {currentWord.example_chinese && 
+                    <div className="example-display-chinese" dangerouslySetInnerHTML={{ __html: currentWord.example_chinese }} />}
+                  <div className="speak-controls">
+                    <button onClick={() => speak(currentWord.kanji)} className="speak-button">🔊 日文</button>
+                    {currentWord.example && 
+                      <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>}
+                  </div>
+                </div>
+              )}
+            </div>
+            {showAnswer && (
+              <div className="phase-controls">
+                {answerPhase === 'feedback' && (
+                  <div className="feedback-buttons">
+                    <button className='correct' onClick={() => handleFeedback(true)}>答對了！</button>
+                    <button className='incorrect' onClick={() => handleFeedback(false)}>答錯了</button>
+                    <button className='next-word' onClick={nextWord}>下一題</button>
+                  </div>
+                )}
+                {answerPhase === 'countdown' && (
+                  <button className="stop-button" onClick={handleStopCountdown}>
+                    停止倒數 ({countdown})
+                  </button>
+                )}
+                {answerPhase === 'paused' && (
+                  <button className='next-word' onClick={nextWord}>下一題</button>
+                )}
+              </div>
+            )}
+            <button className='change-category' onClick={() => {
+              setQuizStarted(false);
+              setSelectedCategories([]);
+            }}>更換題庫</button>
           </div>
         )}
-        <button className='change-category' onClick={() => {
-          setQuizStarted(false);
-          setSelectedCategories([]);
-        }}>更換題庫</button>
+      </>
+    );
+
+    if (loading) return <p>載入中...</p>;
+    if (error) return <p style={{color: 'red'}}>{error}</p>;
+
+    return (
+      <div className="quiz-area-container">
+        <div className="quiz-content">
+          {quizContent}
+        </div>
+        {quizList.length > 0 && (
+          <QuizSidebar
+            list={quizList}
+            mode={quizMode}
+            currentIndex={currentIndex}
+            onWordSelect={handleWordSelect}
+          />
+        )}
       </div>
     );
-  }
+  };
 
   const handleCategoryChange = (categoryName) => {
     setSelectedCategories(prev => 
@@ -502,7 +563,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>日文單字練習</h1>
+        <h1 onClick={handleGoHome}>日文辭典、練習</h1>
         <button className="settings-button" onClick={() => setShowSettings(true)}>設定</button>
       </header>
       <main>

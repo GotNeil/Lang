@@ -14,6 +14,7 @@
 .App-header h1 {
   margin: 0;
   font-size: 1.5em;
+  cursor: pointer;
 }
 
 .settings-button {
@@ -29,9 +30,22 @@ main {
   padding: 20px;
 }
 
-.setup-screen, .quiz-area, .settings-page {
+.setup-screen, .settings-page {
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.quiz-area-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quiz-area, .end-of-round-screen {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -201,6 +215,10 @@ main {
   margin-top: 15px;
 }
 
+.phase-controls {
+  margin-top: 20px;
+}
+
 .speak-button {
   background: none;
   border: 1px solid #ccc;
@@ -351,4 +369,74 @@ main {
 .end-of-round-controls button:last-child {
   background-color: #28a745;
   color: white;
+}
+
+/* New styles for quiz area layout */
+.quiz-area-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.quiz-content {
+  flex-grow: 1;
+}
+
+.quiz-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.sidebar-header {
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  background-color: #f1f1f1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.sidebar-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-item:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar-item.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 992px) {
+  .quiz-area-container {
+    flex-direction: column;
+  }
+
+  .quiz-sidebar {
+    width: 100%;
+    margin-top: 20px;
+    max-height: 300px; /* Adjust height for mobile */
+  }
 }

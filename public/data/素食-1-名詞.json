@@ -70,5 +70,21 @@
   "chinese": "蔬菜 / vegetables",
   "example": "A: このレストランは野菜料理が有名ですよ。 </br> B: いいですね、ヘルシーな食事をしたいです。",
   "example_chinese": "A: 這家餐廳的蔬菜料理很有名喔。 </br> B: 太好了，我想吃健康一點的餐點。"
-}
+},
+  {
+    "kanji": "チーズ",
+    "kana": "ちーず",
+    "romaji": "chiizu",
+    "chinese": "起司 / cheese",
+    "example": "A: ピザにチーズをたくさんのせますか。 </br> B: はい、大好きです。",
+    "example_chinese": "A: 披薩要加很多起司嗎？ </br> B: 是的，我很喜歡。"
+  },
+  {
+    "kanji": "ヨーグルト",
+    "kana": "よーぐると",
+    "romaji": "yo-guruto",
+    "chinese": "優格 / yogurt",
+    "example": "A: 朝ごはんにヨーグルトを食べますか。 </br> B: はい、毎日食べます。",
+    "example_chinese": "A: 你早餐吃優格嗎？ </br> B: 是的，我每天都吃。"
+  }
 ]
