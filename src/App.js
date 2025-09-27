@@ -66,7 +66,7 @@ function App() {
   const [countdown, setCountdown] = useState(null);
   const [showSettings, setShowSettings] = useState(false);
   const [settings, setSettings] = useState(getInitialSettings());
-  const [categories, setCategories] = useState([]);
+  const [categoryGroups, setCategoryGroups] = useState([]);
   const [endOfRoundReached, setEndOfRoundReached] = useState(false);
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
@@ -110,16 +110,22 @@ function App() {
     setLoading(true);
     fetch('/data/manifest.json')
       .then(response => response.json())
-      .then(categoryNames => {
-        const fetchPromises = categoryNames.map(name =>
-          fetch(`/data/${name}.json`)
-            .then(res => res.json())
-            .then(data => ({ name, count: data.length }))
-        );
-        return Promise.all(fetchPromises);
+      .then(groups => {
+        const promises = groups.map(group => {
+          const filePromises = group.files.map(name =>
+            fetch(`/data/${name}`)
+              .then(res => res.json())
+              .then(data => ({ name, count: data.length }))
+          );
+          return Promise.all(filePromises).then(files => ({
+            category: group.category,
+            files: files,
+          }));
+        });
+        return Promise.all(promises);
       })
       .then(categoryData => {
-        setCategories(categoryData);
+        setCategoryGroups(categoryData);
         setLoading(false);
       })
       .catch(err => {
@@ -206,17 +212,30 @@ function App() {
   };
 
   const handleStartPractice = () => {
+    console.log("--- Starting Practice ---");
+    console.log("Selected categories:", selectedCategories);
     setEndOfRoundReached(false);
     setLoading(true);
     setError(null);
     setQuizList([]);
 
-    const fetchPromises = selectedCategories.map(category =>
-      fetch(`/data/${category}.json`).then(response => response.json())
+    const fetchPromises = selectedCategories.map(categoryName =>
+      fetch(`/data/${categoryName}`)
+        .then(response => {
+          console.log(`Fetching ${categoryName}. Status:`, response.status);
+          if (!response.ok) {
+            throw new Error(`Failed to fetch ${categoryName}`);
+          }
+          return response.json().catch(err => {
+            console.error(`Failed to parse JSON for ${categoryName}`, err);
+            throw new Error(`Syntax error in ${categoryName}`);
+          });
+        })
     );
 
     Promise.all(fetchPromises)
       .then(allData => {
+        console.log("All selected files loaded and parsed successfully.");
         const mergedData = allData.flat();
         let processedData = mergedData;
         if (quizMode === 'chinese') {
@@ -238,7 +257,8 @@ function App() {
         setLoading(false);
       })
       .catch(err => {
-        setError('無法載入詞庫，請稍後再試。');
+        console.error("Error in handleStartPractice:", err);
+        setError(`無法載入詞庫，請稍後再試。(${err.message})`);
         setLoading(false);
       });
   };
@@ -512,20 +532,27 @@ function App() {
         <div className="category-selector">
           <h2>請選擇詞庫：</h2>
           {loading && <p>詞庫載入中...</p>}
-          <div className="checkbox-group">
-            {categories.map(category => (
-              <div key={category.name} className="checkbox-item">
-                <input 
-                  type="checkbox"
-                  id={category.name}
-                  value={category.name}
-                  checked={selectedCategories.includes(category.name)}
-                  onChange={() => handleCategoryChange(category.name)}
-                />
-                <label htmlFor={category.name}>{`${category.name} (${category.count})`}</label>
+          
+          {categoryGroups.map(group => (
+            <div key={group.category} className="category-group">
+              <h3>{group.category}</h3>
+              <div className="checkbox-group">
+                {group.files.map(file => (
+                  <div key={file.name} className="checkbox-item">
+                    <input 
+                      type="checkbox"
+                      id={file.name}
+                      value={file.name}
+                      checked={selectedCategories.includes(file.name)}
+                      onChange={() => handleCategoryChange(file.name)}
+                    />
+                    <label htmlFor={file.name}>{`${file.name.replace('.json', '')} (${file.count})`}</label>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+
           <button 
             onClick={handleStartPractice} 
             disabled={selectedCategories.length === 0 || loading}
