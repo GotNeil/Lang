@@ -1,12 +1,13 @@
 [
-  {
-    "kanji": "白ご飯",
-    "kana": "しろごはん",
-    "romaji": "shiro gohan",
-    "chinese": "白飯",
-    "example": "A: 白ご飯は大盛りにできますか？</br>B: はい、プラス100円でできます。",
-    "example_chinese": "A: 白飯可以加大嗎？</br>B: 可以，加100日圓。"
-  },
+{
+  "kanji": "ご飯",
+  "kana": "ごはん",
+  "romaji": "gohan",
+  "chinese": "白飯",
+  "example": "A: ご飯は大盛りにできますか？</br>B: はい、プラス100円でできます。",
+  "example_chinese": "A: 白飯可以加大嗎？</br>B: 可以，加100日圓。"
+}
+,
   {
     "kanji": "ねぎ",
     "kana": "ねぎ",
