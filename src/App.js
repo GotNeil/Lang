@@ -67,6 +67,7 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [settings, setSettings] = useState(getInitialSettings());
   const [categoryGroups, setCategoryGroups] = useState([]);
+  const [activeSubcategories, setActiveSubcategories] = useState({});
   const [endOfRoundReached, setEndOfRoundReached] = useState(false);
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
@@ -149,6 +150,20 @@ function App() {
   useEffect(() => {
     localStorage.setItem('jp_scores', JSON.stringify(scores));
   }, [scores]);
+
+  useEffect(() => {
+    if (categoryGroups.length > 0) {
+      const initialActive = {};
+      categoryGroups.forEach(group => {
+        if (!activeSubcategories[group.category]) {
+          initialActive[group.category] = 'all';
+        }
+      });
+      if (Object.keys(initialActive).length > 0) {
+        setActiveSubcategories(prev => ({ ...prev, ...initialActive }));
+      }
+    }
+  }, [categoryGroups, activeSubcategories]);
 
   const handleGoHome = () => {
     setQuizStarted(false);
@@ -559,6 +574,13 @@ function App() {
   };
 
   const renderSetupScreen = () => {
+    const handleSubcategoryChange = (categoryName, subcategoryName) => {
+      setActiveSubcategories(prev => ({
+        ...prev,
+        [categoryName]: subcategoryName,
+      }));
+    };
+
     return (
       <div className="setup-screen">
         <div className="mode-selector">
@@ -592,35 +614,60 @@ function App() {
           </div>
           {loading && <p>詞庫載入中...</p>}
           
-          {categoryGroups.map(group => (
-            <div key={group.category} className="category-group">
-              <h3>{group.category}</h3>
-              {group.subcategory.map(subcategory => (
-                <div key={subcategory.name} className="subcategory-group">
-                  {(subcategory.name !== 'others' || group.subcategory.length > 1) && <h4>{subcategory.name}</h4>}
-                  <div className="checkbox-group">
-                    {subcategory.files.map(file => (
-                      <div key={file.name} className="checkbox-item">
-                        <input
-                          type="checkbox"
-                          id={file.name}
-                          value={file.name}
-                          checked={selectedCategories.includes(file.name)}
-                          onChange={() => handleCategoryChange(file.name)}
-                          disabled={file.error}
-                        />
-                        <label htmlFor={file.name} className={file.error ? 'disabled' : ''}>
-                          {file.name.replace('.json', '')}
-                          {!file.error && <span className="category-count"> ({file.count})</span>}
-                          {file.error && <span className="category-count"> (載入失敗)</span>}
-                        </label>
-                      </div>
-                    ))}
+          {categoryGroups.map(group => {
+            const activeSub = activeSubcategories[group.category] || 'all';
+            let filesToShow = [];
+            if (activeSub === 'all') {
+              filesToShow = group.subcategory.flatMap(sc => sc.files);
+            } else {
+              const sub = group.subcategory.find(sc => sc.name === activeSub);
+              if (sub) {
+                filesToShow = sub.files;
+              }
+            }
+
+            return (
+              <div key={group.category} className="category-group">
+                <div className="category-header">
+                  <h3>{group.category}</h3>
+                  <div className="subcategory-links">
+                    <a href="#" className={`subcategory-link ${activeSub === 'all' ? 'active' : ''}`} onClick={(e) => {e.preventDefault(); handleSubcategoryChange(group.category, 'all');}}>
+                      All <span className="category-count">({group.subcategory.flatMap(sc => sc.files).length})</span>
+                    </a>
+                    {group.subcategory.map(sub => {
+                      if (sub.name === 'others' && sub.files.length === 0) {
+                        return null;
+                      }
+                      return (
+                        <a href="#" key={sub.name} className={`subcategory-link ${activeSub === sub.name ? 'active' : ''}`} onClick={(e) => {e.preventDefault(); handleSubcategoryChange(group.category, sub.name);}}>
+                          {sub.name} <span className="category-count">({sub.files.length})</span>
+                        </a>
+                      );
+                    })}
                   </div>
                 </div>
-              ))}
-            </div>
-          ))}
+                <div className="checkbox-group">
+                  {filesToShow.map(file => (
+                    <div key={file.name} className="checkbox-item">
+                      <input
+                        type="checkbox"
+                        id={file.name}
+                        value={file.name}
+                        checked={selectedCategories.includes(file.name)}
+                        onChange={() => handleCategoryChange(file.name)}
+                        disabled={file.error}
+                      />
+                      <label htmlFor={file.name} className={file.error ? 'disabled' : ''}>
+                        {file.name.replace('.json', '')}
+                        {!file.error && <span className="category-count"> ({file.count})</span>}
+                        {file.error && <span className="category-count"> (載入失敗)</span>}
+                      </label>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
 
           <button 
             onClick={handleStartPractice} 

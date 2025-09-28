@@ -286,9 +286,9 @@ main {
 }
 
 .category-group h3 {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #e0e0e0;
+  margin: 0 15px 0 0;
+  padding: 0;
+  border: none;
   font-size: 1.2em;
   color: #333;
 }
@@ -524,4 +524,28 @@ main {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.subcategory-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.subcategory-links a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.subcategory-links a:hover {
+  text-decoration: underline;
 }
