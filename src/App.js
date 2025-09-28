@@ -3,10 +3,10 @@ import './App.css';
 import Settings from './Settings';
 
 const QUIZ_MODES = {
-  chinese: '日文發音(🇹🇼中文題目)',
-  kanji: '日文發音(🇯🇵日文題目)',
-  listening: '日文聽力(🎧日文題目)',
-  dictionary: '辭典模式(📚自由瀏覽)',
+  chinese: '練說🇹🇼中文題目',
+  kanji: '練說🇯🇵日文題目',
+  listening: '練聽🎧日文題目',
+  dictionary: '辭典📚自由瀏覽',
 };
 
 const getInitialScores = () => {
