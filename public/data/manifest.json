@@ -1,6 +1,6 @@
 [
   {
-    "category": "數量詞",
+    "category": "🔢 數量詞",
     "subcategory": [
       {
         "name": "數字",
@@ -27,7 +27,7 @@
     ]
   },
   {
-    "category": "旅遊情境",
+    "category": "🏖️ 旅遊情境",
     "subcategory": [
       {
         "name": "名詞",
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "category": "飲食情境",
+    "category": "🍔 飲食情境",
     "subcategory": [
       {
         "name": "名詞",
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "category": "素食情境",
+    "category": "🌱 素食情境",
     "subcategory": [
       {
         "name": "名詞",
@@ -98,7 +98,7 @@
     ]
   },
   {
-    "category": "購物情境",
+    "category": "🛍️ 購物情境",
     "subcategory": [
       {
         "name": "對話",
