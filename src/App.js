@@ -71,6 +71,7 @@ function App() {
   const [endOfRoundReached, setEndOfRoundReached] = useState(false);
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
+  const [allowSidebarScroll, setAllowSidebarScroll] = useState(true);
   const quizContentRef = useRef(null);
   const quizAreaRef = useRef(null); // New ref
   
@@ -200,6 +201,7 @@ function App() {
   };
 
   const previousWord = () => {
+    setAllowSidebarScroll(false);
     cleanupTimers();
     const prevIndex = currentIndex - 1;
     if (prevIndex >= 0) {
@@ -213,6 +215,7 @@ function App() {
   };
 
   const nextWord = () => {
+    setAllowSidebarScroll(false);
     cleanupTimers();
     const nextIndex = currentIndex + 1;
 
@@ -342,6 +345,7 @@ function App() {
   };
 
   const handleWordSelect = (index) => {
+    setAllowSidebarScroll(true);
     cleanupTimers();
     setCurrentIndex(index);
     showWordAtIndex(index, quizList);
@@ -350,17 +354,17 @@ function App() {
     }
   };
 
-  const QuizSidebar = ({ list, mode, currentIndex, onWordSelect }) => {
+  const QuizSidebar = ({ list, mode, currentIndex, onWordSelect, allowSidebarScroll }) => {
     const currentItemRef = useRef(null);
 
     useEffect(() => {
-      if (currentItemRef.current) {
+      if (allowSidebarScroll && currentItemRef.current) {
         currentItemRef.current.scrollIntoView({
           behavior: 'smooth',
           block: 'nearest',
         });
       }
-    }, [currentIndex]);
+    }, [currentIndex, allowSidebarScroll]);
 
     const getDisplayText = (word, index) => {
       switch (mode) {
@@ -559,6 +563,7 @@ function App() {
             mode={quizMode}
             currentIndex={currentIndex}
             onWordSelect={handleWordSelect}
+            allowSidebarScroll={allowSidebarScroll}
           />
         )}
       </div>
@@ -631,7 +636,7 @@ function App() {
                 <div className="category-header">
                   <h3>{group.category}</h3>
                   <div className="subcategory-links">
-                    <a href="#" className={`subcategory-link ${activeSub === 'all' ? 'active' : ''}`} onClick={(e) => {e.preventDefault(); handleSubcategoryChange(group.category, 'all');}}>
+                    <a href="#" className={`subcategory-link all-link ${activeSub === 'all' ? 'active' : ''}`} onClick={(e) => {e.preventDefault(); handleSubcategoryChange(group.category, 'all');}}>
                       All <span className="category-count">({group.subcategory.flatMap(sc => sc.files).length})</span>
                     </a>
                     {group.subcategory.map(sub => {

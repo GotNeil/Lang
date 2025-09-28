@@ -81,15 +81,13 @@
       {
         "name": "名詞",
         "files": [
-          "素食-(名詞1).json",
-          "素食-(問答1).json",
-          "素食-(問答2).json"
+          "素食-(名詞1).json"
         ]
       },{
-        "name": "問答",
+        "name": "對話",
         "files": [
-          "素食-(問答1).json",
-          "素食-(問答2).json"
+          "素食-(對話1).json",
+          "素食-(對話2).json"
         ]
       },
       {
@@ -103,9 +101,9 @@
     "category": "購物情境",
     "subcategory": [
       {
-        "name": "others",
+        "name": "對話",
         "files": [
-          "購物.json"
+          "購物(對話1).json"
         ]
       }
     ]

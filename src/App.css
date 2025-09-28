@@ -549,3 +549,7 @@ main {
 .subcategory-links a:hover {
   text-decoration: underline;
 }
+
+.subcategory-links a.all-link {
+  color: #808080;
+}
