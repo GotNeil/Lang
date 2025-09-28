@@ -113,6 +113,10 @@ main {
   font-size: 2em;
 }
 
+.chinese-display > div {
+  margin-top: 30px;
+}
+
 .proficiency-score {
   position: absolute;
   top: 0;
@@ -137,6 +141,18 @@ main {
   border: 1px solid #ccc;
   background-color: #f0f0f0;
   cursor: pointer;
+}
+
+.feedback-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.correct-incorrect-row {
+  display: flex;
+  gap: 10px;
 }
 
 .feedback-buttons .correct {
@@ -212,6 +228,8 @@ main {
 
 .phase-controls {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .speak-button {
@@ -224,7 +242,9 @@ main {
 }
 
 .change-category {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
   background-color: #f0f0f0; /* Light gray background */
   border: 1px solid #ccc;    /* Subtle border */
   color: #333;              /* Darker text color */
@@ -552,4 +572,9 @@ main {
 
 .subcategory-links a.all-link {
   color: #808080;
+}
+
+button.view-answer-button {
+  background-color: #0089B6;
+  color: black;
 }

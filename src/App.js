@@ -483,12 +483,12 @@ function App() {
             )}
             {quizMode === 'chinese' && (
               <div className="kanji-display chinese-display">
-                {currentWord.chinese}
+                <div>{currentWord.chinese}</div>
                 <span className="proficiency-score" title={`熟練度：${scores[currentWord.id] || 0}`}>熟練度: {scores[currentWord.id] || 0}</span>
               </div>
             )}
             <div className="controls">
-              {!showAnswer && <button onClick={() => {
+              {!showAnswer && <button className="view-answer-button" onClick={() => {
             setShowAnswer(true);
             if (quizAreaRef.current) {
               quizAreaRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -523,7 +523,7 @@ function App() {
               )}
             </div>
 
-            {currentWord.example && (
+            {showAnswer && currentWord.example && (
               <div className="speak-example-button-container">
                 <button onClick={() => speak(getJapaneseFromExample(currentWord.example))} className="speak-button">🔊 範例</button>
               </div>
@@ -533,8 +533,10 @@ function App() {
               <div className="phase-controls">
                 {answerPhase === 'feedback' && (
                   <div className="feedback-buttons">
-                    <button className='correct' onClick={() => handleFeedback(true)}>答對了！</button>
-                    <button className='incorrect' onClick={() => handleFeedback(false)}>答錯了</button>
+                    <div className="correct-incorrect-row">
+                      <button className='correct' onClick={() => handleFeedback(true)}>答對了！</button>
+                      <button className='incorrect' onClick={() => handleFeedback(false)}>答錯了</button>
+                    </div>
                     <button className='next-word' onClick={nextWord}>下一題</button>
                   </div>
                 )}
