@@ -114,14 +114,24 @@ function App() {
       .then(response => response.json())
       .then(groups => {
         const promises = groups.map(group => {
-          const filePromises = group.files.map(name =>
-            fetch(`/data/${name}`)
-              .then(res => res.json())
-              .then(data => ({ name, count: data.length }))
-          );
-          return Promise.all(filePromises).then(files => ({
+          const subcategoryPromises = group.subcategory.map(subcategory => {
+            const filePromises = subcategory.files.map(name =>
+              fetch(`/data/${name}`)
+                .then(res => res.json())
+                .then(data => ({ name, count: data.length }))
+                .catch(err => {
+                  console.error(`Error loading file ${name}:`, err);
+                  return { name, count: 0, error: true };
+                })
+            );
+            return Promise.all(filePromises).then(files => ({
+              name: subcategory.name,
+              files: files,
+            }));
+          });
+          return Promise.all(subcategoryPromises).then(subcategory => ({
             category: group.category,
-            files: files,
+            subcategory: subcategory,
           }));
         });
         return Promise.all(promises);
@@ -585,23 +595,30 @@ function App() {
           {categoryGroups.map(group => (
             <div key={group.category} className="category-group">
               <h3>{group.category}</h3>
-              <div className="checkbox-group">
-                {group.files.map(file => (
-                  <div key={file.name} className="checkbox-item">
-                    <input 
-                      type="checkbox"
-                      id={file.name}
-                      value={file.name}
-                      checked={selectedCategories.includes(file.name)}
-                      onChange={() => handleCategoryChange(file.name)}
-                    />
-                    <label htmlFor={file.name}>
-                      {file.name.replace('.json', '')}
-                      <span className="category-count"> ({file.count})</span>
-                    </label>
+              {group.subcategory.map(subcategory => (
+                <div key={subcategory.name} className="subcategory-group">
+                  {(subcategory.name !== 'others' || group.subcategory.length > 1) && <h4>{subcategory.name}</h4>}
+                  <div className="checkbox-group">
+                    {subcategory.files.map(file => (
+                      <div key={file.name} className="checkbox-item">
+                        <input
+                          type="checkbox"
+                          id={file.name}
+                          value={file.name}
+                          checked={selectedCategories.includes(file.name)}
+                          onChange={() => handleCategoryChange(file.name)}
+                          disabled={file.error}
+                        />
+                        <label htmlFor={file.name} className={file.error ? 'disabled' : ''}>
+                          {file.name.replace('.json', '')}
+                          {!file.error && <span className="category-count"> ({file.count})</span>}
+                          {file.error && <span className="category-count"> (載入失敗)</span>}
+                        </label>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           ))}
 

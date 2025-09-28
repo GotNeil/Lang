@@ -1,47 +1,124 @@
 [
   {
     "category": "數量詞",
-    "files": [
-      "1-100.json",
-      "101-10000.json",
-      "1-10人.json",
-      "1-10個.json",
-      "1-35號.json",
-      "1-10杯.json",
-      "1-9999元.json"
+    "subcategory": [
+      {
+        "name": "數字",
+        "files": [
+          "1-100.json",
+          "101-10000.json"
+        ]
+      },{
+        "name": "數量詞",
+        "files": [
+          "1-10人.json",
+          "1-10個.json",
+          "1-35號.json",
+          "1-10杯.json",
+          "1-9999元.json"
+        ]
+      },
+      {
+        "name": "others",
+        "files": [
+          
+        ]
+      }
     ]
   },
   {
     "category": "旅遊情境",
-    "files": [
-      "旅遊地點-(名詞1).json",
-      "旅遊地點-(對話1).json"
+    "subcategory": [
+      {
+        "name": "名詞",
+        "files": [
+          "旅遊地點-(名詞1).json"
+        ]
+      },
+      {
+        "name": "對話",
+        "files": [
+          "旅遊地點-(對話1).json"
+        ]
+      },
+      {
+        "name": "others",
+        "files": [
+        ]
+      }
     ]
   },
   {
     "category": "飲食情境",
-    "files": [
-      "吃-(名詞-食材1).json",
-      "吃-(名詞-飲料1).json",
-      "吃-(名詞-料理1).json",
-      "吃-(名詞-調味料1).json",
-      "吃-(名詞2).json",
-      "吃-(動詞1).json",
-      "喝-(動詞1).json"
+    "subcategory": [
+      {
+        "name": "名詞",
+        "files": [
+          "吃-(名詞-食材1).json",
+          "吃-(名詞-飲料1).json",
+          "吃-(名詞-料理1).json",
+          "吃-(名詞-調味料1).json",
+          "吃-(名詞2).json"
+        ]
+      },
+      {
+        "name": "動詞",
+        "files": [
+          "吃-(動詞1).json",
+          "喝-(動詞1).json"
+        ]
+      },
+      {
+        "name": "others",
+        "files": [
+        ]
+      }
     ]
   },
   {
     "category": "素食情境",
-    "files": [
-      "素食-(名詞1).json",
-      "素食-(問答1).json",
-      "素食-(問答2).json"
+    "subcategory": [
+      {
+        "name": "名詞",
+        "files": [
+          "素食-(名詞1).json",
+          "素食-(問答1).json",
+          "素食-(問答2).json"
+        ]
+      },{
+        "name": "問答",
+        "files": [
+          "素食-(問答1).json",
+          "素食-(問答2).json"
+        ]
+      },
+      {
+        "name": "others",
+        "files": [
+        ]
+      }
     ]
   },
   {
     "category": "購物情境",
-    "files": [
-      "購物.json"
+    "subcategory": [
+      {
+        "name": "others",
+        "files": [
+          "購物.json"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "others",
+    "subcategory": [
+      {
+        "name": "others",
+        "files": [
+
+        ]
+      }
     ]
   }
 ]
