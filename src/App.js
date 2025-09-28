@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Settings from './Settings';
+import { initGA } from './utils/ga4';
 
 const QUIZ_MODES = {
   chinese: '練說🇹🇼中文題目',
@@ -75,6 +76,10 @@ function App() {
   const quizContentRef = useRef(null);
   const quizAreaRef = useRef(null); // New ref
   
+  useEffect(() => {
+    initGA('G-V7B14EGJC6');
+  }, []);
+
   const autoAdvanceTimer = useRef(null);
   const countdownTimer = useRef(null);
 
