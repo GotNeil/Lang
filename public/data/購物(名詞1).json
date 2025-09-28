@@ -1,0 +1,122 @@
+[
+  {
+    "kanji": "無料",
+    "kana": "むりょう",
+    "romaji": "muryou",
+    "chinese": "免費",
+    "example": "A: このイベントは無料ですか？</br>B: はい、全部無料で参加できます。",
+    "example_chinese": "A: 這個活動是免費的嗎？</br>B: 是的，全部都可以免費參加。"
+  },
+  {
+    "kanji": "有料",
+    "kana": "ゆうりょう",
+    "romaji": "yuuryou",
+    "chinese": "有料(需付費)",
+    "example": "A: このエリアは有料ですか？</br>B: はい、入場料が500円かかります。",
+    "example_chinese": "A: 這個區域要收費嗎？</br>B: 是的，入場費是500日圓。"
+  },
+  {
+    "kanji": "おすすめ",
+    "kana": "おすすめ",
+    "romaji": "osusume",
+    "chinese": "推薦，推薦的東西",
+    "example": "A: おすすめは何ですか？</br>B: このケーキがおすすめです。",
+    "example_chinese": "A: 有什麼推薦的嗎？</br>B: 這個蛋糕很推薦。"
+  },
+  {
+    "kanji": "お土産",
+    "kana": "おみやげ",
+    "romaji": "omiyage",
+    "chinese": "伴手禮",
+    "example": "旅行先でお土産を買いました。",
+    "example_chinese": "我在旅遊地買了伴手禮。"
+  },
+  {
+    "kanji": "デザート",
+    "kana": "デザート",
+    "romaji": "dezaato",
+    "chinese": "甜點（借自英語）",
+    "example": "食事の後にデザートを食べましょう。",
+    "example_chinese": "吃完飯後吃甜點吧。"
+  },
+  {
+    "kanji": "お菓子",
+    "kana": "おかし",
+    "romaji": "okashi",
+    "chinese": "廣義的點心、零食（和菓子 + 洋菓子）",
+    "example": "子供たちはお菓子が大好きです。",
+    "example_chinese": "小孩子很喜歡吃點心。"
+  },
+  {
+    "kanji": "和菓子",
+    "kana": "わがし",
+    "romaji": "wagashi",
+    "chinese": "日式和菓子",
+    "example": "和菓子は日本の伝統的なスイーツです。",
+    "example_chinese": "和菓子是日本的傳統甜點。"
+  },
+    {
+    "kanji": "レジ",
+    "kana": "れじ",
+    "romaji": "reji",
+    "chinese": "收銀台",
+    "example": "A: レジはどこですか？</br>B: あちらです。",
+    "example_chinese": "A: 收銀台在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "試着",
+    "kana": "しちゃく",
+    "romaji": "shichaku",
+    "chinese": "試穿",
+    "example": "A: 試着してもいいですか？</br>B: もちろん、どうぞ。",
+    "example_chinese": "A: 可以試穿嗎？</br>B: 當然，請便。"
+  },
+  {
+    "kanji": "サイズ",
+    "kana": "さいず",
+    "romaji": "saizu",
+    "chinese": "尺寸",
+    "example": "A: このサイズはありますか？</br>B: はい、Mサイズならございます。",
+    "example_chinese": "A: 有這個尺寸嗎？</br>B: 有的，有M號。"
+  },
+    {
+    "kanji": "色",
+    "kana": "いろ",
+    "romaji": "iro",
+    "chinese": "顏色",
+    "example": "A: どの色が人気ですか？</br>B: ベージュが人気ですよ。",
+    "example_chinese": "A: 哪個顏色最受歡迎？</br>B: 米色最受歡迎喔。"
+  },
+  {
+    "kanji": "割引",
+    "kana": "わりびき",
+    "romaji": "waribiki",
+    "chinese": "折扣",
+    "example": "A: 割引はありますか？</br>B: セール中なので、10％オフです。",
+    "example_chinese": "A: 有折扣嗎？</br>B: 現在特價，打九折。"
+  },
+  {
+    "kanji": "レシート",
+    "kana": "れしーと",
+    "romaji": "reshiito",
+    "chinese": "收據",
+    "example": "A: レシートをください。</br>B: はい、こちらです。",
+    "example_chinese": "A: 請給我收據。</br>B: 好的，這邊請。"
+  },
+  {
+    "kanji": "現金",
+    "kana": "げんきん",
+    "romaji": "genkin",
+    "chinese": "現金",
+    "example": "A: 現金しか使えませんか？</br>B: いえ、カードも使えます。",
+    "example_chinese": "A: 只能用現金嗎？</br>B: 不，也可以用信用卡。"
+  },
+  {
+    "kanji": "カード",
+    "kana": "かーど",
+    "romaji": "kaado",
+    "chinese": "信用卡",
+    "example": "A: カードで払えますか？</br>B: はい、大丈夫です。",
+    "example_chinese": "A: 可以刷卡嗎？</br>B: 可以的，沒問題。"
+  }
+]

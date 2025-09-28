@@ -1,0 +1,50 @@
+[
+  {
+    "kanji": "会計",
+    "kana": "かいけい",
+    "romaji": "kaikei",
+    "chinese": "結帳；會計",
+    "example": "会計をお願いします。",
+    "example_chinese": "請結帳。"
+  },
+  {
+    "kanji": "お会計",
+    "kana": "おかいけい",
+    "romaji": "okaikei",
+    "chinese": "（禮貌說法）結帳",
+    "example": "お会計をお願いします。",
+    "example_chinese": "請結帳（較有禮貌的說法）。"
+  },
+  {
+    "kanji": "試着する",
+    "kana": "しちゃくする",
+    "romaji": "shichaku suru",
+    "chinese": "試穿",
+    "example": "A: 試着してもいいですか？</br>B: はい、どうぞ。",
+    "example_chinese": "A: 可以試穿嗎？</br>B: 好的，請便。"
+  },
+  {
+    "kanji": "支払う",
+    "kana": "しはらう",
+    "romaji": "shiharau",
+    "chinese": "付款、結帳",
+    "example": "A: ここで支払えますか？</br>B: はい、レジでお願いします。",
+    "example_chinese": "A: 可以在這裡付款嗎？</br>B: 可以，請到收銀台。"
+  },
+  {
+    "kanji": "大きすぎる",
+    "kana": "おおきすぎる",
+    "romaji": "ookisugiru",
+    "chinese": "太大",
+    "example": "A: この靴、ちょっと大きすぎます。</br>B: もう一つ小さいサイズがありますよ。",
+    "example_chinese": "A: 這雙鞋有點太大。</br>B: 有再小一號的。"
+  },
+  {
+    "kanji": "小さすぎる",
+    "kana": "ちいさすぎる",
+    "romaji": "chiisasugiru",
+    "chinese": "太小",
+    "example": "A: このTシャツ、小さすぎませんか？</br>B: ワンサイズ大きいのもあります。",
+    "example_chinese": "A: 這件T恤是不是太小了？</br>B: 有大一號的。"
+  }
+]

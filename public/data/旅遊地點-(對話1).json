@@ -14,7 +14,14 @@
     "chinese": "附近有吃的嗎？",
     "example": "A: 近くに食べるところはありますか？</br>B: はい、コンビニの隣にラーメン屋があります。",
     "example_chinese": "A: 附近有吃的地方嗎？</br>B: 有的，便利商店旁邊有拉麵店。"
-  },
+  },{
+  "kanji": "近くに何か食べる？",
+  "kana": "ちかくになにかたべる？",
+  "romaji": "chikaku ni nanika taberu?",
+  "chinese": "附近有東西可以吃嗎？（口語化、朋友間）",
+  "example": "A: おなかすいた〜。近くに何か食べる？</br>B: うん、ラーメンでも行こうか。",
+  "example_chinese": "A: 肚子餓了～。附近有什麼吃的嗎？</br>B: 嗯，要不要去吃個拉麵？"
+},
   {
     "kanji": "まだ営業していますか？",
     "kana": "まだえいぎょうしていますか？",
@@ -23,20 +30,44 @@
     "example": "A: すみません、まだ営業していますか？</br>B: はい、午後10時までです。",
     "example_chinese": "A: 不好意思，還有營業嗎？</br>B: 有喔，營業到晚上10點。"
   },
-  {
+    {
     "kanji": "無料ですか？",
     "kana": "むりょうですか？",
     "romaji": "muryou desu ka?",
-    "chinese": "免費嗎？",
-    "example": "A: この展示は無料ですか？</br>B: はい、入場は無料です。",
-    "example_chinese": "A: 這個展覽免費嗎？</br>B: 是的，入場免費。"
+    "chinese": "是免費的嗎？",
+    "example": "A: この展示は無料ですか？</br>B: はい、無料です。",
+    "example_chinese": "A: 這個展覽是免費的嗎？</br>B: 是的，是免費的。"
   },
   {
-    "kanji": "お金がかかりますか？",
-    "kana": "おかねがかかりますか？",
-    "romaji": "okane ga kakarimasu ka?",
-    "chinese": "要費用嗎？",
-    "example": "A: この体験はお金がかかりますか？</br>B: はい、一人500円です。",
-    "example_chinese": "A: 這個體驗要錢嗎？</br>B: 要的，一人500日圓。"
+    "kanji": "有料ですか？",
+    "kana": "ゆうりょうですか？",
+    "romaji": "yuuryou desu ka?",
+    "chinese": "是要付費的嗎？",
+    "example": "A: トイレは有料ですか？</br>B: いいえ、無料ですよ。",
+    "example_chinese": "A: 廁所是要收費的嗎？</br>B: 不，是免費的喔。"
+  },
+  {
+    "kanji": "ここは駐車できますか？",
+    "kana": "ここはちゅうしゃできますか？",
+    "romaji": "koko wa chuusha dekimasu ka?",
+    "chinese": "這裡可以停車嗎？",
+    "example": "A: ここは駐車できますか？</br>B: すみません、ここは駐車禁止です。",
+    "example_chinese": "A: 這裡可以停車嗎？</br>B: 抱歉，這裡禁止停車。"
+  },
+  {
+    "kanji": "どこに駐車できますか？",
+    "kana": "どこにちゅうしゃできますか？",
+    "romaji": "doko ni chuusha dekimasu ka?",
+    "chinese": "哪裡可以停車？",
+    "example": "A: どこに駐車できますか？</br>B: あちらのパーキングをご利用ください。",
+    "example_chinese": "A: 哪裡可以停車？</br>B: 請使用那邊的停車場。"
+  },
+  {
+    "kanji": "駐車場はどこですか？",
+    "kana": "ちゅうしゃじょうはどこですか？",
+    "romaji": "chuushajou wa doko desu ka?",
+    "chinese": "停車場在哪裡？",
+    "example": "A: 駐車場はどこですか？</br>B: この建物の裏にありますよ。",
+    "example_chinese": "A: 停車場在哪裡？</br>B: 在這棟建築物後面喔。"
   }
 ]

@@ -38,5 +38,67 @@
     "chinese": "我不想買。",
     "example": "A: このパソコンを買いたいですか？</br>B: いいえ、このパソコンは買いたくないです。",
     "example_chinese": "A: 你想買這台電腦嗎？</br>B: 不，我不想買這台電腦。"
+  },  {
+    "kanji": "いくらですか？",
+    "kana": "いくらですか？",
+    "romaji": "ikura desu ka?",
+    "chinese": "多少錢？",
+    "example": "A: このお弁当はいくらですか？</br>B: 500円です。",
+    "example_chinese": "A: 這個便當多少錢？</br>B: 500日圓。"
+  },
+  {
+    "kanji": "全部でいくらですか？",
+    "kana": "ぜんぶでいくらですか？",
+    "romaji": "zenbu de ikura desu ka?",
+    "chinese": "全部多少錢？",
+    "example": "A: 全部でいくらですか？</br>B: 3,200円になります。",
+    "example_chinese": "A: 全部多少錢？</br>B: 是 3,200 日圓。"
+  },
+    {
+    "kanji": "会計お願いします。",
+    "kana": "かいけいおねがいします。",
+    "romaji": "Kaikei onegaishimasu.",
+    "chinese": "麻煩結帳。",
+    "example": "A: 会計お願いします。</br>B: はい、少々お待ちください。",
+    "example_chinese": "A: 麻煩結帳。</br>B: 好的，請稍等。"
+    },
+    {
+    "kanji": "他の色ありますか？",
+    "kana": "ほかのいろありますか？",
+    "romaji": "Hoka no iro arimasu ka?",
+    "chinese": "有其他顏色嗎？",
+    "example": "A: 他の色ありますか？</br>B: はい、青と黒があります。",
+    "example_chinese": "A: 有其他顏色嗎？</br>B: 有藍色和黑色。"
+  },
+  {
+    "kanji": "他のサイズありますか？",
+    "kana": "ほかのサイズありますか？",
+    "romaji": "Hoka no saizu arimasu ka?",
+    "chinese": "有其他尺寸嗎？",
+    "example": "A: 他のサイズありますか？</br>B: はい、Mサイズがあります。",
+    "example_chinese": "A: 有其他尺寸嗎？</br>B: 有M號。"
+  },  {
+    "kanji": "おすすめはありますか？",
+    "kana": "おすすめはありますか？",
+    "romaji": "Osusume wa arimasu ka?",
+    "chinese": "有推薦的嗎？",
+    "example": "A: おすすめはありますか？</br>B: はい、この商品がおすすめです。",
+    "example_chinese": "A: 有推薦的嗎？</br>B: 有的，這個商品很推薦。"
+  },
+  {
+    "kanji": "おすすめしてください。",
+    "kana": "おすすめしてください。",
+    "romaji": "Osusume shite kudasai.",
+    "chinese": "請推薦。",
+    "example": "A: 何かおすすめしてください。</br>B: この服がおすすめです。",
+    "example_chinese": "A: 請推薦一下。</br>B: 這件衣服很推薦。"
+  },
+  {
+    "kanji": "おすすめの色は何ですか？",
+    "kana": "おすすめのいろはなんですか？",
+    "romaji": "Osusume no iro wa nan desu ka?",
+    "chinese": "有推薦的顏色嗎？",
+    "example": "A: おすすめの色は何ですか？</br>B: 青色が人気ですよ。",
+    "example_chinese": "A: 有推薦的顏色嗎？</br>B: 藍色很受歡迎。"
   }
 ]

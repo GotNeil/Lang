@@ -1,0 +1,82 @@
+[
+  {
+    "kanji": "色",
+    "kana": "いろ",
+    "romaji": "iro",
+    "chinese": "顏色",
+    "example": "A: どの色が人気ですか？</br>B: ベージュが人気ですよ。",
+    "example_chinese": "A: 哪個顏色最受歡迎？</br>B: 米色最受歡迎喔。"
+  },
+  {
+    "kanji": "赤",
+    "kana": "あか",
+    "romaji": "aka",
+    "chinese": "紅色",
+    "example": "A: この赤、かわいいですね！</br>B: はい、新色です。",
+    "example_chinese": "A: 這個紅色好可愛喔！</br>B: 是的，是新色。"
+  },
+  {
+    "kanji": "青",
+    "kana": "あお",
+    "romaji": "ao",
+    "chinese": "藍色",
+    "example": "A: 青はありますか？</br>B: はい、ございます。",
+    "example_chinese": "A: 有藍色的嗎？</br>B: 有的。"
+  },
+  {
+    "kanji": "黒",
+    "kana": "くろ",
+    "romaji": "kuro",
+    "chinese": "黑色",
+    "example": "A: 黒が一番人気です。</br>B: じゃあ、それにします。",
+    "example_chinese": "A: 黑色最受歡迎。</br>B: 那我就選那個。"
+  },
+  {
+    "kanji": "白",
+    "kana": "しろ",
+    "romaji": "shiro",
+    "chinese": "白色",
+    "example": "A: この服、白もありますか？</br>B: はい、ありますよ。",
+    "example_chinese": "A: 這件衣服有白色的嗎？</br>B: 有的喔。"
+  },
+  {
+    "kanji": "緑",
+    "kana": "みどり",
+    "romaji": "midori",
+    "chinese": "綠色",
+    "example": "A: 緑の帽子は人気ですか？</br>B: はい、よく売れています。",
+    "example_chinese": "A: 綠色帽子賣得好嗎？</br>B: 是的，賣得很好。"
+  },
+  {
+    "kanji": "黄色",
+    "kana": "きいろ",
+    "romaji": "kiiro",
+    "chinese": "黃色",
+    "example": "A: このシャツ、黄色はありますか？</br>B: すみません、売り切れです。",
+    "example_chinese": "A: 這件襯衫有黃色嗎？</br>B: 抱歉，已售完。"
+  },
+  {
+    "kanji": "ピンク",
+    "kana": "ぴんく",
+    "romaji": "pinku",
+    "chinese": "粉紅色",
+    "example": "A: ピンクはちょっと派手ですか？</br>B: いえ、かわいいと思いますよ。",
+    "example_chinese": "A: 粉紅色會不會太鮮豔？</br>B: 不會，我覺得很可愛。"
+  },
+  {
+    "kanji": "グレー",
+    "kana": "ぐれー",
+    "romaji": "guree",
+    "chinese": "灰色",
+    "example": "A: グレーのコートはありますか？</br>B: はい、こちらになります。",
+    "example_chinese": "A: 有灰色的大衣嗎？</br>B: 有的，這邊請。"
+  },
+  {
+    "kanji": "ベージュ",
+    "kana": "べーじゅ",
+    "romaji": "beeju",
+    "chinese": "米色 / 淺棕色",
+    "example": "A: ベージュが欲しいです。</br>B: はい、人気の色です。",
+    "example_chinese": "A: 我想要米色的。</br>B: 好的，那是人氣顏色。"
+  }
+]
