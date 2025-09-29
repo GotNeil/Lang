@@ -9,6 +9,6 @@ export const initPostHog = (key, host) => {
     posthog.init(key, { api_host: host })
     window.posthog = posthog;
     console.log('initPostHog()...done');
-    posthog.capture('test_event');
+    // posthog.capture('test_event');
   }
 }

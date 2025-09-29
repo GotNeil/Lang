@@ -1,0 +1,74 @@
+[
+    {
+    "kanji": "テイクアウトできますか？",
+    "kana": "ていくあうとできますか？",
+    "romaji": "teikuauto dekimasu ka?",
+    "chinese": "可以打包嗎？（テイクアウト）",
+    "example": "A: このコーヒー、テイクアウトできますか？</br>B: はい、テイクアウト可能です。",
+    "example_chinese": "A: 這杯咖啡可以打包嗎？</br>B: 可以，可以外帶。"
+  },
+  {
+    "kanji": "持ち帰りできますか？",
+    "kana": "もちかえりできますか？",
+    "romaji": "mochikaeri dekimasu ka?",
+    "chinese": "可以打包嗎？",
+    "example": "A: この弁当は持ち帰りできますか？</br>B: はい、できます。",
+    "example_chinese": "A: 這個便當可以打包嗎？</br>B: 可以。"
+  },
+  {
+    "kanji": "店内で食べられますか？",
+    "kana": "てんないでたべられますか？",
+    "romaji": "tennai de taberaremasu ka?",
+    "chinese": "可以店內用餐嗎？",
+    "example": "A: ここで店内で食べられますか？</br>B: はい、どうぞ。",
+    "example_chinese": "A: 可以在這裡店內用餐嗎？</br>B: 可以，請用。"
+  },
+    {
+    "kanji": "英語のメニューはありますか？",
+    "kana": "えいごのめにゅーはありますか？",
+    "romaji": "eigo no menyuu wa arimasu ka?",
+    "chinese": "有英文菜單嗎？",
+    "example": "A: 英語のメニューはありますか？</br>B: はい、こちらです。",
+    "example_chinese": "A: 有英文菜單嗎？</br>B: 有的，這邊請。"
+  },
+    {
+    "kanji": "お水はありますか？",
+    "kana": "おみずはありますか？",
+    "romaji": "omizu wa arimasu ka?",
+    "chinese": "有水嗎？",
+    "example": "A: お水はありますか？</br>B: はい、こちらです。",
+    "example_chinese": "A: 有水嗎？</br>B: 有的，在這裡。"
+  },
+  {
+    "kanji": "おすすめは何ですか？",
+    "kana": "おすすめはなんですか？",
+    "romaji": "osusume wa nan desu ka?",
+    "chinese": "有推薦的嗎？",
+    "example": "A: おすすめは何ですか？</br>B: 唐揚げがおすすめです。",
+    "example_chinese": "A: 有推薦的嗎？</br>B: 我推薦炸雞。"
+  },
+  {
+    "kanji": "ヴィーガンの料理はありますか？",
+    "kana": "ゔぃーがんのりょうりはありますか？",
+    "romaji": "viigan no ryouri wa arimasu ka?",
+    "chinese": "有純素食的嗎？",
+    "example": "A: ヴィーガンの料理はありますか？</br>B: はい、サラダがあります。",
+    "example_chinese": "A: 有純素食的嗎？</br>B: 有的，有沙拉。"
+  },
+  {
+    "kanji": "ベジタリアンの料理はありますか？",
+    "kana": "べじたりあんのりょうりはありますか？",
+    "romaji": "bejitarian no ryouri wa arimasu ka?",
+    "chinese": "有素食的嗎？",
+    "example": "A: ベジタリアンの料理はありますか？</br>B: はい、野菜の天ぷらがあります。",
+    "example_chinese": "A: 有素食的嗎？</br>B: 有的，有蔬菜天婦羅。"
+  },
+  {
+    "kanji": "辛くない料理はありますか？",
+    "kana": "からくないりょうりはありますか？",
+    "romaji": "karakunai ryouri wa arimasu ka?",
+    "chinese": "有不辣的嗎？",
+    "example": "A: 辛くない料理はありますか？</br>B: はい、唐揚げがおすすめです。",
+    "example_chinese": "A: 有不辣的嗎？</br>B: 有的，我推薦炸雞。"
+  }
+]

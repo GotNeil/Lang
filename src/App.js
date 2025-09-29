@@ -4,6 +4,7 @@ import Settings from './Settings';
 import About from './About';
 import './About.css';
 import { initGA } from './utils/ga4';
+import VersionInfo from './components/VersionInfo';
 
 const QUIZ_MODES = {
   chinese: '練說🇹🇼中文題目',
@@ -728,6 +729,9 @@ function App() {
         {error && <p style={{color: 'red'}}>{error}</p>}
         {renderContent()}
       </main>
+      <footer className="App-footer">
+        <VersionInfo />
+      </footer>
     </div>
   );
 }

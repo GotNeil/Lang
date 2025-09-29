@@ -1,0 +1,26 @@
+[
+  {
+    "kanji": "テイクアウト",
+    "kana": "ていくあうと",
+    "romaji": "teikuauto",
+    "chinese": "外帶",
+    "example": "A: こちらはテイクアウトできますか？</br>B: はい、テイクアウト可能です。",
+    "example_chinese": "A: 這個可以外帶嗎？</br>B: 可以，可以外帶。"
+  },
+  {
+    "kanji": "店内",
+    "kana": "てんない",
+    "romaji": "tennai",
+    "chinese": "店內",
+    "example": "A: 食べますか、店内ですか？</br>B: はい、店内で食べます。",
+    "example_chinese": "A: 要吃嗎？在店內嗎？</br>B: 是的，在店內吃。"
+  },
+    {
+    "kanji": "持ち帰り",
+    "kana": "もちかえり",
+    "romaji": "mochikaeri",
+    "chinese": "外帶",
+    "example": "A: この弁当は持ち帰りできますか？</br>B: はい、持ち帰り可能です。",
+    "example_chinese": "A: 這個便當可以外帶嗎？</br>B: 可以，可以外帶。"
+  }
+]
