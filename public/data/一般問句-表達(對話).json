@@ -1,0 +1,114 @@
+[
+    {
+    "kanji": "台湾人です。",
+    "kana": "たいわんじんです。",
+    "romaji": "taiwan jin desu.",
+    "chinese": "我是台灣人",
+    "example": "A: お国はどこですか？</br>B: 台湾人です。",
+    "example_chinese": "A: 你是哪國人？</br>B: 我是台灣人。"
+  },
+  {
+    "kanji": "日本語がわかりません。",
+    "kana": "にほんごがわかりません。",
+    "romaji": "nihongo ga wakarimasen.",
+    "chinese": "我不會日文",
+    "example": "A: 日本語で話せますか？</br>B: 日本語がわかりません。",
+    "example_chinese": "A: 你會說日文嗎？</br>B: 我不會日文。"
+  },
+  {
+    "kanji": "これは何ですか？",
+    "kana": "これはなんですか？",
+    "romaji": "kore wa nan desu ka?",
+    "chinese": "這是什麼？",
+    "example": "A: これは何ですか？</br>B: それはコロッケです。",
+    "example_chinese": "A: 這是什麼？</br>B: 那是可樂餅。"
+  },
+  {
+    "kanji": "いくらですか？",
+    "kana": "いくらですか？",
+    "romaji": "ikura desu ka?",
+    "chinese": "多少錢？",
+    "example": "A: これはいくらですか？</br>B: 300円です。",
+    "example_chinese": "A: 這個多少錢？</br>B: 300日圓。"
+  },
+  {
+    "kanji": "どこですか？",
+    "kana": "どこですか？",
+    "romaji": "doko desu ka?",
+    "chinese": "在哪裡？",
+    "example": "A: トイレはどこですか？</br>B: あそこです。",
+    "example_chinese": "A: 廁所在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "これをください。",
+    "kana": "これをください。",
+    "romaji": "kore o kudasai",
+    "chinese": "請給我這個。",
+    "example": "A: これをください。</br>B: はい、どうぞ。",
+    "example_chinese": "A: 請給我這個。</br>B: 好的，給您。"
+  },
+  {
+    "kanji": "おすすめは何ですか？",
+    "kana": "おすすめはなんですか？",
+    "romaji": "osusume wa nan desu ka?",
+    "chinese": "有什麼推薦的嗎？",
+    "example": "A: おすすめは何ですか？</br>B: 唐揚げがおすすめです。",
+    "example_chinese": "A: 有什麼推薦的嗎？</br>B: 我推薦炸雞。"
+  },
+  {
+    "kanji": "英語のメニューはありますか？",
+    "kana": "えいごのめにゅーはありますか？",
+    "romaji": "eigo no menyuu wa arimasu ka?",
+    "chinese": "有英文菜單嗎？",
+    "example": "A: 英語のメニューはありますか？</br>B: はい、こちらです。",
+    "example_chinese": "A: 有英文菜單嗎？</br>B: 有的，這邊請。"
+  },
+  {
+    "kanji": "持ち帰りできますか？",
+    "kana": "もちかえりできますか？",
+    "romaji": "mochikaeri dekimasu ka?",
+    "chinese": "可以外帶嗎？",
+    "example": "A: 持ち帰りできますか？</br>B: はい、できます。",
+    "example_chinese": "A: 可以外帶嗎？</br>B: 可以。"
+  },
+  {
+    "kanji": "カードは使えますか？",
+    "kana": "かーどはつかえますか？",
+    "romaji": "kaado wa tsukaemasu ka?",
+    "chinese": "可以刷卡嗎？",
+    "example": "A: カードは使えますか？</br>B: すみません、現金だけです。",
+    "example_chinese": "A: 可以刷卡嗎？</br>B: 不好意思，只能用現金。"
+  },
+  {
+    "kanji": "〇〇へ行きます。",
+    "kana": "〇〇へいきます。",
+    "romaji": "〇〇 e ikimasu.",
+    "chinese": "去〇〇。",
+    "example": "A: 駅へ行きます。</br>B: 気をつけてください。",
+    "example_chinese": "A: 我要去車站。</br>B: 請小心路上。"
+  },
+  {
+    "kanji": "〇〇に行きたいです。",
+    "kana": "〇〇にいきたいです。",
+    "romaji": "〇〇 ni ikitai desu.",
+    "chinese": "想去〇〇。",
+    "example": "A: 商店街に行きたいです。</br>B: この道をまっすぐです。",
+    "example_chinese": "A: 我想去商店街。</br>B: 從這條路直走就到了。"
+  },
+  {
+    "kanji": "これは駅に行きますか？",
+    "kana": "これはえきにいきますか？",
+    "romaji": "kore wa eki ni ikimasu ka?",
+    "chinese": "這個會去車站嗎？",
+    "example": "A: このバスは駅に行きますか？</br>B: はい、行きます。",
+    "example_chinese": "A: 這班公車會到車站嗎？</br>B: 是的，會到。"
+  },
+  {
+    "kanji": "このバスは〇〇に行きますか？",
+    "kana": "このばすは〇〇にいきますか？",
+    "romaji": "kono basu wa 〇〇 ni ikimasu ka?",
+    "chinese": "這班公車會去〇〇嗎？",
+    "example": "A: このバスは空港に行きますか？</br>B: いいえ、行きません。",
+    "example_chinese": "A: 這班公車會到機場嗎？</br>B: 不，不會。"
+  }
+]
