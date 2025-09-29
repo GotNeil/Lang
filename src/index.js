@@ -7,8 +7,8 @@ import posthog from 'posthog-js';
 import { initPostHog } from './utils/posthog';
 
 // Initialize PostHog
-console.log('index.js - REACT_APP_PUBLIC_POSTHOG_KEY:', process.env.REACT_APP_PUBLIC_POSTHOG_KEY);
-console.log('index.js - REACT_APP_PUBLIC_POSTHOG_HOST:', process.env.REACT_APP_PUBLIC_POSTHOG_HOST);
+// console.log('index.js - REACT_APP_PUBLIC_POSTHOG_KEY:', process.env.REACT_APP_PUBLIC_POSTHOG_KEY);
+// console.log('index.js - REACT_APP_PUBLIC_POSTHOG_HOST:', process.env.REACT_APP_PUBLIC_POSTHOG_HOST);
 initPostHog(
   process.env.REACT_APP_PUBLIC_POSTHOG_KEY,
   process.env.REACT_APP_PUBLIC_POSTHOG_HOST
