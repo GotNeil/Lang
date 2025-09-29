@@ -1,0 +1,58 @@
+[
+  {
+    "kanji": "ホット",
+    "kana": "ほっと",
+    "romaji": "hotto",
+    "chinese": "熱的",
+    "example": "A: ホットコーヒーにしますか？</br>B: はい、ホットでお願いします。",
+    "example_chinese": "A: 要熱咖啡嗎？</br>B: 是的，請給我熱的。"
+  },
+  {
+    "kanji": "アイス",
+    "kana": "あいす",
+    "romaji": "aisu",
+    "chinese": "冰的",
+    "example": "A: アイスティーを飲みますか？</br>B: はい、アイスでお願いします。",
+    "example_chinese": "A: 要喝冰茶嗎？</br>B: 是的，請給我冰的。"
+  },
+  {
+    "kanji": "熱い",
+    "kana": "あつい",
+    "romaji": "atsui",
+    "chinese": "熱的",
+    "example": "A: このスープ、熱いですか？</br>B: はい、とても熱いです。",
+    "example_chinese": "A: 這個湯很熱嗎？</br>B: 是的，非常燙。"
+  },
+  {
+    "kanji": "冷たい",
+    "kana": "つめたい",
+    "romaji": "tsumetai",
+    "chinese": "冷的",
+    "example": "A: この水は冷たいですか？</br>B: はい、とても冷たいです。",
+    "example_chinese": "A: 這個水很冰嗎？</br>B: 是的，非常冰。"
+  },
+  {
+    "kanji": "塩辛い",
+    "kana": "しおからい",
+    "romaji": "shiokarai",
+    "chinese": "鹹的",
+    "example": "A: このスナック、塩辛いですか？</br>B: はい、少し塩辛いです。",
+    "example_chinese": "A: 這個零食很鹹嗎？</br>B: 是的，有點鹹。"
+  },
+  {
+    "kanji": "甘い",
+    "kana": "あまい",
+    "romaji": "amai",
+    "chinese": "甜的",
+    "example": "A: このデザート、甘いですか？</br>B: はい、とても甘いです。",
+    "example_chinese": "A: 這個甜點甜嗎？</br>B: 是的，非常甜。"
+  },
+  {
+    "kanji": "辛い",
+    "kana": "からい",
+    "romaji": "karai",
+    "chinese": "辣的",
+    "example": "A: このカレー、辛いですか？</br>B: はい、少し辛いです。",
+    "example_chinese": "A: 這個咖哩辣嗎？</br>B: 是的，有一點辣。"
+  }
+]

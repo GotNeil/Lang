@@ -1,0 +1,154 @@
+[
+  {
+    "kanji": "コンビニ",
+    "kana": "こんびに",
+    "romaji": "konbini",
+    "chinese": "便利商店",
+    "example": "A: この近くにコンビニはありますか？</br>B: はい、駅の前にあります。",
+    "example_chinese": "A: 這附近有便利商店嗎？</br>B: 有的，在車站前面。"
+  },
+  {
+    "kanji": "レジ",
+    "kana": "れじ",
+    "romaji": "reji",
+    "chinese": "收銀台",
+    "example": "A: レジはどこですか？</br>B: あちらにございます。",
+    "example_chinese": "A: 收銀台在哪裡？</br>B: 在那邊。"
+  },
+  {
+    "kanji": "袋",
+    "kana": "ふくろ",
+    "romaji": "fukuro",
+    "chinese": "袋子 / 塑膠袋",
+    "example": "A: 袋はご利用ですか？</br>B: はい、お願いします。",
+    "example_chinese": "A: 需要袋子嗎？</br>B: 好的，麻煩給我。"
+  },
+  {
+    "kanji": "レジ袋",
+    "kana": "れじぶくろ",
+    "romaji": "rejibukuro",
+    "chinese": "塑膠購物袋",
+    "example": "A: レジ袋はご利用ですか？</br>B: はい、お願いします。",
+    "example_chinese": "A: 需要塑膠購物袋嗎？</br>B: 好的，麻煩給我。"
+  },
+  {
+    "kanji": "袋",
+    "kana": "ふくろ",
+    "romaji": "fukuro",
+    "chinese": "袋子",
+    "example": "A: 袋は使いますか？</br>B: いいえ、袋はいりません。",
+    "example_chinese": "A: 要用袋子嗎？</br>B: 不，我不用袋子。"
+  },
+  {
+    "kanji": "バッグ",
+    "kana": "ばっぐ",
+    "romaji": "baggu",
+    "chinese": "袋子 / 包",
+    "example": "A: バッグに入れてお持ち帰りですか？</br>B: はい、このままバッグに入れます。",
+    "example_chinese": "A: 要放進包包帶回去嗎？</br>B: 是的，我會放進包包裡。"
+  },
+  {
+    "kanji": "エコバッグ",
+    "kana": "えこばっぐ",
+    "romaji": "ekobaggu",
+    "chinese": "環保袋",
+    "example": "A: エコバッグはお持ちですか？</br>B: はい、自分のエコバッグを使います。",
+    "example_chinese": "A: 有帶環保袋嗎？</br>B: 有，我用自己的環保袋。"
+  },
+  {
+    "kanji": "レシート",
+    "kana": "れしーと",
+    "romaji": "reshīto",
+    "chinese": "明細 / 收據",
+    "example": "A: レシートをください。</br>B: はい、こちらです。",
+    "example_chinese": "A: 請給我收據。</br>B: 好的，這是收據。"
+  },
+  {
+    "kanji": "現金",
+    "kana": "げんきん",
+    "romaji": "genkin",
+    "chinese": "現金",
+    "example": "A: お支払いは現金ですか？</br>B: はい、現金で払います。",
+    "example_chinese": "A: 您要用現金付款嗎？</br>B: 是的，我用現金付。"
+  },
+  {
+    "kanji": "クレジットカード",
+    "kana": "くれじっとかーど",
+    "romaji": "kurejitto kādo",
+    "chinese": "信用卡",
+    "example": "A: クレジットカードは使えますか？</br>B: はい、使えます。",
+    "example_chinese": "A: 可以刷信用卡嗎？</br>B: 可以的。"
+  },
+    {
+    "kanji": "唐揚げ",
+    "kana": "からあげ",
+    "romaji": "karaage",
+    "chinese": "炸雞塊",
+    "example": "A: 唐揚げをください。</br>B: はい、唐揚げ1パックですね。",
+    "example_chinese": "A: 我要炸雞塊。</br>B: 好的，一份炸雞塊。"
+  },
+  {
+    "kanji": "フライドチキン",
+    "kana": "ふらいどちきん",
+    "romaji": "furaido chikin",
+    "chinese": "炸雞",
+    "example": "A: フライドチキンは温めますか？</br>B: はい、お願いします。",
+    "example_chinese": "A: 炸雞要加熱嗎？</br>B: 好的，麻煩加熱。"
+  },
+  {
+    "kanji": "コロッケ",
+    "kana": "ころっけ",
+    "romaji": "korokke",
+    "chinese": "可樂餅",
+    "example": "A: コロッケを2つください。</br>B: はい、コロッケ2つですね。",
+    "example_chinese": "A: 我要兩個可樂餅。</br>B: 好的，兩個可樂餅。"
+  },
+  {
+    "kanji": "コーヒー",
+    "kana": "こーひー",
+    "romaji": "kōhī",
+    "chinese": "咖啡",
+    "example": "A: ホットコーヒーをください。</br>B: SサイズとMサイズがありますが、どちらにしますか？",
+    "example_chinese": "A: 請給我一杯熱咖啡。</br>B: 有小杯和中杯，要哪一個？"
+  },
+  {
+    "kanji": "アメリカンコーヒー",
+    "kana": "あめりかんこーひー",
+    "romaji": "amerikan kōhī",
+    "chinese": "美式咖啡",
+    "example": "A: アメリカンコーヒーをください。</br>B: はい、SサイズとMサイズがありますが、どちらにしますか？",
+    "example_chinese": "A: 請給我一杯美式咖啡。</br>B: 好的，有小杯和中杯，要哪一個？"
+  },
+  {
+    "kanji": "ホットコーヒー",
+    "kana": "ほっとこーひー",
+    "romaji": "hotto kōhī",
+    "chinese": "熱咖啡",
+    "example": "A: ホットコーヒーをお願いします。</br>B: サイズはどうなさいますか？",
+    "example_chinese": "A: 請給我一杯熱咖啡。</br>B: 您要哪個尺寸？"
+  },
+  {
+    "kanji": "アイスコーヒー",
+    "kana": "あいすこーひー",
+    "romaji": "aisu kōhī",
+    "chinese": "冰咖啡",
+    "example": "A: アイスコーヒーを一つください。</br>B: はい、氷の量はどうしますか？",
+    "example_chinese": "A: 我要一杯冰咖啡。</br>B: 好的，冰塊多還是少？"
+  },
+  {
+    "kanji": "カフェラテ",
+    "kana": "かふぇらて",
+    "romaji": "kafe rate",
+    "chinese": "拿鐵",
+    "example": "A: カフェラテのMサイズをください。</br>B: はい、砂糖とミルクは入れますか？",
+    "example_chinese": "A: 我要一杯中杯拿鐵。</br>B: 好的，要加糖和牛奶嗎？"
+  },
+  {
+    "kanji": "カプチーノ",
+    "kana": "かぷちーの",
+    "romaji": "kapuchīno",
+    "chinese": "卡布奇諾",
+    "example": "A: カプチーノをお願いします。</br>B: はい、SサイズとMサイズがあります。",
+    "example_chinese": "A: 我要一杯卡布奇諾。</br>B: 好的，有小杯和中杯。"
+  }
+]

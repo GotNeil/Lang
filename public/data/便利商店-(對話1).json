@@ -1,0 +1,89 @@
+[
+  {
+    "kanji": "現金は使えますか？",
+    "kana": "げんきんはつかえますか？",
+    "romaji": "genkin wa tsukaemasu ka?",
+    "chinese": "可以使用現金嗎？",
+    "example": "A: 現金は使えますか？</br>B: はい、ご利用いただけます。",
+    "example_chinese": "A: 可以用現金嗎？</br>B: 可以使用。"
+  },
+  {
+    "kanji": "クレジットカードは使えますか？",
+    "kana": "くれじっとかーどはつかえますか？",
+    "romaji": "kurejitto kādo wa tsukaemasu ka?",
+    "chinese": "可以使用信用卡嗎？",
+    "example": "A: クレジットカードは使えますか？</br>B: はい、VISAとMasterが使えます。",
+    "example_chinese": "A: 可以刷信用卡嗎？</br>B: 可以，VISA 和 Master 都能用。"
+  },
+  {
+    "kanji": "PayPayは使えますか？",
+    "kana": "ぺいぺいはつかえますか？",
+    "romaji": "peipei wa tsukaemasu ka?",
+    "chinese": "可以使用PayPay嗎？",
+    "example": "A: PayPayは使えますか？</br>B: はい、使えます。",
+    "example_chinese": "A: 可以用 PayPay 嗎？</br>B: 可以的。"
+  },
+  {
+    "kanji": "これ、PayPayでお願いします。",
+    "kana": "これ、ぺいぺいでおねがいします。",
+    "romaji": "kore, peipei de onegaishimasu.",
+    "chinese": "這個是PayPay麻煩了。",
+    "example": "A: お支払いはどうなさいますか？</br>B: これ、PayPayでお願いします。",
+    "example_chinese": "A: 您要用什麼付款呢？</br>B: 這個用 PayPay，麻煩了。"
+  },
+  {
+    "kanji": "温めますか？",
+    "kana": "あたためますか？",
+    "romaji": "atatamemasu ka?",
+    "chinese": "需要加熱嗎？",
+    "example": "A: このお弁当、温めますか？</br>B: はい、お願いします。",
+    "example_chinese": "A: 這個便當要加熱嗎？</br>B: 要，麻煩了。"
+  },  {
+    "kanji": "温めてください",
+    "kana": "あたためてください",
+    "romaji": "atatamete kudasai",
+    "chinese": "請幫我加熱",
+    "example": "A: こちらのお弁当、温めますか？</br>B: はい、温めてください。",
+    "example_chinese": "A: 這個便當要加熱嗎？</br>B: 是的，請幫我加熱。"
+  },
+  {
+    "kanji": "フライドチキンをください。",
+    "kana": "ふらいどちきんをください。",
+    "romaji": "furaido chikin o kudasai.",
+    "chinese": "我要炸雞。",
+    "example": "A: ご注文は？</br>B: フライドチキンをください。",
+    "example_chinese": "A: 您要買什麼？</br>B: 我要炸雞。"
+  },
+  {
+    "kanji": "コーヒーをください。",
+    "kana": "こーひーをください。",
+    "romaji": "kōhī o kudasai.",
+    "chinese": "我要咖啡。",
+    "example": "A: いらっしゃいませ。ご注文は？</br>B: コーヒーをください。",
+    "example_chinese": "A: 歡迎光臨，請問要點什麼？</br>B: 我要咖啡。"
+  },
+  {
+    "kanji": "会計をお願いします。",
+    "kana": "かいけいをおねがいします。",
+    "romaji": "kaikei o onegaishimasu.",
+    "chinese": "我要結帳。",
+    "example": "A: ほかにご購入はございますか？</br>B: いいえ、会計をお願いします。",
+    "example_chinese": "A: 還需要別的東西嗎？</br>B: 不需要了，我要結帳。"
+  },
+  {
+    "kanji": "袋をください。",
+    "kana": "ふくろをください。",
+    "romaji": "fukuro o kudasai.",
+    "chinese": "我要袋子。",
+    "example": "A: 袋はご利用ですか？</br>B: はい、袋をください。",
+    "example_chinese": "A: 需要袋子嗎？</br>B: 是的，請給我袋子。"
+  },
+  {
+    "kanji": "袋はいりません。",
+    "kana": "ふくろはいりません。",
+    "romaji": "fukuro wa irimasen.",
+    "chinese": "我不用袋子。",
+    "example": "A: 袋はご利用ですか？</br>B: いいえ、袋はいりません。",
+    "example_chinese": "A: 需要袋子嗎？</br>B: 不用了，我不用袋子。"
+  }
+]
