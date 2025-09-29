@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Settings from './Settings';
+import About from './About';
+import './About.css';
 import { initGA } from './utils/ga4';
 
 const QUIZ_MODES = {
@@ -66,6 +68,7 @@ function App() {
   const [answerPhase, setAnswerPhase] = useState('feedback'); // feedback, countdown, paused
   const [countdown, setCountdown] = useState(null);
   const [showSettings, setShowSettings] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
   const [settings, setSettings] = useState(getInitialSettings());
   const [categoryGroups, setCategoryGroups] = useState([]);
   const [activeSubcategories, setActiveSubcategories] = useState({});
@@ -703,6 +706,9 @@ function App() {
         selectedVoice={selectedVoice}
       />;
     }
+    if (showAbout) {
+      return <About onBack={() => setShowAbout(false)} />;
+    }
     if (!quizStarted) {
       return renderSetupScreen();
     }
@@ -713,7 +719,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 onClick={handleGoHome}>日文辭典、練習</h1>
-        <button className="settings-button" onClick={() => setShowSettings(true)}>設定</button>
+        <div className="header-buttons">
+          <button className="about-button" onClick={() => setShowAbout(true)}>About</button>
+          <button className="settings-button" onClick={() => setShowSettings(true)}>設定</button>
+        </div>
       </header>
       <main>
         {error && <p style={{color: 'red'}}>{error}</p>}

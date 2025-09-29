@@ -17,6 +17,20 @@
   cursor: pointer;
 }
 
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.about-button, .settings-button {
+  background-color: #4a4a4a;
+  color: white;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
 main {
   padding: 20px;
 }
