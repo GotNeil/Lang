@@ -14,9 +14,6 @@ initPostHog(
   process.env.REACT_APP_PUBLIC_POSTHOG_HOST
 );
 
-const options = {
-  api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST,
-};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
