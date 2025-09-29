@@ -7,10 +7,12 @@ import posthog from 'posthog-js';
 import { initPostHog } from './utils/posthog';
 
 // Initialize PostHog
-initPostHog();
-
-// Add this test code
-posthog.capture('my event', { property: 'value' });
+console.log('index.js - REACT_APP_PUBLIC_POSTHOG_KEY:', process.env.REACT_APP_PUBLIC_POSTHOG_KEY);
+console.log('index.js - REACT_APP_PUBLIC_POSTHOG_HOST:', process.env.REACT_APP_PUBLIC_POSTHOG_HOST);
+initPostHog(
+  process.env.REACT_APP_PUBLIC_POSTHOG_KEY,
+  process.env.REACT_APP_PUBLIC_POSTHOG_HOST
+);
 
 const options = {
   api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST,

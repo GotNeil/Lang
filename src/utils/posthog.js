@@ -1,11 +1,12 @@
 import posthog from 'posthog-js'
 
-export const initPostHog = () => {
+export const initPostHog = (key, host) => {
   if (typeof window !== 'undefined') {
-    console.log('process.env:', process.env);
-    console.log('REACT_APP_PUBLIC_POSTHOG_KEY:', process.env.REACT_APP_PUBLIC_POSTHOG_KEY);
-    console.log('REACT_APP_PUBLIC_POSTHOG_HOST:', process.env.REACT_APP_PUBLIC_POSTHOG_HOST);
-    posthog.init(process.env.REACT_APP_PUBLIC_POSTHOG_KEY, { api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST })
+    // console.log('process.env:', process.env);
+    // console.log('REACT_APP_PUBLIC_POSTHOG_KEY:', key);
+    // console.log('REACT_APP_PUBLIC_POSTHOG_HOST:', host);
+    posthog.init(key, { api_host: host })
+    window.posthog = posthog;
   }
 }
 
