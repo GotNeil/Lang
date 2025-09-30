@@ -216,21 +216,23 @@ main {
 
 .kanji-in-answer {
   font-weight: bold;
-  margin-right: 10px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .chinese-in-answer {
   font-size: 0.8em;
   color: #555;
-  margin-left: 10px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .romaji-in-answer {
   font-size: 0.8em;
   color: #007bff;
-  margin-left: 10px;
   display: block;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .example-display, .example-display-chinese {
