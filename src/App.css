@@ -46,8 +46,15 @@ main {
 }
 
 .quiz-area-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.quiz-content {
+  flex-grow: 1;
 }
 
 .quiz-area, .end-of-round-screen {
@@ -518,4 +525,11 @@ main {
 button.view-answer-button {
   background-color: #0089B6;
   color: black;
+}
+
+@media (max-width: 992px) {
+  .quiz-area-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
