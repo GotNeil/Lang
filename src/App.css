@@ -214,25 +214,34 @@ main {
   margin-bottom: 15px;
 }
 
+.kanji-in-answer, .romaji-in-answer, .chinese-in-answer, .kana-in-answer {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .kanji-in-answer {
   font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
 }
 
 .chinese-in-answer {
   font-size: 0.8em;
   color: #555;
-  display: block;
-  margin-bottom: 5px;
 }
 
 .romaji-in-answer {
   font-size: 0.8em;
   color: #007bff;
-  display: block;
   margin-top: 5px;
-  margin-bottom: 5px;
+}
+
+.copy-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-left: 10px;
 }
 
 .example-display, .example-display-chinese {

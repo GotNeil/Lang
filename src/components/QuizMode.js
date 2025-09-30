@@ -1,4 +1,5 @@
 import React from 'react';
+import { copyToClipboard } from '../utils/clipboard';
 import './QuizMode.css'; // We'll create this CSS file
 
 function QuizMode({
@@ -49,10 +50,26 @@ function QuizMode({
         {showAnswer && (
           <div className="answer-details">
             <div className="kana-display">
-              <span className="kanji-in-answer">{currentWord.kanji}</span>
-              {currentWord.kana}
-              {currentWord.romaji && <span className="romaji-in-answer">{currentWord.romaji}</span>}
-              {currentWord.chinese && <span className="chinese-in-answer">{currentWord.chinese}</span>}
+              <div className="kanji-in-answer">
+                <span>{currentWord.kanji}</span>
+                <button className="copy-btn" onClick={() => copyToClipboard(currentWord.kanji)}><i className="fa-regular fa-copy"></i></button>
+              </div>
+              <div className="kana-in-answer">
+                <span>{currentWord.kana}</span>
+                <button className="copy-btn" onClick={() => copyToClipboard(currentWord.kana)}><i className="fa-regular fa-copy"></i></button>
+              </div>
+              {currentWord.romaji &&
+                <div className="romaji-in-answer">
+                  <span>{currentWord.romaji}</span>
+                  <button className="copy-btn" onClick={() => copyToClipboard(currentWord.romaji)}><i className="fa-regular fa-copy"></i></button>
+                </div>
+              }
+              {currentWord.chinese &&
+                <div className="chinese-in-answer">
+                  <span>{currentWord.chinese}</span>
+                  <button className="copy-btn" onClick={() => copyToClipboard(currentWord.chinese)}><i className="fa-regular fa-copy"></i></button>
+                </div>
+              }
             </div>
 
             <div className="speak-japanese-only">
