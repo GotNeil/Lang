@@ -29,7 +29,7 @@ function QuizList({ list, mode, currentIndex, onWordSelect, allowSidebarScroll }
 
   return (
     <div className="quiz-sidebar">
-      <div className="sidebar-header">詞庫列表</div>
+      <div className="sidebar-header">詞庫列表 ({list.length})</div>
       <ul className="sidebar-list">
         {list.map((word, index) => (
           <li

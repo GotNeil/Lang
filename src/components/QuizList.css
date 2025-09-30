@@ -6,3 +6,54 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+
+.quiz-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 70vh; /* This makes it scrollable */
+  overflow-y: auto; /* This makes it scrollable */
+}
+
+.sidebar-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-item:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar-item.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 992px) {
+  .quiz-sidebar {
+    width: 100%;
+    margin-top: 20px;
+    max-height: 600px; /* Adjust height for mobile */
+  }
+
+  .sidebar-list {
+    /* Parent max-height - approx. header height */
+    max-height: calc(600px - 48px);
+  }
+}
