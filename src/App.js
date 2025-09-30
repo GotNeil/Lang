@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Settings from './Settings';
 import About from './About';
+import QuizList from './components/QuizList';
 import './About.css';
 import { initGA } from './utils/ga4';
 import VersionInfo from './components/VersionInfo';
@@ -363,51 +364,6 @@ function App() {
     }
   };
 
-  const QuizSidebar = ({ list, mode, currentIndex, onWordSelect, allowSidebarScroll }) => {
-    const currentItemRef = useRef(null);
-
-    useEffect(() => {
-      if (allowSidebarScroll && currentItemRef.current) {
-        currentItemRef.current.scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest',
-        });
-      }
-    }, [currentIndex, allowSidebarScroll]);
-
-    const getDisplayText = (word, index) => {
-      switch (mode) {
-        case 'chinese':
-        case 'dictionary':
-          return word.chinese || word.kanji;
-        case 'kanji':
-          return word.kanji;
-        case 'listening':
-          return `題目 ${index + 1}`;
-        default:
-          return word.kanji;
-      }
-    };
-
-    return (
-      <div className="quiz-sidebar">
-        <div className="sidebar-header">詞庫列表</div>
-        <ul className="sidebar-list">
-          {list.map((word, index) => (
-            <li
-              key={`${word.id}-${index}`}
-              ref={index === currentIndex ? currentItemRef : null}
-              className={`sidebar-item ${index === currentIndex ? 'active' : ''}`}
-              onClick={() => onWordSelect(index)}
-            >
-              {getDisplayText(word, index)}
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  };
-
   const renderQuizArea = () => {
     const quizContent = (
       <>
@@ -569,7 +525,7 @@ function App() {
           {quizContent}
         </div>
         {quizList.length > 0 && (
-          <QuizSidebar
+          <QuizList
             list={quizList}
             mode={quizMode}
             currentIndex={currentIndex}
