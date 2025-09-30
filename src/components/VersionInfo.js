@@ -1,5 +1,5 @@
 import React from 'react';
-import versionData from '../../version.json'; // Adjust path as needed
+import versionData from '../version.json';
 import './VersionInfo.css';
 
 function VersionInfo() {
