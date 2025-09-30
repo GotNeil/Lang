@@ -1,4 +1,36 @@
 [
+{
+  "kanji": "母の料理にはネギ、ニンニク、玉ねぎを入れないでください。",
+  "kana": "ははのりょうりにはねぎ、にんにく、たまねぎをいれないでください。",
+  "romaji": "Haha no ryōri ni wa negi, ninniku, tamanegi o irenaide kudasai.",
+  "chinese": "母親的料理請不要加蔥、蒜、洋蔥。",
+  "example": "A: 母の料理にはネギ、ニンニク、玉ねぎを入れないでください。</br>B: わかりました、抜いてお作りします。",
+  "example_chinese": "A: 母親的料理請不要加蔥、蒜、洋蔥。</br>B: 好的，我會去掉再做。"
+},
+{
+  "kanji": "母の分はネギ・ニンニク・玉ねぎ抜きでお願いします。",
+  "kana": "ははのぶんはねぎ・にんにく・たまねぎぬきでおねがいします。",
+  "romaji": "Haha no bun wa negi, ninniku, tamanegi nuki de onegaishimasu.",
+  "chinese": "母親的份請不要加蔥、蒜、洋蔥。",
+  "example": "A: 母の分はネギ・ニンニク・玉ねぎ抜きでお願いします。</br>B: はい、承知しました。",
+  "example_chinese": "A: 母親的份請不要加蔥、蒜、洋蔥。</br>B: 好的，明白了。"
+},
+{
+  "kanji": "他の人の料理はそのままで大丈夫です。",
+  "kana": "ほかのひとのりょうりはそのままでだいじょうぶです。",
+  "romaji": "Hoka no hito no ryōri wa sono mama de daijōbu desu.",
+  "chinese": "其他人的料理照原本就可以。",
+  "example": "A: 他の人の料理はどうしますか？</br>B: 他の人の料理はそのままで大丈夫です。",
+  "example_chinese": "A: 其他人的料理要怎麼處理？</br>B: 其他人的料理照原本就可以。"
+},
+{
+  "kanji": "母はヴィーガンです。他の人は違います。",
+  "kana": "はははヴィーガンです。ほかのひとはちがいます。",
+  "romaji": "Haha wa viigan desu. Hoka no hito wa chigaimasu.",
+  "chinese": "媽媽是純素者，其他人不是。",
+  "example": "A: 食事の内容はどうしますか？</br>B: 母はヴィーガンです。他の人は違います。",
+  "example_chinese": "A: 餐點要怎麼安排？</br>B: 媽媽是純素者，其他人不是。"
+},
   {
     "kanji": "菜食できますか",
     "kana": "さいしょくできますか",

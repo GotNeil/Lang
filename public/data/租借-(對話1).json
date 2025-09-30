@@ -1,0 +1,66 @@
+[
+{
+  "kanji": "予約があります",
+  "kana": "よやくがあります",
+  "romaji": "yoyaku ga arimasu",
+  "chinese": "我有預約",
+  "example": "A: ご予約はされていますか？</br>B: はい、予約があります。",
+  "example_chinese": "A: 您有預約嗎？</br>B: 是的，我有預約。"
+},  
+{
+  "kanji": "借りたいです",
+  "kana": "かりたいです",
+  "romaji": "karitai desu",
+  "chinese": "我要租借",
+  "example": "A: いらっしゃいませ。ご希望はありますか？</br>B: 車を借りたいです。",
+  "example_chinese": "A: 歡迎光臨，請問有什麼需求嗎？</br>B: 我要租車。"
+},
+ {
+    "kanji": "保険はありますか？",
+    "kana": "ほけんはありますか？",
+    "romaji": "hoken wa arimasu ka?",
+    "chinese": "有保險嗎？",
+    "example": "A: 保険はありますか？</br>B: はい、追加料金で加入できます。",
+    "example_chinese": "A: 有保險嗎？</br>B: 有的，可以加收費用加入。"
+  },
+  {
+    "kanji": "NOC保険はありますか？",
+    "kana": "NOCほけんはありますか？",
+    "romaji": "NOC hoken wa arimasu ka?",
+    "chinese": "有NOC保險嗎？",
+    "example": "A: NOC保険はありますか？</br>B: はい、追加料金で加入可能です。",
+    "example_chinese": "A: 有NOC保險嗎？</br>B: 有的，可以加收費用加入。"
+  },
+{
+  "kanji": "返却時間は何時ですか？",
+  "kana": "へんきゃくじかんはなんじですか？",
+  "romaji": "henkyaku jikan wa nanji desu ka?",
+  "chinese": "幾點歸還？",
+  "example": "A: 返却時間は何時ですか？</br>B: 午後6時までです。",
+  "example_chinese": "A: 歸還時間是幾點？</br>B: 晚上6點前。"
+},
+{
+  "kanji": "返却したいです",
+  "kana": "へんきゃくしたいです",
+  "romaji": "henkyaku shitai desu",
+  "chinese": "我要歸還",
+  "example": "A: 車を返却されますか？</br>B: はい、返却したいです。",
+  "example_chinese": "A: 您要歸還車子嗎？</br>B: 是的，我要歸還。"
+},
+  {
+  "kanji": "助けが必要です",
+  "kana": "たすけがひつようです",
+  "romaji": "tasuke ga hitsuyou desu",
+  "chinese": "我需要協助",
+  "example": "A: どうしましたか？</br>B: 助けが必要です。",
+  "example_chinese": "A: 怎麼了？</br>B: 我需要協助。"
+},
+{
+  "kanji": "助けていただけますか？",
+  "kana": "たすけていただけますか？",
+  "romaji": "tasukete itadakemasu ka?",
+  "chinese": "可以請您幫忙嗎？",
+  "example": "A: 困っていますか？</br>B: はい、助けていただけますか？",
+  "example_chinese": "A: 需要幫忙嗎？</br>B: 是的，可以請您幫忙嗎？"
+}
+]

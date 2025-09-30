@@ -124,6 +124,28 @@
       }
     ]
   },
+  {
+    "category": "🚗 租借情境",
+    "subcategory": [
+      {
+        "name": "單詞",
+        "files": [
+          "租借-(名詞1).json"
+        ]
+      },{
+        "name": "對話",
+        "files": [
+          "租借-(對話1).json"
+        ]
+      },
+      
+      {
+        "name": "others",
+        "files": [
+        ]
+      }
+    ]
+  },
    {
     "category": "🔢 數量詞",
     "subcategory": [

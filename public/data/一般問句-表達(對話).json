@@ -110,5 +110,20 @@
     "chinese": "這班公車會去〇〇嗎？",
     "example": "A: このバスは空港に行きますか？</br>B: いいえ、行きません。",
     "example_chinese": "A: 這班公車會到機場嗎？</br>B: 不，不會。"
+  },  {
+    "kanji": "違います",
+    "kana": "ちがいます",
+    "romaji": "chigaimasu",
+    "chinese": "不是 / 不對",
+    "example": "A: あなたはベジタリアンですか？</br>B: いいえ、違います。",
+    "example_chinese": "A: 你是素食者嗎？</br>B: 不， 不是。"
+  },
+  {
+    "kanji": "違います",
+    "kana": "ちがいます",
+    "romaji": "chigaimasu",
+    "chinese": "不是 / 不對",
+    "example": "A: 持ち帰りですか？</br>B: いいえ、違います。",
+    "example_chinese": "A: 你要外帶嗎？</br>B: 不， 不是。"
   }
 ]

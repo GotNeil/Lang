@@ -1,0 +1,35 @@
+[
+  
+{
+  "kanji": "予約",
+  "kana": "よやく",
+  "romaji": "yoyaku",
+  "chinese": "預約",
+  "example": "A: ご予約はされていますか？</br>B: はい、予約しています。",
+  "example_chinese": "A: 您有預約嗎？</br>B: 是的，我有預約。"
+},
+{
+  "kanji": "ノン・オペレーションチャージ保険（NOC保険）",
+  "kana": "のん・おぺれーしょんちゃーじほけん（NOCほけん）",
+  "romaji": "non operēshon chāji hoken (NOC hoken)",
+  "chinese": "營業損失保險 / NOC保險",
+  "example": "A: NOC保険はありますか？</br>B: はい、ご用意しております。追加料金が必要です。",
+  "example_chinese": "A: 有NOC保險嗎？</br>B: 有的，我們有提供，需要額外費用。"
+},
+{
+  "kanji": "保険",
+  "kana": "ほけん",
+  "romaji": "hoken",
+  "chinese": "保險",
+  "example": "A: 保険は付けられますか？</br>B: はい、追加料金で可能です。",
+  "example_chinese": "A: 可以加保險嗎？</br>B: 可以，加收額外費用。"
+},
+{
+  "kanji": "返却時間",
+  "kana": "へんきゃくじかん",
+  "romaji": "henkyaku jikan",
+  "chinese": "歸還時間",
+  "example": "A: 返却時間は何時ですか？</br>B: 午後6時までです。",
+  "example_chinese": "A: 歸還時間是幾點？</br>B: 晚上6點前。"
+}
+]
