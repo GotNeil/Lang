@@ -1,0 +1,6 @@
+/* Styles specific to DictionaryMode component */
+@import './SharedQuizStyles.css';
+
+.quiz-area.dictionary-mode {
+  /* Inherits from .quiz-area, but can have specific overrides */
+}

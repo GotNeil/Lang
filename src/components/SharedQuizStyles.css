@@ -1,0 +1,117 @@
+/* Shared styles for DictionaryMode and QuizMode components */
+.quiz-area {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.question-counter {
+  font-size: 0.9em;
+  color: #666;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.answer-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.kana-display {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.kanji-in-answer {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.chinese-in-answer {
+  font-size: 0.8em;
+  color: #555;
+  margin-left: 10px;
+}
+
+.romaji-in-answer {
+  font-size: 0.8em;
+  color: #007bff;
+  margin-left: 10px;
+  display: block;
+  margin-top: 5px;
+}
+
+.example-display, .example-display-chinese {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.example-display-chinese {
+  color: #555;
+}
+
+.speak-japanese-only {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.answer-separator {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.example-speak-text {
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  color: #007bff;
+}
+
+.speak-example-button-container {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.phase-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.correct-incorrect-row {
+  display: flex;
+  gap: 10px;
+}
+
+.change-category {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.change-category:hover {
+  background-color: #e0e0e0;
+}
