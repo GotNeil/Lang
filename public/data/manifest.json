@@ -3,9 +3,15 @@
     "category": "🙏 一般常用句",
     "subcategory": [
       {
+        "name": "動詞",
+        "files": [
+          "一般-表達(動詞).json"
+        ]
+      },
+      {
         "name": "對話",
         "files": [
-          "一般問句-表達(對話).json"
+          "一般-問句(對話).json"
         ]
       }
     ]

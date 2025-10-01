@@ -1,0 +1,42 @@
+[
+   {
+    "kanji": "使う",
+    "kana": "つかう",
+    "romaji": "tsukau",
+    "chinese": "使用 / 利用",
+    "example": "A: クレジットカードは使えますか？</br>B: はい、使えます。",
+    "example_chinese": "A: 可以使用信用卡嗎？</br>B: 可以使用。"
+  },
+  {
+    "kanji": "使う",
+    "kana": "つかう",
+    "romaji": "tsukau",
+    "chinese": "使用 / 利用",
+    "example": "A: Wi-Fiを使いたいんですが。</br>B: こちらのパスワードを入力してください。",
+    "example_chinese": "A: 我想使用 Wi-Fi。 </br>B: 請輸入這個密碼。"
+  },
+  {
+    "kanji": "使う",
+    "kana": "つかう",
+    "romaji": "tsukau",
+    "chinese": "使用 / 利用",
+    "example": "A: このクーポンは使えますか？</br>B: はい、使えます。",
+    "example_chinese": "A: 這張優惠券可以使用嗎？</br>B: 可以使用。"
+  },
+  {
+    "kanji": "違います",
+    "kana": "ちがいます",
+    "romaji": "chigaimasu",
+    "chinese": "不是 / 不對",
+    "example": "A: あなたはベジタリアンですか？</br>B: いいえ、違います。",
+    "example_chinese": "A: 你是素食者嗎？</br>B: 不， 不是。"
+  },
+  {
+    "kanji": "違います",
+    "kana": "ちがいます",
+    "romaji": "chigaimasu",
+    "chinese": "不是 / 不對",
+    "example": "A: 持ち帰りですか？</br>B: いいえ、違います。",
+    "example_chinese": "A: 你要外帶嗎？</br>B: 不， 不是。"
+  }
+]

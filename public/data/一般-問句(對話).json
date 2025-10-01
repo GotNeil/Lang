@@ -72,6 +72,14 @@
     "example_chinese": "A: 可以外帶嗎？</br>B: 可以。"
   },
   {
+  "kanji": "店内で食べられますか？",
+  "kana": "てんないでたべられますか？",
+  "romaji": "tennai de taberaremasu ka?",
+  "chinese": "可以內用嗎？",
+  "example": "A: 店内で食べられますか？</br>B: はい、どうぞ。",
+  "example_chinese": "A: 可以內用嗎？</br>B: 可以，請用。"
+},
+  {
     "kanji": "カードは使えますか？",
     "kana": "かーどはつかえますか？",
     "romaji": "kaado wa tsukaemasu ka?",
@@ -79,6 +87,45 @@
     "example": "A: カードは使えますか？</br>B: すみません、現金だけです。",
     "example_chinese": "A: 可以刷卡嗎？</br>B: 不好意思，只能用現金。"
   },
+  {
+  "kanji": "現金は使えますか？",
+  "kana": "げんきんはつかえますか？",
+  "romaji": "genkin wa tsukaemasu ka?",
+  "chinese": "可以使用現金嗎？",
+  "example": "A: 現金は使えますか？</br>B: はい、使えます。",
+  "example_chinese": "A: 可以使用現金嗎？</br>B: 可以使用。"
+},
+{
+  "kanji": "クレジットカードは使えますか？",
+  "kana": "くれじっとかーどはつかえますか？",
+  "romaji": "kurejitto kādo wa tsukaemasu ka?",
+  "chinese": "可以使用信用卡嗎？",
+  "example": "A: クレジットカードは使えますか？</br>B: はい、使えます。",
+  "example_chinese": "A: 可以使用信用卡嗎？</br>B: 可以使用。"
+},
+{
+  "kanji": "PayPayは使えますか？",
+  "kana": "ぺいぺいはつかえますか？",
+  "romaji": "peipei wa tsukaemasu ka?",
+  "chinese": "可以使用PayPay嗎？",
+  "example": "A: PayPayは使えますか？</br>B: はい、使えます。",
+  "example_chinese": "A: 可以使用 PayPay 嗎？</br>B: 可以使用。"
+},
+{
+  "kanji": "クーポンは使えますか？",
+  "kana": "くーぽんはつかえますか？",
+  "romaji": "kūpon wa tsukaemasu ka?",
+  "chinese": "可以使用優惠券嗎？",
+  "example": "A: クーポンは使えますか？</br>B: はい、使えます。",
+  "example_chinese": "A: 這張優惠券可以使用嗎？</br>B: 可以使用。"
+},{
+  "kanji": "ここで駐車できますか？",
+  "kana": "ここでちゅうしゃできますか？",
+  "romaji": "koko de chūsha dekimasu ka?",
+  "chinese": "這裡可以停車嗎？",
+  "example": "A: ここで駐車できますか？</br>B: はい、できます。",
+  "example_chinese": "A: 這裡可以停車嗎？</br>B: 可以。"
+},
   {
     "kanji": "〇〇へ行きます。",
     "kana": "〇〇へいきます。",
