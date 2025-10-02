@@ -1,4 +1,20 @@
 [
+    {
+    "kanji": "料理",
+    "kana": "りょうり",
+    "romaji": "ryōri",
+    "chinese": "料理",
+    "example": "A: この料理は辛いですか？</br>B: いいえ、辛くありません。",
+    "example_chinese": "A: 這道料理辣嗎？</br>B: 不，這道不辣。"
+  },
+  {
+    "kanji": "料理",
+    "kana": "りょうり",
+    "romaji": "ryōri",
+    "chinese": "料理",
+    "example": "A: ヴィーガン料理はありますか？</br>B: はい、こちらの料理がおすすめです。",
+    "example_chinese": "A: 有純素食的料理嗎？</br>B: 有的，這道料理很推薦。"
+  },
   {
     "kanji": "白ご飯",
     "kana": "しろごはん",

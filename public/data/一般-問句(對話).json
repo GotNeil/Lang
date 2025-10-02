@@ -172,5 +172,31 @@
     "chinese": "不是 / 不對",
     "example": "A: 持ち帰りですか？</br>B: いいえ、違います。",
     "example_chinese": "A: 你要外帶嗎？</br>B: 不， 不是。"
+  },
+  [
+  {
+    "kanji": "他の人",
+    "kana": "ほかのひと",
+    "romaji": "hoka no hito",
+    "chinese": "其他人",
+    "example": "A: 母の料理はベジタリアンにしてください。他の人は大丈夫です。</br>B: かしこまりました。",
+    "example_chinese": "A: 我媽媽的餐點請做素食，其他人沒關係。</br>B: 好的，明白了。"
+  },
+  {
+    "kanji": "他の人",
+    "kana": "ほかのひと",
+    "romaji": "hoka no hito",
+    "chinese": "其他人",
+    "example": "A: 私はカレーをお願いします。他の人も同じものを注文します。</br>B: かしこまりました。",
+    "example_chinese": "A: 我要一份咖哩，其他人也都點一樣的。</br>B: 好的。"
+  },
+  {
+    "kanji": "他の人",
+    "kana": "ほかのひと",
+    "romaji": "hoka no hito",
+    "chinese": "其他人",
+    "example": "A: 水は私だけでいいです。他の人はいりません。</br>B: 了解しました。",
+    "example_chinese": "A: 水只要給我就好，其他人不用。</br>B: 知道了。"
   }
+]
 ]
