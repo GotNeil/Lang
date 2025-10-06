@@ -87,6 +87,22 @@
     "example": "A: 唐揚げをください。</br>B: はい、唐揚げ1パックですね。",
     "example_chinese": "A: 我要炸雞塊。</br>B: 好的，一份炸雞塊。"
   },
+    {
+    "kanji": "唐揚",
+    "kana": "からあげ",
+    "romaji": "karaage",
+    "chinese": "炸雞塊",
+    "example": "A: この唐揚はチキンですか？</br>B: はい、鶏肉の唐揚です。",
+    "example_chinese": "A: 這個唐揚是雞肉做的嗎？</br>B: 是的，是炸雞塊。"
+  },
+  {
+    "kanji": "唐揚",
+    "kana": "からあげ",
+    "romaji": "karaage",
+    "chinese": "炸雞塊",
+    "example": "A: 唐揚を一つ追加できますか？</br>B: もちろんです。",
+    "example_chinese": "A: 可以再加一份炸雞塊嗎？</br>B: 當然可以。"
+  },
   {
     "kanji": "フライドチキン",
     "kana": "ふらいどちきん",

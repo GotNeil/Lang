@@ -16,6 +16,22 @@
     "example": "A: 薬を飲むのでお湯をもらえますか？</br>B: はい、少々お待ちください。",
     "example_chinese": "A: 我要吃藥，可以給我熱水嗎？</br>B: 好的，請稍等一下。"
   },
+   {
+    "kanji": "飲み物",
+    "kana": "のみもの",
+    "romaji": "nomimono",
+    "chinese": "飲料",
+    "example": "A: 飲み物はどうされますか？</br>B: お水をお願いします。",
+    "example_chinese": "A: 您想喝點什麼？</br>B: 請給我水。"
+  },
+  {
+    "kanji": "ドリンク",
+    "kana": "どりんく",
+    "romaji": "dorinku",
+    "chinese": "飲料",
+    "example": "A: ドリンクはセットにできますか？</br>B: はい、プラス200円です。",
+    "example_chinese": "A: 飲料可以加成套餐嗎？</br>B: 可以，加200日圓。"
+  },
   {
     "kanji": "お茶",
     "kana": "おちゃ",
