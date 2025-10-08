@@ -1,0 +1,42 @@
+[
+  {
+    "kanji": "片道切符をください。",
+    "kana": "かたみちきっぷをください。",
+    "romaji": "katamichi kippu o kudasai.",
+    "chinese": "請給我一張單程票。",
+    "example": "A: 片道切符をください。</br>B: はい、1枚ですね。",
+    "example_chinese": "A: 請給我一張單程票。</br>B: 好的，一張。"
+  },
+  {
+    "kanji": "往復切符を買いたいです。",
+    "kana": "おうふくきっぷをかいたいです。",
+    "romaji": "ōfuku kippu o kaitai desu.",
+    "chinese": "我想買一張來回票。",
+    "example": "A: 往復切符を買いたいです。</br>B: はい、どちらまでですか？",
+    "example_chinese": "A: 我想買一張來回票。</br>B: 好的，要到哪裡？"
+  },
+  {
+    "kanji": "往復切符を2枚ください。",
+    "kana": "おうふくきっぷをにまいください。",
+    "romaji": "ōfuku kippu o nimai kudasai.",
+    "chinese": "我想買兩張票，來回的。",
+    "example": "A: 往復切符を2枚ください。</br>B: はい、2枚ですね。",
+    "example_chinese": "A: 我想買兩張票，來回的。</br>B: 好的，兩張。"
+  },
+  {
+    "kanji": "片道はいくらですか？",
+    "kana": "かたみちはいくらですか？",
+    "romaji": "katamichi wa ikura desu ka?",
+    "chinese": "單程多少錢？",
+    "example": "A: 片道はいくらですか？</br>B: 2500円です。",
+    "example_chinese": "A: 單程多少錢？</br>B: 2500日圓。"
+  },
+  {
+    "kanji": "往復はいくらですか？",
+    "kana": "おうふくはいくらですか？",
+    "romaji": "ōfuku wa ikura desu ka?",
+    "chinese": "來回票多少錢？",
+    "example": "A: 往復はいくらですか？</br>B: 4500円です。",
+    "example_chinese": "A: 來回票多少錢？</br>B: 4500日圓。"
+  }
+]

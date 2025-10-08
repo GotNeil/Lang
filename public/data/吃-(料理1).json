@@ -142,5 +142,69 @@
     "chinese": "全素食 / vegan",
     "example": "A: 彼はヴィーガンです。 </br> B: だから肉も魚も食べません。",
     "example_chinese": "A: 他是全素食者。 </br> B: 所以他不吃肉也不吃魚。"
+  },
+  {
+    "kanji": "漬物",
+    "kana": "つけもの",
+    "romaji": "tsukemono",
+    "chinese": "醃漬小菜",
+    "example": "A: 漬物はどの種類がありますか？</br>B: きゅうりと大根の漬物があります。",
+    "example_chinese": "A: 有哪些醃漬小菜？</br>B: 有黃瓜和白蘿蔔。"
+  },
+  {
+    "kanji": "唐揚げ",
+    "kana": "からあげ",
+    "romaji": "karaage",
+    "chinese": "炸雞塊",
+    "example": "A: 唐揚げを一つください。</br>B: はい、熱々の唐揚げです。",
+    "example_chinese": "A: 我要一份炸雞塊。</br>B: 好的，是熱騰騰的炸雞塊。"
+  },
+  {
+    "kanji": "丼",
+    "kana": "どんぶり",
+    "romaji": "donburi",
+    "chinese": "丼飯",
+    "example": "A: 丼はどんな種類がありますか？</br>B: 親子丼と牛丼があります。",
+    "example_chinese": "A: 有哪些丼飯種類？</br>B: 有親子丼和牛丼。"
+  },
+  {
+    "kanji": "親子丼",
+    "kana": "おやこどん",
+    "romaji": "oyakodon",
+    "chinese": "親子丼（雞肉蛋蓋飯）",
+    "example": "A: 親子丼を一つお願いします。</br>B: はい、少々お待ちください。",
+    "example_chinese": "A: 我要一份親子丼。</br>B: 好的，請稍等。"
+  },
+  {
+    "kanji": "牛丼",
+    "kana": "ぎゅうどん",
+    "romaji": "gyūdon",
+    "chinese": "牛丼（牛肉蓋飯）",
+    "example": "A: 牛丼を二つください。</br>B: はい、熱々の牛丼です。",
+    "example_chinese": "A: 我要兩份牛丼。</br>B: 好的，是熱騰騰的牛丼。"
+  },
+  {
+    "kanji": "焼き鳥",
+    "kana": "やきとり",
+    "romaji": "yakitori",
+    "chinese": "烤雞串",
+    "example": "A: 焼き鳥は塩ですか、タレですか？</br>B: タレでお願いします。",
+    "example_chinese": "A: 烤雞串要鹽味還是醬汁？</br>B: 請醬汁。"
+  },
+  {
+    "kanji": "豚バラ串",
+    "kana": "ぶたばらくし",
+    "romaji": "butabara kushi",
+    "chinese": "豬五花串",
+    "example": "A: 豚バラ串を3本お願いします。</br>B: はい、焼き上がるまで少々お待ちください。",
+    "example_chinese": "A: 我要三串豬五花串。</br>B: 好的，請稍等烤好。"
+  },
+  {
+    "kanji": "牛串",
+    "kana": "ぎゅうくし",
+    "romaji": "gyū kushi",
+    "chinese": "牛肉串",
+    "example": "A: 牛串を2本ください。</br>B: はい、塩焼きでよろしいですか？",
+    "example_chinese": "A: 我要兩串牛肉串。</br>B: 好的，要鹽烤嗎？"
   }
 ]

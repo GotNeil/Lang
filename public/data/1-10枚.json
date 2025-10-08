@@ -1,0 +1,82 @@
+[
+  {
+    "kanji": "1枚",
+    "kana": "いちまい",
+    "romaji": "ichimai",
+    "chinese": "一張",
+    "example": "A: チケットを1枚ください。</br>B: はい、1枚ですね。",
+    "example_chinese": "A: 請給我一張票。</br>B: 好的，一張。"
+  },
+  {
+    "kanji": "2枚",
+    "kana": "にまい",
+    "romaji": "nimai",
+    "chinese": "兩張",
+    "example": "A: 地図を2枚もらえますか？</br>B: はい、どうぞ。",
+    "example_chinese": "A: 可以給我兩張地圖嗎？</br>B: 好的，給您。"
+  },
+  {
+    "kanji": "3枚",
+    "kana": "さんまい",
+    "romaji": "sanmai",
+    "chinese": "三張",
+    "example": "A: チケットを3枚予約しました。</br>B: ありがとうございます。",
+    "example_chinese": "A: 我預約了三張票。</br>B: 謝謝您。"
+  },
+  {
+    "kanji": "4枚",
+    "kana": "よんまい",
+    "romaji": "yonmai",
+    "chinese": "四張",
+    "example": "A: この書類を4枚コピーしてください。</br>B: はい、すぐにします。",
+    "example_chinese": "A: 請幫我影印這份文件四張。</br>B: 好的，馬上處理。"
+  },
+  {
+    "kanji": "5枚",
+    "kana": "ごまい",
+    "romaji": "gomai",
+    "chinese": "五張",
+    "example": "A: チケットを5枚まとめて買いたいです。</br>B: はい、5枚ですね。",
+    "example_chinese": "A: 我想一起買五張票。</br>B: 好的，五張。"
+  },
+  {
+    "kanji": "6枚",
+    "kana": "ろくまい",
+    "romaji": "rokumai",
+    "chinese": "六張",
+    "example": "A: 写真を6枚印刷しました。</br>B: きれいにできましたね。",
+    "example_chinese": "A: 我印了六張照片。</br>B: 印得很漂亮呢。"
+  },
+  {
+    "kanji": "7枚",
+    "kana": "ななまい",
+    "romaji": "nanamai",
+    "chinese": "七張",
+    "example": "A: 領収書を7枚もらえますか？</br>B: はい、少々お待ちください。",
+    "example_chinese": "A: 可以給我七張收據嗎？</br>B: 好的，請稍等。"
+  },
+  {
+    "kanji": "8枚",
+    "kana": "はちまい",
+    "romaji": "hachimai",
+    "chinese": "八張",
+    "example": "A: チラシを8枚配ってください。</br>B: はい、わかりました。",
+    "example_chinese": "A: 請幫我發八張傳單。</br>B: 好的，我知道了。"
+  },
+  {
+    "kanji": "9枚",
+    "kana": "きゅうまい",
+    "romaji": "kyūmai",
+    "chinese": "九張",
+    "example": "A: チケットを9枚確認しました。</br>B: はい、全部そろっています。",
+    "example_chinese": "A: 我確認了九張票。</br>B: 是的，全都有。"
+  },
+  {
+    "kanji": "10枚",
+    "kana": "じゅうまい",
+    "romaji": "jūmai",
+    "chinese": "十張",
+    "example": "A: 船のチケットを10枚購入しました。</br>B: ありがとうございます。団体ですね。",
+    "example_chinese": "A: 我買了十張船票。</br>B: 謝謝您，是團體客呢。"
+  }
+]

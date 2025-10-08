@@ -1,0 +1,34 @@
+[
+  {
+    "kanji": "チケット",
+    "kana": "ちけっと",
+    "romaji": "chiketto",
+    "chinese": "票、門票",
+    "example": "A: コンサートのチケットはありますか？</br>B: はい、まだ少し残っています。",
+    "example_chinese": "A: 有音樂會的門票嗎？</br>B: 有的，還剩一點。"
+  },
+  {
+    "kanji": "きっぷ",
+    "kana": "きっぷ",
+    "romaji": "kippu",
+    "chinese": "車票、票",
+    "example": "A: 東京までのきっぷをください。</br>B: はい、片道ですか？往復ですか？",
+    "example_chinese": "A: 請給我一張到東京的車票。</br>B: 好的，是單程還是來回？"
+  },
+  {
+    "kanji": "片道",
+    "kana": "かたみち",
+    "romaji": "katamichi",
+    "chinese": "單程",
+    "example": "A: 片道のチケットはいくらですか？</br>B: 2500円です。",
+    "example_chinese": "A: 單程票多少錢？</br>B: 2500日圓。"
+  },
+  {
+    "kanji": "往復",
+    "kana": "おうふく",
+    "romaji": "ōfuku",
+    "chinese": "來回",
+    "example": "A: 往復きっぷの方が安いですか？</br>B: はい、少しお得です。",
+    "example_chinese": "A: 買來回票比較便宜嗎？</br>B: 是的，會便宜一點。"
+  }
+]

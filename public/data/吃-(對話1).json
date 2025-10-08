@@ -70,5 +70,45 @@
     "chinese": "有不辣的嗎？",
     "example": "A: 辛くない料理はありますか？</br>B: はい、唐揚げがおすすめです。",
     "example_chinese": "A: 有不辣的嗎？</br>B: 有的，我推薦炸雞。"
+  },
+    {
+    "kanji": "これは熱い料理ですか？",
+    "kana": "これはあついりょうりですか？",
+    "romaji": "Kore wa atsui ryōri desu ka?",
+    "chinese": "這是熱食嗎？",
+    "example": "A: これは熱い料理ですか？</br>B: はい、温かいです。",
+    "example_chinese": "A: 這是熱食嗎？</br>B: 是的，是熱的。"
+  },
+  {
+  "kanji": "これは温かい料理ですか？",
+  "kana": "これはあたたかいりょうりですか？",
+  "romaji": "Kore wa atatakai ryōri desu ka?",
+  "chinese": "這是熱食嗎？",
+  "example": "A: これは温かい料理ですか？</br>B: はい、温かいです。",
+  "example_chinese": "A: 這是熱食嗎？</br>B: 是的，是熱的。"
+},
+  {
+    "kanji": "これは冷たい料理ですか？",
+    "kana": "これはつめたいりょうりですか？",
+    "romaji": "Kore wa tsumetai ryōri desu ka?",
+    "chinese": "這是冷食嗎？",
+    "example": "A: これは冷たい料理ですか？</br>B: はい、冷たいです。",
+    "example_chinese": "A: 這是冷食嗎？</br>B: 是的，是冷的。"
+  },
+  {
+    "kanji": "これはスープですか？",
+    "kana": "これはすーぷですか？",
+    "romaji": "Kore wa sūpu desu ka?",
+    "chinese": "這是湯嗎？",
+    "example": "A: これはスープですか？</br>B: いいえ、味噌汁です。",
+    "example_chinese": "A: 這是湯嗎？</br>B: 不是，是味噌湯。"
+  },
+  {
+    "kanji": "これは丼ですか？",
+    "kana": "これはどんぶりですか？",
+    "romaji": "Kore wa donburi desu ka?",
+    "chinese": "這是丼飯嗎？",
+    "example": "A: これは丼ですか？</br>B: はい、ご飯の上に具がのっています。",
+    "example_chinese": "A: 這是丼飯嗎？</br>B: 是的，飯上面有配料。"
   }
 ]
