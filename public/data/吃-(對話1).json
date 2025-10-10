@@ -23,6 +23,14 @@
     "example": "A: ここで店内で食べられますか？</br>B: はい、どうぞ。",
     "example_chinese": "A: 可以在這裡店內用餐嗎？</br>B: 可以，請用。"
   },
+  {
+  "kanji": "店内で食べます",
+  "kana": "てんないでたべます",
+  "romaji": "tennai de tabemasu",
+  "chinese": "我要內用。",
+  "example": "A: 店内で食べます。</br>B: はい、かしこまりました。",
+  "example_chinese": "A: 我要內用。<br>B: 好的，了解。"
+},
     {
     "kanji": "英語のメニューはありますか？",
     "kana": "えいごのめにゅーはありますか？",
@@ -31,6 +39,30 @@
     "example": "A: 英語のメニューはありますか？</br>B: はい、こちらです。",
     "example_chinese": "A: 有英文菜單嗎？</br>B: 有的，這邊請。"
   },
+    {
+    "kanji": "注文したいです",
+    "kana": "ちゅうもんしたいです",
+    "romaji": "chūmon shitai desu",
+    "chinese": "我要點餐",
+    "example": "A: 注文したいです。</br>B: はい、どうぞ。",
+    "example_chinese": "A: 我要點餐。<br>B: 好的，請說。"
+  },
+  {
+    "kanji": "注文してもいいですか？",
+    "kana": "ちゅうもんしてもいいですか？",
+    "romaji": "chūmon shitemo ii desu ka?",
+    "chinese": "可以點餐嗎？",
+    "example": "A: 注文してもいいですか？</br>B: はい、大丈夫です。",
+    "example_chinese": "A: 可以點餐嗎？<br>B: 可以，沒問題。"
+  },
+  {
+  "kanji": "注文します",
+  "kana": "ちゅうもんします",
+  "romaji": "chūmon shimasu",
+  "chinese": "我要點餐。",
+  "example": "A: 注文します。</br>B: はい、お願いします。",
+  "example_chinese": "A: 我要點餐。<br>B: 好的，麻煩您。"
+},
     {
     "kanji": "お水はありますか？",
     "kana": "おみずはありますか？",

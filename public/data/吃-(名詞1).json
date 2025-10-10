@@ -22,5 +22,29 @@
     "chinese": "外帶",
     "example": "A: この弁当は持ち帰りできますか？</br>B: はい、持ち帰り可能です。",
     "example_chinese": "A: 這個便當可以外帶嗎？</br>B: 可以，可以外帶。"
+  },
+    {
+    "kanji": "注文",
+    "kana": "ちゅうもん",
+    "romaji": "chūmon",
+    "chinese": "點餐（最正式的說法）",
+    "example": "A: 注文をお願いします。</br>B: はい、少々お待ちください。",
+    "example_chinese": "A: 麻煩幫我點餐。<br>B: 好的，請稍等。"
+  },
+  {
+    "kanji": "メニュー",
+    "kana": "めにゅー",
+    "romaji": "menyū",
+    "chinese": "菜單",
+    "example": "A: メニューを見せてください。</br>B: はい、どうぞ。",
+    "example_chinese": "A: 請讓我看一下菜單。<br>B: 好的，這邊請。"
+  },
+  {
+    "kanji": "料理",
+    "kana": "りょうり",
+    "romaji": "ryōri",
+    "chinese": "餐點、料理、菜餚",
+    "example": "A: この料理は何ですか？</br>B: 親子丼です。",
+    "example_chinese": "A: 這道料理是什麼？<br>B: 是親子丼。"
   }
 ]
